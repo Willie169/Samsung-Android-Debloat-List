@@ -13,7 +13,7 @@ See my <https://github.com/Willie169/Android-Non-Root> repo for more Android tip
 ## Warning
 
 - Both Google Messages (`com.google.android.apps.messaging`) and Samsung Messages (`com.samsung.android.messaging`) are disabled in the list because I'm using Fossify Messages (`org.fossify.messages`): <https://github.com/FossifyOrg/Messages> from F-droid: <https://f-droid.org/packages/org.fossify.messages>. Enable one of them if you need.
-- Disabling `com.samsung.android.dkey` will cause increase in background resources usage, so it is not disabled in the list.
+- Disabling Samsung Wallet Digital Key (`com.samsung.android.dkey`) may cause increase in background resources usage, so it is not disabled in the list.
 - Disabling Filter Provider (`com.samsung.android.provider.filterprovider`) or Samsung Capture (`com.samsung.android.app.smartcapture`) will cause Camera (`com.sec.android.app.camera`) to crash, so they are not disabled in the list.
 
 ## Info
