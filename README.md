@@ -49,6 +49,8 @@ This is an incomplete list of apps disabled in the list that you may want to ena
 - Samsung PaymentFramework (`com.samsung.android.spayfw`)
 - Samsung text-to-speech engine (`com.samsung.SMT`)
 - SmartThings Companion (`com.samsung.android.service.stplatform`)
+- Talk Back (`com.samsung.android.accessibility.talkback`)
+- Voice Access (`com.google.android.apps.accessibility.voiceaccess`)
 - Weather (`com.sec.android.daemonapp`)
 
 ## ADB Command
