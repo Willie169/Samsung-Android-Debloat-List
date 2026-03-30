@@ -199,4 +199,4 @@ Usage:
 
 ## License
 
-This repo is licensed under CC BY 4.0. See [LICENSE.html](LICENSE.html) for the legal code.
+This repo is licensed under CC BY 4.0. See [LICENSE.txt](LICENSE.txt) for the legal code.
