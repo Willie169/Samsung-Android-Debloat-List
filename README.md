@@ -28,6 +28,24 @@ See my <https://github.com/Willie169/Android-Non-Root> repo for more Android tip
 - Terminal (`com.android.virtualization.terminal`) is disabled/uninstalled in the list because it's not usable after all in a test on Mar 30, 2026.
 - Meta App Installer (`com.facebook.system`), Meta App Manager (`com.facebook.appmanager`), and Meta Services (`com.facebook.services`) are disabled/uninstalled in the list because disabling them won't affect Facebook (`com.facebook.katana`), Messenger (`com.facebook.orca`), and other apps.
 
+## Disabled/Uninstalled
+
+This is an incomplete list of apps disabled/uninstalled in the list that you may want to enable.
+
+- Hey Google Hotword (`com.android.hotwordenrollment.xgoogle`) and OK Google Hotword (`com.android.hotwordenrollment.okgoogle`)
+- Bixby (`com.samsung.android.bixby.agent`), Bixby Vision (`com.samsung.android.visionintelligence`), BixbyVision Framework (`com.samsung.android.bixbyvision.framework`), and Voice wake-up (`com.samsung.android.bixby.wakeup`)
+- Link to Windows (`com.microsoft.appmanager`) and Link to Windows Service (`com.samsung.android.mdx`)
+- Microsoft SwiftKey Keyboard (`com.touchtype.swiftkey`) and Microsoft SwiftKey Factory Settings (`com.swiftkey.swiftkeyconfigurator`)
+- Modes and Routines (`com.samsung.android.app.routines`)
+- Neayby Service (`com.samsung.android.allshare.service.mediashare`), Nearby devices (`com.samsung.android.mydevice`), Nearby device scanning (`com.samsung.android.easysetup`), Nearby device scanning agent (`com.samsung.android.beaconmanager`)
+- Samsung Pass (`com.samsung.android.samsungpass`) and Autofill with Samsung Pass (`com.samsung.android.samsungpassautofill`)
+- Samsung PaymentFramework (`com.samsung.android.spayfw`)
+- SmartThings Companion (`com.samsung.android.service.stplatform`)
+- Smart View (`com.samsung.android.smartmirroring`)
+- TalkBack (`com.samsung.android.accessibility.talkback`)
+- Voice Access (`com.google.android.apps.accessibility.voiceaccess`)
+- Weather (`com.sec.android.daemonapp`)
+
 ## Not Disabled/Uninstalled
 
 These apps are not disabled/uninstalled in the list and should be safe to disable if you don't need them.
@@ -42,24 +60,6 @@ These apps are not disabled/uninstalled in the list and should be safe to disabl
 - Samsung Account (`com.osp.app.signin`), Samsung Cloud (`com.samsung.android.scloud`), and Samsung Cloud Assistant (`com.samsung.android.scpm`)
 - Quick Share (`com.samsung.android.app.sharelive`), Quick Share Agent (`com.samsung.android.aware.service`), Quick Share Connectivity (`com.samsung.android.mdx.kit`)
 - YouTube (`com.google.android.youtube`)
-
-## Disabled/Uninstalled
-
-This is an incomplete list of apps disabled/uninstalled in the list that you may want to enable.
-
-- Assistant (`com.google.android.apps.googleassistant`), Hey Google Hotword (`com.android.hotwordenrollment.xgoogle`) and OK Google Hotword (`com.android.hotwordenrollment.okgoogle`)
-- Bixby (`com.samsung.android.bixby.agent`), Bixby Vision (`com.samsung.android.visionintelligence`), BixbyVision Framework (`com.samsung.android.bixbyvision.framework`), and Voice wake-up (`com.samsung.android.bixby.wakeup`)
-- Link to Windows (`com.microsoft.appmanager`) and Link to Windows Service (`com.samsung.android.mdx`)
-- Microsoft SwiftKey Keyboard (`com.touchtype.swiftkey`) and Microsoft SwiftKey Factory Settings (`com.swiftkey.swiftkeyconfigurator`)
-- Modes and Routines (`com.samsung.android.app.routines`)
-- Neayby Service (`com.samsung.android.allshare.service.mediashare`), Nearby devices (`com.samsung.android.mydevice`), Nearby device scanning (`com.samsung.android.easysetup`), Nearby device scanning agent (`com.samsung.android.beaconmanager`)
-- Samsung Pass (`com.samsung.android.samsungpass`) and Autofill with Samsung Pass (`com.samsung.android.samsungpassautofill`)
-- Samsung PaymentFramework (`com.samsung.android.spayfw`)
-- SmartThings Companion (`com.samsung.android.service.stplatform`)
-- Smart View (`com.samsung.android.smartmirroring`)
-- TalkBack (`com.samsung.android.accessibility.talkback`)
-- Voice Access (`com.google.android.apps.accessibility.voiceaccess`)
-- Weather (`com.sec.android.daemonapp`)
 
 ## ADB Disable Command
 
