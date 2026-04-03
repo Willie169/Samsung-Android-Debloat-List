@@ -14,9 +14,9 @@ See my <https://github.com/Willie169/Android-Non-Root> repo for more Android tip
 
 ## Read Before Execution
 
-- Both Google Messages (`com.google.android.apps.messaging`) and Samsung Messages (`com.samsung.android.messaging`) are disabled/uninstalled in the list because I'm using Fossify Messages (`org.fossify.messages`): <https://github.com/FossifyOrg/Messages> from F-droid: <https://f-droid.org/packages/org.fossify.messages>. Enable one of them if you need.
+- Both Google Messages (`com.google.android.apps.messaging`) and Samsung Messages (`com.samsung.android.messaging`) are disabled/uninstalled in the list because I'm using Fossify Messages (`org.fossify.messages`): <https://github.com/FossifyOrg/Messages> from F-Droid: <https://f-droid.org/packages/org.fossify.messages>. Enable one of them if you need.
 - Disabling/Uninstalling Samsung Wallet Digital Key (`com.samsung.android.dkey`) may cause increase in background resources usage, so it is not disabled/uninstalled in the list.
-- Disabling/Uninstalling Smart View (`com.samsung.android.smartmirroring`) may causs One UI Home (`com.sec.android.app.launcher`) to crash, so it is not disabled/uninstalled in the list.
+- Disabling/Uninstalling Smart View (`com.samsung.android.smartmirroring`) may cause One UI Home (`com.sec.android.app.launcher`) to crash, so it is not disabled/uninstalled in the list.
 - Disabling/Uninstalling Filter Provider (`com.samsung.android.provider.filterprovider`) or Samsung Capture (`com.samsung.android.app.smartcapture`) will cause Camera (`com.sec.android.app.camera`) to crash, so they are not disabled/uninstalled in the list.
 - Samsung text-to-speech engine (`com.samsung.SMT`) is disabled/uninstalled in the list. You can also disable/uninstall all apps starting with `com.samsung.SMT.lang_` with ADB command:
   ```
@@ -47,18 +47,18 @@ This is an incomplete list of apps disabled/uninstalled in the list that you may
 
 ## Not Disabled/Uninstalled
 
-These apps are not disabled/uninstalled in the list and should be safe to disable if you don't need them.
+These apps are not disabled/uninstalled in the list and should be safe to disable if you don't need them. The app list in the right of each app is the alternative I recommend. I recommend using Droid-fy (`com.looker.droidify`): <https://github.com/Droid-ify/client> from F-Droid: <https://f-droid.org/packages/com.looker.droidify> to install apps from F-Droid and using Obtainium (`dev.imranr.obtainium.fdroid`): <https://github.com/ImranR98/Obtainium> from F-Droid: <https://f-droid.org/packages/dev.imranr.obtainium.fdroid> from apps from other sources such as GitHub release.
 
-- Google (`com.google.android.googlequicksearchbox`)
-- Chrome (`com.android.chrome`)
-- Gmail (`com.google.android.gm`)
-- Maps (`com.google.android.apps.maps`)
+- Google (`com.google.android.googlequicksearchbox`): CircleToSearch (`com.akslabs.circletosearch`): <https://github.com/AKS-Labs/CircleToSearch> from F-Droid: <https://f-droid.org/packages/com.akslabs.circletosearch>, Firefox (`org.mozilla.firefox`): <https://github.com/mozilla-mobile/firefox-android> from Google Play: <https://play.google.com/store/apps/details?id=org.mozilla.firefox>, Brave (`com.brave.browser`): <https://github.com/brave/brave-browser> from Google Play: <https://play.google.com/store/apps/details?id=com.brave.browser>.
+- Chrome (`com.android.chrome`): Firefox (`org.mozilla.firefox`): <https://github.com/mozilla-mobile/firefox-android> from Google Play: <https://play.google.com/store/apps/details?id=org.mozilla.firefox>, Brave (`com.brave.browser`): <https://github.com/brave/brave-browser> from Google Play: <https://play.google.com/store/apps/details?id=com.brave.browser>.
+- Gmail (`com.google.android.gm`): Thunderbird (`net.thunderbird.android`): <https://github.com/thunderbird/thunderbird-android> from F-Droid: <https://f-droid.org/packages/net.thunderbird.android>.
+- Maps (`com.google.android.apps.maps`): GMaps WV (`us.spotco.maps`): <https://github.com/woheller69/maps> from F-Droid: <https://f-droid.org/packages/us.spotco.maps>.
 - Meet (`com.google.android.apps.tachyon`)
 - Gemini (`com.google.android.apps.bard`)
 - Galaxy Store (`com.sec.android.app.samsungapps`)
 - Samsung Account (`com.osp.app.signin`), Samsung Cloud (`com.samsung.android.scloud`), and Samsung Cloud Assistant (`com.samsung.android.scpm`)
-- Quick Share (`com.samsung.android.app.sharelive`), Quick Share Agent (`com.samsung.android.aware.service`), Quick Share Connectivity (`com.samsung.android.mdx.kit`)
-- YouTube (`com.google.android.youtube`)
+- Quick Share (`com.samsung.android.app.sharelive`), Quick Share Agent (`com.samsung.android.aware.service`), Quick Share Connectivity (`com.samsung.android.mdx.kit`): LocalSend (`org.localsend.localsend_app`): <https://github.com/localsend/localsend> from F-Droid: <https://f-droid.org/packages/org.localsend.localsend_app>.
+- YouTube (`com.google.android.youtube`): PipePipe (`InfinityLoop1309.NewPipeEnhanced`): <https://github.com/InfinityLoop1308/PipePipe> from F-Droid: <https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced> or GitHub release (recommended due to frequent updates).
 
 ## ADB Disable Command
 
