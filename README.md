@@ -375,6 +375,14 @@ On Android 14+, let persistent notifications posted by the app of user 0 be dism
 ```
 appops set --user 0 <package_name> SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS default
 ```
+Let vibration by the app of user 0 be ignored:
+```
+appops set --user 0 <package_name> VIBRATE ignore
+```
+Let vibration by the app of user 0 be allowed:
+```
+appops set --user 0 <package_name> VIBRATE allow
+```
 
 ## Useful ADB Command Combination
 
