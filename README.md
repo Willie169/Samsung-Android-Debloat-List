@@ -19,7 +19,7 @@ See my <https://github.com/Willie169/Android-Non-Root> repo for more Android tip
   settings put global device_provisioned 1
   ```
 - Both Google Messages (`com.google.android.apps.messaging`) and Samsung Messages (`com.samsung.android.messaging`) are disabled/uninstalled in the list because I'm using Fossify Messages (`org.fossify.messages`): <https://github.com/FossifyOrg/Messages> from F-Droid: <https://f-droid.org/packages/org.fossify.messages>. Enable/install one of them if you use them.
-- Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.gestural_no_hint`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural_no_hint`), and Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural`) are disabled/uninstalled in the list. Enable/install them if you use swipe gestures instead of three buttons navigation bar.
+- Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.gestural_no_hint`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural_no_hint`), and Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural`) are disabled/uninstalled in the list. Enable/install them if you use them instead of 3 Button Navigation Bar (`com.android.internal.systemui.navbar.threebutton`).
 - Gallery (`com.sec.android.gallery3d`), Gallery (`com.samsung.android.widget.pictureframe`), Gallery stories (`com.samsung.storyservice`), CMHProvider (`com.samsung.cmh`), FaceService (`com.samsung.faceservice`), Editor Lite (`com.samsung.app.newtrim`), and Photo Editor (`com.sec.android.mimage.photoretouching`) are disabled/uninstalled in the list because I'm using Lavender Photos (`com.kaii.photos`): <https://github.com/kaii-lb/LavenderPhotos> from F-Droid: <https://apt.izzysoft.de/fdroid/index/apk/com.kaii.photos>, and Image Toolbox (`ru.tech.imageresizershrinker`): <https://github.com/T8RIN/ImageToolbox> from F-Droid: <https://f-droid.org/packages/ru.tech>.imageresizershrinker>. Enable/install them if you need.
 - Smart capture (`com.samsung.android.app.smartcapture`) is disabled/uninstalled in the list. This makes taking screenshots does not send notification but does not affect taking screenshots or other functionalities.
 - Disabling/uninstalling Samsung Wallet Digital Key (`com.samsung.android.dkey`) may cause increase in background resources usage, so it is not disabled/uninstalled in the list.
@@ -723,7 +723,7 @@ done
 
 ## Credits
 
-- Universal Android Debloater GUI: <https://github.com/0x192/universal-android-debloater>, especially <https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json>
+- Universal Android Debloater GUI: <https://github.com/0x192/universal-android-debloater>, <https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json>
 - Shizuku: <https://github.com/thedjchi/Shizuku>
 - Hail: <https://github.com/aistra0528/Hail>
 
