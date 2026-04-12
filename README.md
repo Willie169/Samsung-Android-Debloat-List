@@ -12,23 +12,23 @@ See my <https://github.com/Willie169/Android-Non-Root> repo for more Android tip
 
 ## Caution
 
-- Android Setup (`com.google.android.setupwizard`) sends a notification after ADB operations, run the following inside ADB shell to turn it off:
+- Disabling/uninstalling DiagMonAgent (`com.sec.android.diagmonagent`) may cause crashes, so it is not disabled/uninstalled in the list.
+- Disabling/uninstalling Filter Provider (`com.samsung.android.provider.filterprovider`) may cause Camera (`com.sec.android.app.camera`) to crash, so it is are not disabled/uninstalled in the list.
+- Disabling/uninstalling Enrollment Service (`com.sec.enterprise.knox.cloudmdm.smdms`), Find My Mobile (`com.samsung.android.fmm`), KLMS Agent (`com.samsung.klmsagent`), or KnoxVpnPacProcessor (`com.knox.vpn.proxyhandler`) may fail, so it is not disabled/uninstalled in the list.
+- Disabling/uninstalling NFC Service (`com.android.nfc`) or Samsung Account (`com.osp.app.signin`) may cause crashes, so it is not disabled/uninstalled in the list.
+- Disabling/uninstalling Samsung Wallet Digital Key (`com.samsung.android.dkey`) may cause increase in background resources usage, so it is not disabled/uninstalled in the list.
+- Disabling/uninstalling Smart View (`com.samsung.android.smartmirroring`) may cause One UI Home (`com.sec.android.app.launcher`) and/or Video Player (`com.samsung.android.video`) to crash, so it is not disabled/uninstalled in the list.
+- If Android Setup (`com.google.android.setupwizard`) sends a notification after ADB operations, run the following inside ADB shell to turn it off:
   ```
   settings put global setup_wizard_has_run 1
   settings put secure user_setup_complete 1
   settings put global device_provisioned 1
   ```
-- Both Google Messages (`com.google.android.apps.messaging`) and Samsung Messages (`com.samsung.android.messaging`) are disabled/uninstalled in the list because I'm using QUIK (`dev.octoshrimpy.quik.fdroid`): <https://github.com/quik-sms/quik> from F-Drois: <https://f-droid.org/packages/dev.octoshrimpy.quik.fdroid>. Enable/install one of them if you use them.
-- Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.gestural_no_hint`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural_no_hint`), and Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural`) are disabled/uninstalled in the list. Enable/install them if you use them instead of 3 Button Navigation Bar (`com.android.internal.systemui.navbar.threebutton`).
+- Both Google Messages (`com.google.android.apps.messaging`) and Samsung Messages (`com.samsung.android.messaging`) are disabled/uninstalled in the list because I'm using Fossify Messages (`org.fossify.messages`): <https://github.com/FossifyOrg/Messages> from F-Droid: <https://f-droid.org/packages/org.fossify.messages>. Enable/install one of them if you use them.
+- Contacts (`com.samsung.android.app.contacts`) is disabled/uninstalled in the list because I'm using Fossify Contacts (`org.fossify.contacts`): <https://github.com/FossifyOrg/Contacts> from F-Droid: <https://f-droid.org/packages/org.fossify.contacts>. Enable/install it if you use it.
 - Gallery (`com.sec.android.gallery3d`), Gallery (`com.samsung.android.widget.pictureframe`), Gallery stories (`com.samsung.storyservice`), CMHProvider (`com.samsung.cmh`), FaceService (`com.samsung.faceservice`), Editor Lite (`com.samsung.app.newtrim`), and Photo Editor (`com.sec.android.mimage.photoretouching`) are disabled/uninstalled in the list because I'm using Lavender Photos (`com.kaii.photos`): <https://github.com/kaii-lb/LavenderPhotos> from F-Droid: <https://apt.izzysoft.de/fdroid/index/apk/com.kaii.photos>, and Image Toolbox (`ru.tech.imageresizershrinker`): <https://github.com/T8RIN/ImageToolbox> from F-Droid: <https://f-droid.org/packages/ru.tech>.imageresizershrinker>. Enable/install them if you need.
-- Smart capture (`com.samsung.android.app.smartcapture`) is disabled/uninstalled in the list. This makes taking screenshots does not send notification but does not affect taking screenshots or other functionalities.
-- Disabling/uninstalling Find My Mobile (`com.samsung.android.fmm`) may fail, so it is not disabled/uninstalled in the list.
-- Disabling/uninstalling Samsung Wallet Digital Key (`com.samsung.android.dkey`) may cause increase in background resources usage, so it is not disabled/uninstalled in the list.
-- Disabling/uninstallng Samsung Account (`com.osp.app.signin`) may cause other apps crash, so it is not disabled/uninstalled in the list.
-- Disabling/uninstalling DiagMonAgent (`com.sec.android.diagmonagent`) may cause crashes, so it is not disabled/uninstalled in the list.
-- Disabling/uninstalling NFC Service (`com.android.nfc`) may cause crashes, so it is not disabled/uninstalled in the list.
-- Disabling/uninstalling Smart View (`com.samsung.android.smartmirroring`) may cause One UI Home (`com.sec.android.app.launcher`) and/or Video Player (`com.samsung.android.video`) to crash, so it is not disabled/uninstalled in the list.
-- Disabling/uninstalling Filter Provider (`com.samsung.android.provider.filterprovider`) may cause Camera (`com.sec.android.app.camera`) to crash, so it is are not disabled/uninstalled in the list.
+- Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.gestural_no_hint`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural_no_hint`), and Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural`) are disabled/uninstalled in the list. Enable/install them if you use them instead of 3 Button Navigation Bar (`com.android.internal.systemui.navbar.threebutton`).
+- Phone (`com.samsung.android.dialer`) is disabled/uninstalled in the list because I'm using Fossify Phone (`org.fossify.phone`): <https://github.com/FossifyOrg/Phone> from F-Droid: <https://f-droid.org/packages/org.fossify.phone>. Enable/install it if you use it.
 - Samsung text-to-speech engine (`com.samsung.SMT`), and the voices pre-installed on my phone, SamsungTTS US English Voice 1 (`com.samsung.SMT.lang_en_us_l03`), SamsungTTS 简体中文 语音 1 (`com.samsung.SMT.lang_zh_cn_l02`), SamsungTTS Cantonese Voice 1 (`com.samsung.SMT.lang_zh_hk_f00`), SamsungTTS Taiwanese Mandarin Voice 1 (`com.samsung.SMT.lang_zh_tw_f00`), are disabled/uninstalled in the list because I use SherpaTTS (`org.woheller69.ttsengine`): <https://github.com/woheller69/ttsEngine> from F-Droid: <https://f-droid.org/packages/org.woheller69.ttsengine>. Enable/install Samsung text-to-speech engine and the voices you want if you use them. Pre-installed voices differ across regions and all start with `com.samsung.SMT.lang_` , you can disable them with the ADB command:
   ```
   for pkg in $(pm list packages --user 0 -f | sed "s/.*=//" | grep com.samsung.SMT.lang_); do
@@ -41,7 +41,7 @@ See my <https://github.com/Willie169/Android-Non-Root> repo for more Android tip
     pm uninstall --user 0 $pkg
   done
   ```
-- Android Switch (`com.google.android.apps.restore`), App protection (`com.samsung.android.sm.devicesecurity`), Enrollment Service (`com.sec.enterprise.knox.cloudmdm.smdms`), Galaxy Theme Service (`com.samsung.android.themecenter`), KLMS Agent (`com.samsung.klmsagent`), KnoxVpnPacProcessor (`com.knox.vpn.proxyhandler`), and Smart Switch (`com.sec.android.easyMover`) may be automatically re-enabled/reinstalled and are not disabled/uninstalled in the list.
+- Smart capture (`com.samsung.android.app.smartcapture`) is disabled/uninstalled in the list. This makes taking screenshots does not send notification but does not affect taking screenshots or other functionalities.
 - See [Disabled/Uninstalled](#disabled-uninstalled) for an incomplete list of apps disabled/uninstalled in the list that you may want to enable and my recommended alternatives. See [Not Disabled/Uninstalled](#not-disabled-uninstalled) for an incomplete list of apps not disabled/uninstalled in the list that you may want to disable, reasons, and my recommended alternatives. I recommend using Droid-fy (`com.looker.droidify`): <https://github.com/Droid-ify/client> from F-Droid: <https://f-droid.org/packages/com.looker.droidify> to install apps from F-Droid, and using Obtainium (`dev.imranr.obtainium.fdroid`): <https://github.com/ImranR98/Obtainium> from F-Droid: <https://f-droid.org/packages/dev.imranr.obtainium.fdroid> from apps from other sources such as GitHub release.
 
 ## Raw List
@@ -70,6 +70,7 @@ com.google.android.aicore
 com.google.android.apps.accessibility.voiceaccess
 com.google.android.apps.aiwallpapers
 com.google.android.apps.messaging
+com.google.android.apps.restore
 com.google.android.apps.tachyon
 com.google.android.as
 com.google.android.feedback
@@ -104,6 +105,7 @@ com.samsung.android.aicore
 com.samsung.android.aircommandmanager
 com.samsung.android.allshare.service.mediashare
 com.samsung.android.app.camera.sticker.facearavatar.preload
+com.samsung.android.app.contacts
 com.samsung.android.app.omcagent
 com.samsung.android.app.parentalcare
 com.samsung.android.app.routines
@@ -122,6 +124,7 @@ com.samsung.android.bixbyvision.framework
 com.samsung.android.carkey
 com.samsung.android.da.daagent
 com.samsung.android.dbsc
+com.samsung.android.dialer
 com.samsung.android.dqagent
 com.samsung.android.dynamiclock
 com.samsung.android.easysetup
@@ -201,6 +204,7 @@ com.sec.android.app.wlantest
 com.sec.android.autodoodle.service
 com.sec.android.daemonapp
 com.sec.android.desktopmode.uiservice
+com.sec.android.easyMover
 com.sec.android.easyMover.Agent
 com.sec.android.easyonehand
 com.sec.android.gallery3d
@@ -254,6 +258,7 @@ pm disable --user 0 com.google.android.aicore
 pm disable --user 0 com.google.android.apps.accessibility.voiceaccess
 pm disable --user 0 com.google.android.apps.aiwallpapers
 pm disable --user 0 com.google.android.apps.messaging
+pm disable --user 0 com.google.android.apps.restore
 pm disable --user 0 com.google.android.apps.tachyon
 pm disable --user 0 com.google.android.as
 pm disable --user 0 com.google.android.feedback
@@ -288,6 +293,7 @@ pm disable --user 0 com.samsung.android.aicore
 pm disable --user 0 com.samsung.android.aircommandmanager
 pm disable --user 0 com.samsung.android.allshare.service.mediashare
 pm disable --user 0 com.samsung.android.app.camera.sticker.facearavatar.preload
+pm disable --user 0 com.samsung.android.app.contacts
 pm disable --user 0 com.samsung.android.app.omcagent
 pm disable --user 0 com.samsung.android.app.parentalcare
 pm disable --user 0 com.samsung.android.app.routines
@@ -306,6 +312,7 @@ pm disable --user 0 com.samsung.android.bixbyvision.framework
 pm disable --user 0 com.samsung.android.carkey
 pm disable --user 0 com.samsung.android.da.daagent
 pm disable --user 0 com.samsung.android.dbsc
+pm disable --user 0 com.samsung.android.dialer
 pm disable --user 0 com.samsung.android.dqagent
 pm disable --user 0 com.samsung.android.dynamiclock
 pm disable --user 0 com.samsung.android.easysetup
@@ -385,6 +392,7 @@ pm disable --user 0 com.sec.android.app.wlantest
 pm disable --user 0 com.sec.android.autodoodle.service
 pm disable --user 0 com.sec.android.daemonapp
 pm disable --user 0 com.sec.android.desktopmode.uiservice
+pm disable --user 0 com.sec.android.easyMover
 pm disable --user 0 com.sec.android.easyMover.Agent
 pm disable --user 0 com.sec.android.easyonehand
 pm disable --user 0 com.sec.android.gallery3d
@@ -438,6 +446,7 @@ pm uninstall --user 0 com.google.android.aicore
 pm uninstall --user 0 com.google.android.apps.accessibility.voiceaccess
 pm uninstall --user 0 com.google.android.apps.aiwallpapers
 pm uninstall --user 0 com.google.android.apps.messaging
+pm uninstall --user 0 com.google.android.apps.restore
 pm uninstall --user 0 com.google.android.apps.tachyon
 pm uninstall --user 0 com.google.android.as
 pm uninstall --user 0 com.google.android.feedback
@@ -472,6 +481,7 @@ pm uninstall --user 0 com.samsung.android.aicore
 pm uninstall --user 0 com.samsung.android.aircommandmanager
 pm uninstall --user 0 com.samsung.android.allshare.service.mediashare
 pm uninstall --user 0 com.samsung.android.app.camera.sticker.facearavatar.preload
+pm uninstall --user 0 com.samsung.android.app.contacts
 pm uninstall --user 0 com.samsung.android.app.omcagent
 pm uninstall --user 0 com.samsung.android.app.parentalcare
 pm uninstall --user 0 com.samsung.android.app.routines
@@ -490,6 +500,7 @@ pm uninstall --user 0 com.samsung.android.bixbyvision.framework
 pm uninstall --user 0 com.samsung.android.carkey
 pm uninstall --user 0 com.samsung.android.da.daagent
 pm uninstall --user 0 com.samsung.android.dbsc
+pm uninstall --user 0 com.samsung.android.dialer
 pm uninstall --user 0 com.samsung.android.dqagent
 pm uninstall --user 0 com.samsung.android.dynamiclock
 pm uninstall --user 0 com.samsung.android.easysetup
@@ -569,6 +580,7 @@ pm uninstall --user 0 com.sec.android.app.wlantest
 pm uninstall --user 0 com.sec.android.autodoodle.service
 pm uninstall --user 0 com.sec.android.daemonapp
 pm uninstall --user 0 com.sec.android.desktopmode.uiservice
+pm uninstall --user 0 com.sec.android.easyMover
 pm uninstall --user 0 com.sec.android.easyMover.Agent
 pm uninstall --user 0 com.sec.android.easyonehand
 pm uninstall --user 0 com.sec.android.gallery3d
@@ -607,13 +619,14 @@ Usage:
 2. Go to `Home`, click three dots at the top right corner, click `Import app > Import from Clipboard`.
 
 ```
-["android.autoinstalls.config.samsung","com.android.apps.tag","com.android.bips","com.android.bluetoothmidiservice","com.android.calllogbackup","com.android.dreams.phototable","com.android.egg","com.android.hotwordenrollment.okgoogle","com.android.hotwordenrollment.xgoogle","com.android.internal.systemui.navbar.gestural","com.android.printspooler","com.android.providers.partnerbookmarks","com.android.proxyhandler","com.android.traceur","com.android.virtualization.terminal","com.facebook.appmanager","com.facebook.services","com.facebook.system","com.google.android.adservices.api","com.google.android.aicore","com.google.android.apps.accessibility.voiceaccess","com.google.android.apps.aiwallpapers","com.google.android.apps.messaging","com.google.android.apps.tachyon","com.google.android.as","com.google.android.feedback","com.google.android.gms.location.history","com.google.android.gms.supervision","com.google.android.health.connect.backuprestore","com.google.android.healthconnect.controller","com.google.android.onetimeinitializer","com.google.android.partnersetup","com.google.android.printservice.recommendation","com.google.android.projection.gearhead","com.google.android.safetycenter.resources","com.google.android.setupwizard","com.google.android.tts","com.google.android.youtube","com.google.ar.core","com.google.mainline.adservices","com.google.mainline.telemetry","com.hiya.star","com.microsoft.appmanager","com.microsoft.skydrive","com.mygalaxy.service","com.samsung.SMT","com.samsung.SMT.lang_en_us_l03","com.samsung.SMT.lang_zh_cn_l02","com.samsung.SMT.lang_zh_hk_f00","com.samsung.SMT.lang_zh_tw_f00","com.samsung.aasaservice","com.samsung.accessory.budsunitemgr","com.samsung.android.accessibility.talkback","com.samsung.android.aicore","com.samsung.android.aircommandmanager","com.samsung.android.allshare.service.mediashare","com.samsung.android.app.camera.sticker.facearavatar.preload","com.samsung.android.app.omcagent","com.samsung.android.app.parentalcare","com.samsung.android.app.routines","com.samsung.android.app.smartcapture","com.samsung.android.app.taskedge","com.samsung.android.app.watchmanagerstub","com.samsung.android.aremoji","com.samsung.android.aremojieditor","com.samsung.android.authfw","com.samsung.android.aware.service","com.samsung.android.bbc.bbcagent","com.samsung.android.beaconmanager","com.samsung.android.bixby.agent","com.samsung.android.bixby.wakeup","com.samsung.android.bixbyvision.framework","com.samsung.android.carkey","com.samsung.android.da.daagent","com.samsung.android.dbsc","com.samsung.android.dqagent","com.samsung.android.dynamiclock","com.samsung.android.easysetup","com.samsung.android.fast","com.samsung.android.forest","com.samsung.android.gru","com.samsung.android.hwresourceshare","com.samsung.android.hwresourceshare.storage","com.samsung.android.inputshare","com.samsung.android.intellivoiceservice","com.samsung.android.ipsgeofence","com.samsung.android.kidsinstaller","com.samsung.android.knox.analytics.uploader","com.samsung.android.knox.attestation","com.samsung.android.knox.containercore","com.samsung.android.knox.pushmanager","com.samsung.android.mapsagent","com.samsung.android.mcfds","com.samsung.android.mcfserver","com.samsung.android.mdecservice","com.samsung.android.mdm","com.samsung.android.mdx","com.samsung.android.mdx.kit","com.samsung.android.messaging","com.samsung.android.mobileservice","com.samsung.android.mydevice","com.samsung.android.net.wifi.wifiguider","com.samsung.android.networkdiagnostic","com.samsung.android.rampart","com.samsung.android.rubin.app","com.samsung.android.samsungpass","com.samsung.android.samsungpassautofill","com.samsung.android.samsungpositioning","com.samsung.android.scloud","com.samsung.android.sdk.handwriting","com.samsung.android.sdm.config","com.samsung.android.service.peoplestripe","com.samsung.android.service.stplatform","com.samsung.android.service.tagservice","com.samsung.android.shortcutbackupservice","com.samsung.android.smartcallprovider","com.samsung.android.smartsuggestions","com.samsung.android.smartswitchassistant","com.samsung.android.spayfw","com.samsung.android.stickercenter","com.samsung.android.svcagent","com.samsung.android.themestore","com.samsung.android.video","com.samsung.android.vision.model","com.samsung.android.visionintelligence","com.samsung.android.visual.cloudcore","com.samsung.android.wifi.softap.resources","com.samsung.app.newtrim","com.samsung.cmh","com.samsung.faceservice","com.samsung.internal.systemui.navbar.gestural_no_hint","com.samsung.internal.systemui.navbar.sec_gestural","com.samsung.internal.systemui.navbar.sec_gestural_no_hint","com.samsung.ipservice","com.samsung.petservice","com.samsung.safetyinformation","com.samsung.storyservice","com.samsung.videoscan","com.sec.android.RilServiceModeApp","com.sec.android.app.SecSetupWizard","com.sec.android.app.billing","com.sec.android.app.chromecustomizations","com.sec.android.app.desktoplauncher","com.sec.android.app.factorykeystring","com.sec.android.app.hwmoduletest","com.sec.android.app.magnifier","com.sec.android.app.parser","com.sec.android.app.servicemodeapp","com.sec.android.app.ve.vebgm","com.sec.android.app.vepreload","com.sec.android.app.wlantest","com.sec.android.autodoodle.service","com.sec.android.daemonapp","com.sec.android.desktopmode.uiservice","com.sec.android.easyMover.Agent","com.sec.android.easyonehand","com.sec.android.gallery3d","com.sec.android.mimage.avatarstickers","com.sec.android.mimage.photoretouching","com.sec.android.widgetapp.easymodecontactswidget","com.sec.app.RilErrorNotifier","com.sec.bcservice","com.sec.epdgtestapp","com.sec.factory.camera","com.sec.imslogger","com.sec.location.nsflp2","com.sec.modem.settings","com.sec.phone","com.sec.spp.push","com.sec.unifiedwfc","com.sec.usbsettings","com.sec.vsim.ericssonnsds.webapp","com.sem.factoryapp","com.skms.android.agent","com.swiftkey.swiftkeyconfigurator","com.tencent.soter.soterserver","com.touchtype.swiftkey","com.wsomacp","org.ifaa.aidl.manager"]
+["android.autoinstalls.config.samsung","com.android.apps.tag","com.android.bips","com.android.bluetoothmidiservice","com.android.calllogbackup","com.android.dreams.phototable","com.android.egg","com.android.hotwordenrollment.okgoogle","com.android.hotwordenrollment.xgoogle","com.android.internal.systemui.navbar.gestural","com.android.printspooler","com.android.providers.partnerbookmarks","com.android.proxyhandler","com.android.traceur","com.android.virtualization.terminal","com.facebook.appmanager","com.facebook.services","com.facebook.system","com.google.android.adservices.api","com.google.android.aicore","com.google.android.apps.accessibility.voiceaccess","com.google.android.apps.aiwallpapers","com.google.android.apps.messaging","com.google.android.apps.restore","com.google.android.apps.tachyon","com.google.android.as","com.google.android.feedback","com.google.android.gms.location.history","com.google.android.gms.supervision","com.google.android.health.connect.backuprestore","com.google.android.healthconnect.controller","com.google.android.onetimeinitializer","com.google.android.partnersetup","com.google.android.printservice.recommendation","com.google.android.projection.gearhead","com.google.android.safetycenter.resources","com.google.android.setupwizard","com.google.android.tts","com.google.android.youtube","com.google.ar.core","com.google.mainline.adservices","com.google.mainline.telemetry","com.hiya.star","com.microsoft.appmanager","com.microsoft.skydrive","com.mygalaxy.service","com.samsung.SMT","com.samsung.SMT.lang_en_us_l03","com.samsung.SMT.lang_zh_cn_l02","com.samsung.SMT.lang_zh_hk_f00","com.samsung.SMT.lang_zh_tw_f00","com.samsung.aasaservice","com.samsung.accessory.budsunitemgr","com.samsung.android.accessibility.talkback","com.samsung.android.aicore","com.samsung.android.aircommandmanager","com.samsung.android.allshare.service.mediashare","com.samsung.android.app.camera.sticker.facearavatar.preload","com.samsung.android.app.contacts","com.samsung.android.app.omcagent","com.samsung.android.app.parentalcare","com.samsung.android.app.routines","com.samsung.android.app.smartcapture","com.samsung.android.app.taskedge","com.samsung.android.app.watchmanagerstub","com.samsung.android.aremoji","com.samsung.android.aremojieditor","com.samsung.android.authfw","com.samsung.android.aware.service","com.samsung.android.bbc.bbcagent","com.samsung.android.beaconmanager","com.samsung.android.bixby.agent","com.samsung.android.bixby.wakeup","com.samsung.android.bixbyvision.framework","com.samsung.android.carkey","com.samsung.android.da.daagent","com.samsung.android.dbsc","com.samsung.android.dialer","com.samsung.android.dqagent","com.samsung.android.dynamiclock","com.samsung.android.easysetup","com.samsung.android.fast","com.samsung.android.forest","com.samsung.android.gru","com.samsung.android.hwresourceshare","com.samsung.android.hwresourceshare.storage","com.samsung.android.inputshare","com.samsung.android.intellivoiceservice","com.samsung.android.ipsgeofence","com.samsung.android.kidsinstaller","com.samsung.android.knox.analytics.uploader","com.samsung.android.knox.attestation","com.samsung.android.knox.containercore","com.samsung.android.knox.pushmanager","com.samsung.android.mapsagent","com.samsung.android.mcfds","com.samsung.android.mcfserver","com.samsung.android.mdecservice","com.samsung.android.mdm","com.samsung.android.mdx","com.samsung.android.mdx.kit","com.samsung.android.messaging","com.samsung.android.mobileservice","com.samsung.android.mydevice","com.samsung.android.net.wifi.wifiguider","com.samsung.android.networkdiagnostic","com.samsung.android.rampart","com.samsung.android.rubin.app","com.samsung.android.samsungpass","com.samsung.android.samsungpassautofill","com.samsung.android.samsungpositioning","com.samsung.android.scloud","com.samsung.android.sdk.handwriting","com.samsung.android.sdm.config","com.samsung.android.service.peoplestripe","com.samsung.android.service.stplatform","com.samsung.android.service.tagservice","com.samsung.android.shortcutbackupservice","com.samsung.android.smartcallprovider","com.samsung.android.smartsuggestions","com.samsung.android.smartswitchassistant","com.samsung.android.spayfw","com.samsung.android.stickercenter","com.samsung.android.svcagent","com.samsung.android.themestore","com.samsung.android.video","com.samsung.android.vision.model","com.samsung.android.visionintelligence","com.samsung.android.visual.cloudcore","com.samsung.android.wifi.softap.resources","com.samsung.app.newtrim","com.samsung.cmh","com.samsung.faceservice","com.samsung.internal.systemui.navbar.gestural_no_hint","com.samsung.internal.systemui.navbar.sec_gestural","com.samsung.internal.systemui.navbar.sec_gestural_no_hint","com.samsung.ipservice","com.samsung.petservice","com.samsung.safetyinformation","com.samsung.storyservice","com.samsung.videoscan","com.sec.android.RilServiceModeApp","com.sec.android.app.SecSetupWizard","com.sec.android.app.billing","com.sec.android.app.chromecustomizations","com.sec.android.app.desktoplauncher","com.sec.android.app.factorykeystring","com.sec.android.app.hwmoduletest","com.sec.android.app.magnifier","com.sec.android.app.parser","com.sec.android.app.servicemodeapp","com.sec.android.app.ve.vebgm","com.sec.android.app.vepreload","com.sec.android.app.wlantest","com.sec.android.autodoodle.service","com.sec.android.daemonapp","com.sec.android.desktopmode.uiservice","com.sec.android.easyMover","com.sec.android.easyMover.Agent","com.sec.android.easyonehand","com.sec.android.gallery3d","com.sec.android.mimage.avatarstickers","com.sec.android.mimage.photoretouching","com.sec.android.widgetapp.easymodecontactswidget","com.sec.app.RilErrorNotifier","com.sec.bcservice","com.sec.epdgtestapp","com.sec.factory.camera","com.sec.imslogger","com.sec.location.nsflp2","com.sec.modem.settings","com.sec.phone","com.sec.spp.push","com.sec.unifiedwfc","com.sec.usbsettings","com.sec.vsim.ericssonnsds.webapp","com.sem.factoryapp","com.skms.android.agent","com.swiftkey.swiftkeyconfigurator","com.tencent.soter.soterserver","com.touchtype.swiftkey","com.wsomacp","org.ifaa.aidl.manager"]
 ```
 
 ## Disabled/Uninstalled
 
 This is an incomplete list of apps disabled/uninstalled in the list that you may want to enable and my recommended alternatives. User apps are not listed here since they are all safe to disable/uninstall.
 
+- Android Switch (`com.google.android.apps.restore`),
 - Android System Intelligence (`com.google.android.as`): Live Caption (`com.tools.livecaptions`) from Google Play: <https://play.google.com/store/apps/details?id=com.tools.livecaptions>.
 - Bixby (`com.samsung.android.bixby.agent`), Bixby Vision (`com.samsung.android.visionintelligence`), BixbyVision Framework (`com.samsung.android.bixbyvision.framework`), and Voice wake-up (`com.samsung.android.bixby.wakeup`)
 - Digital Wellbeing (`com.samsung.android.forest`): Mindful (`com.mindful.android`): <https://github.com/akaMrNagar/Mindful> from GitHub release.
@@ -635,7 +648,7 @@ This is an incomplete list of apps disabled/uninstalled in the list that you may
 - Samsung Pass (`com.samsung.android.samsungpass`) and Autofill with Samsung Pass (`com.samsung.android.samsungpassautofill`): Bitwarden (`com.x8bit.bitwarden`): <https://github.com/bitwarden/android> from F-Droid: <https://droidify.app/app/?id=com.x8bit.bitwarden&repo_address=https://mobileapp.bitwarden.com/fdroid/repo>.
 - Samsung PaymentFramework (`com.samsung.android.spayfw`)
 - Smart Call (`com.samsung.android.smartcallprovider`) and Hiya Service (`com.hiya.star`)
-- Smart Switch Agent (`com.sec.android.easyMover.Agent`)
+- Smart Switch (`com.sec.android.easyMover`), and Smart Switch Agent (`com.sec.android.easyMover.Agent`)
 - SmartThings Companion (`com.samsung.android.service.stplatform`)
 - Speech Recognition and Synthesis from Google (`com.google.android.tts`): SherpaTTS (`org.woheller69.ttsengine`): <https://github.com/woheller69/ttsEngine> from F-Droid: <https://f-droid.org/packages/org.woheller69.ttsengine>.
 - Studio (`com.sec.android.app.vepreload`): Miniter (`org.mlm.miniter`): <https://github.com/mlm-games/Miniter> from F-Droid: <https://f-droid.org/packages/org.mlm.miniter>.
@@ -656,6 +669,7 @@ This is an incomplete list of apps not disabled/uninstalled in the list that you
 - Adapt sound (`com.sec.hearingadjust`) and Sound quality and effects (`com.sec.android.app.soundalive`)
 - Camera (`com.sec.android.app.camera`)
 - Chrome (`com.android.chrome`): Firefox (`org.mozilla.firefox`): <https://github.com/mozilla-mobile/firefox-android> from Google Play: <https://play.google.com/store/apps/details?id=org.mozilla.firefox>, or Brave (`com.brave.browser`): <https://github.com/brave/brave-browser> from Google Play: <https://play.google.com/store/apps/details?id=com.brave.browser>.
+- Clipboard edge (`com.samsung.android.app.clipboardedge`), Tools (`com.sec.android.app.quicktool`), and Samsung Keyboard (`com.samsung.android.honeyboard`): Because Clipboard edge depends on Samsung Keyboard. Glide (`com.dagimg.glide`): <https://github.com/dagimg-dot/Glide> from GitHub release, SmartEdge (`com.imi.smartedge.sidebar.panel`): <https://github.com/Imtiaz-Official/Smart-Edge> from F-Droid: <https://f-droid.org/packages/com.imi.smartedge.sidebar.panel> or GitHub release (recommended due to frequent updates), and GBoard (`com.google.android.inputmethod.latin`) from Google Play: <https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin>.
 - Galaxy Store (`com.sec.android.app.samsungapps`)
 - Game Booster (`com.samsung.android.game.gametools`) and Game Optimizing Service (`com.samsung.android.game.gos`): because Gaming Hub (`com.samsung.android.game.gamehome`) depends on it.
 - Gemini (`com.google.android.apps.bard`)
@@ -663,8 +677,6 @@ This is an incomplete list of apps not disabled/uninstalled in the list that you
 - Google (`com.google.android.googlequicksearchbox`): CircleToSearch (`com.akslabs.circletosearch`): <https://github.com/AKS-Labs/CircleToSearch> from F-Droid: <https://f-droid.org/packages/com.akslabs.circletosearch>, and Firefox (`org.mozilla.firefox`): <https://github.com/mozilla-mobile/firefox-android> from Google Play: <https://play.google.com/store/apps/details?id=org.mozilla.firefox>, or Brave (`com.brave.browser`): <https://github.com/brave/brave-browser> from Google Play: <https://play.google.com/store/apps/details?id=com.brave.browser>.
 - Live Transcribe & Sound Notifications (`com.google.audio.hearing.visualization.accessibility.scribe`)
 - Maps (`com.google.android.apps.maps`): GMaps WV (`us.spotco.maps`): <https://github.com/woheller69/maps> from F-Droid: <https://f-droid.org/packages/us.spotco.maps>, or OsmAnd~ (`net.osmand.plus`): <https://github.com/osmandapp/OsmAnd> from F-Droid: <https://droidify.app/app/?id=net.osmand.plus&repo_address=https://guardianproject-wind.s3.amazonaws.com/fdroid/repo>.
-- Clipboard edge (`com.samsung.android.app.clipboardedge`), Tools (`com.sec.android.app.quicktool`), and Samsung Keyboard (`com.samsung.android.honeyboard`): Because Clipboard edge depends on Samsung Keyboard. Glide (`com.dagimg.glide`): <https://github.com/dagimg-dot/Glide> from GitHub release, SmartEdge (`com.imi.smartedge.sidebar.panel`): <https://github.com/Imtiaz-Official/Smart-Edge> from F-Droid: <https://f-droid.org/packages/com.imi.smartedge.sidebar.panel> or GitHub release (recommended due to frequent updates), and GBoard (`com.google.android.inputmethod.latin`) from Google Play: <https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin>.
-- Samsung PaymentFramework (`com.samsung.android.spay`)
 - Secure Folder (`com.samsung.knox.securefolder`)
 
 ## Shizuku
@@ -727,7 +739,7 @@ done
 
 ## Credits
 
-- Universal Android Debloater GUI: <https://github.com/0x192/universal-android-debloater>, <https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json>
+- Universal Android Debloater GUI: <https://github.com/0x192/universal-android-debloater>, a copy of <https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json> is at [uad_lists.json](uad_lists.json)
 - Shizuku: <https://github.com/thedjchi/Shizuku>
 - Hail: <https://github.com/aistra0528/Hail>
 
