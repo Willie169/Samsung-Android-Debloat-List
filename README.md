@@ -12,6 +12,7 @@ See my <https://github.com/Willie169/Android-Non-Root> repo for more Android tip
 
 ## Caution
 
+- Disabling/uninstalling `com.samsung.android.wifi.softap.resources` may cause mobile data and/or mobile hotspot to fail, so it is not disabled/uninstalled in the list.
 - Disabling/uninstalling DiagMonAgent (`com.sec.android.diagmonagent`) may cause crashes, so it is not disabled/uninstalled in the list.
 - Disabling/uninstalling Filter Provider (`com.samsung.android.provider.filterprovider`) may cause Camera (`com.sec.android.app.camera`) to crash, so it is are not disabled/uninstalled in the list.
 - Disabling/uninstalling Enrollment Service (`com.sec.enterprise.knox.cloudmdm.smdms`), Find My Mobile (`com.samsung.android.fmm`), KLMS Agent (`com.samsung.klmsagent`), or KnoxVpnPacProcessor (`com.knox.vpn.proxyhandler`) may fail, so it is not disabled/uninstalled in the list.
