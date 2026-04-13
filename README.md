@@ -59,7 +59,6 @@ com.android.hotwordenrollment.xgoogle
 com.android.internal.systemui.navbar.gestural
 com.android.printspooler
 com.android.providers.partnerbookmarks
-com.android.proxyhandler
 com.android.traceur
 com.android.virtualization.terminal
 com.facebook.appmanager
@@ -176,14 +175,12 @@ com.samsung.android.video
 com.samsung.android.vision.model
 com.samsung.android.visionintelligence
 com.samsung.android.visual.cloudcore
-com.samsung.android.wifi.softap.resources
 com.samsung.app.newtrim
 com.samsung.cmh
 com.samsung.faceservice
 com.samsung.internal.systemui.navbar.gestural_no_hint
 com.samsung.internal.systemui.navbar.sec_gestural
 com.samsung.internal.systemui.navbar.sec_gestural_no_hint
-com.samsung.ipservice
 com.samsung.petservice
 com.samsung.safetyinformation
 com.samsung.storyservice
@@ -200,7 +197,6 @@ com.sec.android.app.parser
 com.sec.android.app.servicemodeapp
 com.sec.android.app.ve.vebgm
 com.sec.android.app.vepreload
-com.sec.android.app.wlantest
 com.sec.android.autodoodle.service
 com.sec.android.daemonapp
 com.sec.android.desktopmode.uiservice
@@ -247,7 +243,6 @@ pm disable --user 0 com.android.hotwordenrollment.xgoogle
 pm disable --user 0 com.android.internal.systemui.navbar.gestural
 pm disable --user 0 com.android.printspooler
 pm disable --user 0 com.android.providers.partnerbookmarks
-pm disable --user 0 com.android.proxyhandler
 pm disable --user 0 com.android.traceur
 pm disable --user 0 com.android.virtualization.terminal
 pm disable --user 0 com.facebook.appmanager
@@ -364,14 +359,12 @@ pm disable --user 0 com.samsung.android.video
 pm disable --user 0 com.samsung.android.vision.model
 pm disable --user 0 com.samsung.android.visionintelligence
 pm disable --user 0 com.samsung.android.visual.cloudcore
-pm disable --user 0 com.samsung.android.wifi.softap.resources
 pm disable --user 0 com.samsung.app.newtrim
 pm disable --user 0 com.samsung.cmh
 pm disable --user 0 com.samsung.faceservice
 pm disable --user 0 com.samsung.internal.systemui.navbar.gestural_no_hint
 pm disable --user 0 com.samsung.internal.systemui.navbar.sec_gestural
 pm disable --user 0 com.samsung.internal.systemui.navbar.sec_gestural_no_hint
-pm disable --user 0 com.samsung.ipservice
 pm disable --user 0 com.samsung.petservice
 pm disable --user 0 com.samsung.safetyinformation
 pm disable --user 0 com.samsung.storyservice
@@ -388,7 +381,6 @@ pm disable --user 0 com.sec.android.app.parser
 pm disable --user 0 com.sec.android.app.servicemodeapp
 pm disable --user 0 com.sec.android.app.ve.vebgm
 pm disable --user 0 com.sec.android.app.vepreload
-pm disable --user 0 com.sec.android.app.wlantest
 pm disable --user 0 com.sec.android.autodoodle.service
 pm disable --user 0 com.sec.android.daemonapp
 pm disable --user 0 com.sec.android.desktopmode.uiservice
@@ -435,7 +427,6 @@ pm uninstall --user 0 com.android.hotwordenrollment.xgoogle
 pm uninstall --user 0 com.android.internal.systemui.navbar.gestural
 pm uninstall --user 0 com.android.printspooler
 pm uninstall --user 0 com.android.providers.partnerbookmarks
-pm uninstall --user 0 com.android.proxyhandler
 pm uninstall --user 0 com.android.traceur
 pm uninstall --user 0 com.android.virtualization.terminal
 pm uninstall --user 0 com.facebook.appmanager
@@ -552,14 +543,12 @@ pm uninstall --user 0 com.samsung.android.video
 pm uninstall --user 0 com.samsung.android.vision.model
 pm uninstall --user 0 com.samsung.android.visionintelligence
 pm uninstall --user 0 com.samsung.android.visual.cloudcore
-pm uninstall --user 0 com.samsung.android.wifi.softap.resources
 pm uninstall --user 0 com.samsung.app.newtrim
 pm uninstall --user 0 com.samsung.cmh
 pm uninstall --user 0 com.samsung.faceservice
 pm uninstall --user 0 com.samsung.internal.systemui.navbar.gestural_no_hint
 pm uninstall --user 0 com.samsung.internal.systemui.navbar.sec_gestural
 pm uninstall --user 0 com.samsung.internal.systemui.navbar.sec_gestural_no_hint
-pm uninstall --user 0 com.samsung.ipservice
 pm uninstall --user 0 com.samsung.petservice
 pm uninstall --user 0 com.samsung.safetyinformation
 pm uninstall --user 0 com.samsung.storyservice
@@ -576,7 +565,6 @@ pm uninstall --user 0 com.sec.android.app.parser
 pm uninstall --user 0 com.sec.android.app.servicemodeapp
 pm uninstall --user 0 com.sec.android.app.ve.vebgm
 pm uninstall --user 0 com.sec.android.app.vepreload
-pm uninstall --user 0 com.sec.android.app.wlantest
 pm uninstall --user 0 com.sec.android.autodoodle.service
 pm uninstall --user 0 com.sec.android.daemonapp
 pm uninstall --user 0 com.sec.android.desktopmode.uiservice
@@ -619,7 +607,7 @@ Usage:
 2. Go to `Home`, click three dots at the top right corner, click `Import app > Import from Clipboard`.
 
 ```
-["android.autoinstalls.config.samsung","com.android.apps.tag","com.android.bips","com.android.bluetoothmidiservice","com.android.calllogbackup","com.android.dreams.phototable","com.android.egg","com.android.hotwordenrollment.okgoogle","com.android.hotwordenrollment.xgoogle","com.android.internal.systemui.navbar.gestural","com.android.printspooler","com.android.providers.partnerbookmarks","com.android.proxyhandler","com.android.traceur","com.android.virtualization.terminal","com.facebook.appmanager","com.facebook.services","com.facebook.system","com.google.android.adservices.api","com.google.android.aicore","com.google.android.apps.accessibility.voiceaccess","com.google.android.apps.aiwallpapers","com.google.android.apps.messaging","com.google.android.apps.restore","com.google.android.apps.tachyon","com.google.android.as","com.google.android.feedback","com.google.android.gms.location.history","com.google.android.gms.supervision","com.google.android.health.connect.backuprestore","com.google.android.healthconnect.controller","com.google.android.onetimeinitializer","com.google.android.partnersetup","com.google.android.printservice.recommendation","com.google.android.projection.gearhead","com.google.android.safetycenter.resources","com.google.android.setupwizard","com.google.android.tts","com.google.android.youtube","com.google.ar.core","com.google.mainline.adservices","com.google.mainline.telemetry","com.hiya.star","com.microsoft.appmanager","com.microsoft.skydrive","com.mygalaxy.service","com.samsung.SMT","com.samsung.SMT.lang_en_us_l03","com.samsung.SMT.lang_zh_cn_l02","com.samsung.SMT.lang_zh_hk_f00","com.samsung.SMT.lang_zh_tw_f00","com.samsung.aasaservice","com.samsung.accessory.budsunitemgr","com.samsung.android.accessibility.talkback","com.samsung.android.aicore","com.samsung.android.aircommandmanager","com.samsung.android.allshare.service.mediashare","com.samsung.android.app.camera.sticker.facearavatar.preload","com.samsung.android.app.contacts","com.samsung.android.app.omcagent","com.samsung.android.app.parentalcare","com.samsung.android.app.routines","com.samsung.android.app.smartcapture","com.samsung.android.app.taskedge","com.samsung.android.app.watchmanagerstub","com.samsung.android.aremoji","com.samsung.android.aremojieditor","com.samsung.android.authfw","com.samsung.android.aware.service","com.samsung.android.bbc.bbcagent","com.samsung.android.beaconmanager","com.samsung.android.bixby.agent","com.samsung.android.bixby.wakeup","com.samsung.android.bixbyvision.framework","com.samsung.android.carkey","com.samsung.android.da.daagent","com.samsung.android.dbsc","com.samsung.android.dialer","com.samsung.android.dqagent","com.samsung.android.dynamiclock","com.samsung.android.easysetup","com.samsung.android.fast","com.samsung.android.forest","com.samsung.android.gru","com.samsung.android.hwresourceshare","com.samsung.android.hwresourceshare.storage","com.samsung.android.inputshare","com.samsung.android.intellivoiceservice","com.samsung.android.ipsgeofence","com.samsung.android.kidsinstaller","com.samsung.android.knox.analytics.uploader","com.samsung.android.knox.attestation","com.samsung.android.knox.containercore","com.samsung.android.knox.pushmanager","com.samsung.android.mapsagent","com.samsung.android.mcfds","com.samsung.android.mcfserver","com.samsung.android.mdecservice","com.samsung.android.mdm","com.samsung.android.mdx","com.samsung.android.mdx.kit","com.samsung.android.messaging","com.samsung.android.mobileservice","com.samsung.android.mydevice","com.samsung.android.net.wifi.wifiguider","com.samsung.android.networkdiagnostic","com.samsung.android.rampart","com.samsung.android.rubin.app","com.samsung.android.samsungpass","com.samsung.android.samsungpassautofill","com.samsung.android.samsungpositioning","com.samsung.android.scloud","com.samsung.android.sdk.handwriting","com.samsung.android.sdm.config","com.samsung.android.service.peoplestripe","com.samsung.android.service.stplatform","com.samsung.android.service.tagservice","com.samsung.android.shortcutbackupservice","com.samsung.android.smartcallprovider","com.samsung.android.smartsuggestions","com.samsung.android.smartswitchassistant","com.samsung.android.spayfw","com.samsung.android.stickercenter","com.samsung.android.svcagent","com.samsung.android.themestore","com.samsung.android.video","com.samsung.android.vision.model","com.samsung.android.visionintelligence","com.samsung.android.visual.cloudcore","com.samsung.android.wifi.softap.resources","com.samsung.app.newtrim","com.samsung.cmh","com.samsung.faceservice","com.samsung.internal.systemui.navbar.gestural_no_hint","com.samsung.internal.systemui.navbar.sec_gestural","com.samsung.internal.systemui.navbar.sec_gestural_no_hint","com.samsung.ipservice","com.samsung.petservice","com.samsung.safetyinformation","com.samsung.storyservice","com.samsung.videoscan","com.sec.android.RilServiceModeApp","com.sec.android.app.SecSetupWizard","com.sec.android.app.billing","com.sec.android.app.chromecustomizations","com.sec.android.app.desktoplauncher","com.sec.android.app.factorykeystring","com.sec.android.app.hwmoduletest","com.sec.android.app.magnifier","com.sec.android.app.parser","com.sec.android.app.servicemodeapp","com.sec.android.app.ve.vebgm","com.sec.android.app.vepreload","com.sec.android.app.wlantest","com.sec.android.autodoodle.service","com.sec.android.daemonapp","com.sec.android.desktopmode.uiservice","com.sec.android.easyMover","com.sec.android.easyMover.Agent","com.sec.android.easyonehand","com.sec.android.gallery3d","com.sec.android.mimage.avatarstickers","com.sec.android.mimage.photoretouching","com.sec.android.widgetapp.easymodecontactswidget","com.sec.app.RilErrorNotifier","com.sec.bcservice","com.sec.epdgtestapp","com.sec.factory.camera","com.sec.imslogger","com.sec.location.nsflp2","com.sec.modem.settings","com.sec.phone","com.sec.spp.push","com.sec.unifiedwfc","com.sec.usbsettings","com.sec.vsim.ericssonnsds.webapp","com.sem.factoryapp","com.skms.android.agent","com.swiftkey.swiftkeyconfigurator","com.tencent.soter.soterserver","com.touchtype.swiftkey","com.wsomacp","org.ifaa.aidl.manager"]
+["android.autoinstalls.config.samsung","com.android.apps.tag","com.android.bips","com.android.bluetoothmidiservice","com.android.calllogbackup","com.android.dreams.phototable","com.android.egg","com.android.hotwordenrollment.okgoogle","com.android.hotwordenrollment.xgoogle","com.android.internal.systemui.navbar.gestural","com.android.printspooler","com.android.providers.partnerbookmarks","com.android.traceur","com.android.virtualization.terminal","com.facebook.appmanager","com.facebook.services","com.facebook.system","com.google.android.adservices.api","com.google.android.aicore","com.google.android.apps.accessibility.voiceaccess","com.google.android.apps.aiwallpapers","com.google.android.apps.messaging","com.google.android.apps.restore","com.google.android.apps.tachyon","com.google.android.as","com.google.android.feedback","com.google.android.gms.location.history","com.google.android.gms.supervision","com.google.android.health.connect.backuprestore","com.google.android.healthconnect.controller","com.google.android.onetimeinitializer","com.google.android.partnersetup","com.google.android.printservice.recommendation","com.google.android.projection.gearhead","com.google.android.safetycenter.resources","com.google.android.setupwizard","com.google.android.tts","com.google.android.youtube","com.google.ar.core","com.google.mainline.adservices","com.google.mainline.telemetry","com.hiya.star","com.microsoft.appmanager","com.microsoft.skydrive","com.mygalaxy.service","com.samsung.SMT","com.samsung.SMT.lang_en_us_l03","com.samsung.SMT.lang_zh_cn_l02","com.samsung.SMT.lang_zh_hk_f00","com.samsung.SMT.lang_zh_tw_f00","com.samsung.aasaservice","com.samsung.accessory.budsunitemgr","com.samsung.android.accessibility.talkback","com.samsung.android.aicore","com.samsung.android.aircommandmanager","com.samsung.android.allshare.service.mediashare","com.samsung.android.app.camera.sticker.facearavatar.preload","com.samsung.android.app.contacts","com.samsung.android.app.omcagent","com.samsung.android.app.parentalcare","com.samsung.android.app.routines","com.samsung.android.app.smartcapture","com.samsung.android.app.taskedge","com.samsung.android.app.watchmanagerstub","com.samsung.android.aremoji","com.samsung.android.aremojieditor","com.samsung.android.authfw","com.samsung.android.aware.service","com.samsung.android.bbc.bbcagent","com.samsung.android.beaconmanager","com.samsung.android.bixby.agent","com.samsung.android.bixby.wakeup","com.samsung.android.bixbyvision.framework","com.samsung.android.carkey","com.samsung.android.da.daagent","com.samsung.android.dbsc","com.samsung.android.dialer","com.samsung.android.dqagent","com.samsung.android.dynamiclock","com.samsung.android.easysetup","com.samsung.android.fast","com.samsung.android.forest","com.samsung.android.gru","com.samsung.android.hwresourceshare","com.samsung.android.hwresourceshare.storage","com.samsung.android.inputshare","com.samsung.android.intellivoiceservice","com.samsung.android.ipsgeofence","com.samsung.android.kidsinstaller","com.samsung.android.knox.analytics.uploader","com.samsung.android.knox.attestation","com.samsung.android.knox.containercore","com.samsung.android.knox.pushmanager","com.samsung.android.mapsagent","com.samsung.android.mcfds","com.samsung.android.mcfserver","com.samsung.android.mdecservice","com.samsung.android.mdm","com.samsung.android.mdx","com.samsung.android.mdx.kit","com.samsung.android.messaging","com.samsung.android.mobileservice","com.samsung.android.mydevice","com.samsung.android.net.wifi.wifiguider","com.samsung.android.networkdiagnostic","com.samsung.android.rampart","com.samsung.android.rubin.app","com.samsung.android.samsungpass","com.samsung.android.samsungpassautofill","com.samsung.android.samsungpositioning","com.samsung.android.scloud","com.samsung.android.sdk.handwriting","com.samsung.android.sdm.config","com.samsung.android.service.peoplestripe","com.samsung.android.service.stplatform","com.samsung.android.service.tagservice","com.samsung.android.shortcutbackupservice","com.samsung.android.smartcallprovider","com.samsung.android.smartsuggestions","com.samsung.android.smartswitchassistant","com.samsung.android.spayfw","com.samsung.android.stickercenter","com.samsung.android.svcagent","com.samsung.android.themestore","com.samsung.android.video","com.samsung.android.vision.model","com.samsung.android.visionintelligence","com.samsung.android.visual.cloudcore","com.samsung.app.newtrim","com.samsung.cmh","com.samsung.faceservice","com.samsung.internal.systemui.navbar.gestural_no_hint","com.samsung.internal.systemui.navbar.sec_gestural","com.samsung.internal.systemui.navbar.sec_gestural_no_hint","com.samsung.petservice","com.samsung.safetyinformation","com.samsung.storyservice","com.samsung.videoscan","com.sec.android.RilServiceModeApp","com.sec.android.app.SecSetupWizard","com.sec.android.app.billing","com.sec.android.app.chromecustomizations","com.sec.android.app.desktoplauncher","com.sec.android.app.factorykeystring","com.sec.android.app.hwmoduletest","com.sec.android.app.magnifier","com.sec.android.app.parser","com.sec.android.app.servicemodeapp","com.sec.android.app.ve.vebgm","com.sec.android.app.vepreload","com.sec.android.autodoodle.service","com.sec.android.daemonapp","com.sec.android.desktopmode.uiservice","com.sec.android.easyMover","com.sec.android.easyMover.Agent","com.sec.android.easyonehand","com.sec.android.gallery3d","com.sec.android.mimage.avatarstickers","com.sec.android.mimage.photoretouching","com.sec.android.widgetapp.easymodecontactswidget","com.sec.app.RilErrorNotifier","com.sec.bcservice","com.sec.epdgtestapp","com.sec.factory.camera","com.sec.imslogger","com.sec.location.nsflp2","com.sec.modem.settings","com.sec.phone","com.sec.spp.push","com.sec.unifiedwfc","com.sec.usbsettings","com.sec.vsim.ericssonnsds.webapp","com.sem.factoryapp","com.skms.android.agent","com.swiftkey.swiftkeyconfigurator","com.tencent.soter.soterserver","com.touchtype.swiftkey","com.wsomacp","org.ifaa.aidl.manager"]
 ```
 
 ## Disabled/Uninstalled
