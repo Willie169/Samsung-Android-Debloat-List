@@ -36,5 +36,5 @@ Here's my current (April 28, 2026) network connection configuration on Android. 
 ## Others
 
 - UDP won't work in the With Tor configuration.
-- UDP and mDNS of Tailscale won't work in Personal Profile in both configurations. Apps such as RustDesk and KDE Connect rely on it.
+- UDP multicast of Tailscale won't work in Personal Profile in both configurations. Apps such as RustDesk and KDE Connect rely on it to connect devices over Tailscale.
 - A more detailed guide about the apps and my old (as of the time writing this (April 28, 2026)) configuration is in my [Android-Non-Root](https://github.com/Willie169/Android-Non-Root) repo. I'll update them when I have time.
