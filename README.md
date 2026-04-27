@@ -4,15 +4,18 @@ This repo contains the list of apps I uninstalled on my Galaxy S24+ Android 16 d
 
 ## Description
 
-You can use ADB via Shizuku or PC, root, or other apps utilizing them such as `rish` provided by Shizuku in a terminal app or Hail (<https://github.com/aistra0528/Hail>) to disable (`pm disable --user 0 <package_name>`), enable (`pm enable --user 0 <package_name>`), uninstall (`pm uninstall --user 0 <package_name>`), and reinstall (for system apps) (`pm install-existing --user 0 <package_name>`) apps. See [Shizuku](#shizuku) for more information about Shizuku.
+You can use ADB, via [Shizuku](https://github.com/thedjchi/Shizuku) or from a computer, root, or other apps utilizing either of them, such as `rish` provided by Shizuku to be used in a terminal app, [Hail](https://github.com/aistra0528/Hail) with Shizuku, and [Canta](https://github.com/samolego/Canta) on phone, or [Universal Android Debloater Next Generation](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation) or [Universal Android Debloater GUI](https://github.com/0x192/universal-android-debloater) from a computer, to disable (`pm disable --user 0 <package_name>`), enable (`pm enable --user 0 <package_name>`), uninstall (`pm uninstall --user 0 <package_name>`), and reinstall (for system apps) (`pm install-existing --user 0 <package_name>`) apps.
 
-The list is provided in four formats: [Raw List](#raw-list), [ADB Disable Command](#adb-disable-command), [ADB Uninstall Command](#adb-uninstall-command), and [Hail](#hail).
+Shizuku is an Android app that allows other apps to use system-level APIs that require ADB/root privileges. I recommend using [thedjchi's fork](https://github.com/thedjchi/Shizuku) fork and manage its installation using [Obtainium](https://github.com/ImranR98/Obtainium). Please visit the [official wiki](https://github.com/thedjchi/Shizuku/wiki) and [thedjchi's repo](https://github.com/thedjchi/Shizuku) for setup, info, troubleshooting steps, etc.
 
-See my <https://github.com/Willie169/Android-Non-Root> repo for more Android tips.
+The list is provided in four formats: [Raw List](#raw-list), [ADB Disable Command](#adb-disable-command), [ADB Uninstall Command](#adb-uninstall-command), and [Hail](#hail). ADB Disable Command and ADB Uninstall Command formats can be used directly in ADB shell. Hail format can be used in [Hail](https://github.com/aistra0528/Hail), which can be installed from [F-Droid](https://f-droid.org/packages/com.aistra.hail). The steps to use the list in Hail with Shizuku is as follows:
+1. Start [Shizuku](https://github.com/thedjchi/Shizuku).
+2. Copy the list.
+2. Open Hail.
+2. Go to `Settings > Work mode` and select `Shizuku - Disable`.
+2. Go to `Home`, click three dots at the top right corner, click `Import app > Import from Clipboard`.
 
-## Shizuku
-
-Shizuku is an Android app that allows other apps to use system-level APIs that require ADB/root privileges. I recommend using the <https://github.com/thedjchi/Shizuku> fork and manage its installation using <https://github.com/ImranR98/Obtainium>. Please read the official wiki: <https://github.com/thedjchi/Shizuku/wiki> for setup, info, and troubleshooting steps.
+Visit my <https://github.com/Willie169/Android-Non-Root> repo for more Android tips.
 
 ## Read Before Execution
 
@@ -23,7 +26,7 @@ Shizuku is an Android app that allows other apps to use system-level APIs that r
 - Disabling/uninstalling Samsung Location SDK will cause GPS location can not be recieved, so it is not disabled/uninstalled in the list.
 - Disabling/uninstalling Samsung Wallet Digital Key (`com.samsung.android.dkey`) may cause increase in background resources usage, so it is not disabled/uninstalled in the list.
 - Disabling/uninstalling Smart View (`com.samsung.android.smartmirroring`) may cause One UI Home (`com.sec.android.app.launcher`) and/or Video Player (`com.samsung.android.video`) to crash, so it is not disabled/uninstalled in the list.
-- Disabling/uninstalling Enrollment Service (`com.sec.enterprise.knox.cloudmdm.smdms`), Find My Mobile (`com.samsung.android.fmm`), KLMS Agent (`com.samsung.klmsagent`), or KnoxVpnPacProcessor (`com.knox.vpn.proxyhandler`) may fail, so it is not disabled/uninstalled in the list.
+  <!-- - Disabling/uninstalling Enrollment Service (`com.sec.enterprise.knox.cloudmdm.smdms`), Find My Mobile (`com.samsung.android.fmm`), KLMS Agent (`com.samsung.klmsagent`), or KnoxVpnPacProcessor (`com.knox.vpn.proxyhandler`) may fail, so it is not disabled/uninstalled in the list. -->
 - If Android Setup (`com.google.android.setupwizard`) sends a notification after ADB operations, run the following inside ADB shell to turn it off:
   ```
   settings put global setup_wizard_has_run 1
@@ -123,8 +126,10 @@ com.android.egg
 com.android.hotwordenrollment.okgoogle
 com.android.hotwordenrollment.xgoogle
 com.android.internal.systemui.navbar.gestural
+com.android.microdroid.empty_payload
 com.android.printspooler
 com.android.providers.partnerbookmarks
+com.android.theme.font.notoserifsource
 com.android.traceur
 com.android.virtualization.terminal
 com.facebook.appmanager
@@ -138,12 +143,16 @@ com.google.android.apps.messaging
 com.google.android.apps.restore
 com.google.android.apps.tachyon
 com.google.android.as
+com.google.android.as.oss
+com.google.android.federatedcompute
 com.google.android.feedback
 com.google.android.gms.location.history
 com.google.android.gms.supervision
 com.google.android.health.connect.backuprestore
 com.google.android.healthconnect.controller
+com.google.android.ondevicepersonalization.services
 com.google.android.onetimeinitializer
+com.google.android.overlay.modules.healthfitness.forframework
 com.google.android.partnersetup
 com.google.android.printservice.recommendation
 com.google.android.projection.gearhead
@@ -155,9 +164,13 @@ com.google.ar.core
 com.google.mainline.adservices
 com.google.mainline.telemetry
 com.hiya.star
+com.knox.vpn.proxyhandler
 com.microsoft.appmanager
 com.microsoft.skydrive
 com.mygalaxy.service
+com.qti.qcc
+com.qti.snapdragon.qdcm_ff
+com.qualcomm.location
 com.samsung.SMT
 com.samsung.SMT.lang_en_us_l03
 com.samsung.SMT.lang_zh_cn_l02
@@ -171,6 +184,7 @@ com.samsung.android.aircommandmanager
 com.samsung.android.allshare.service.mediashare
 com.samsung.android.app.camera.sticker.facearavatar.preload
 com.samsung.android.app.contacts
+com.samsung.android.app.earphonetypec
 com.samsung.android.app.interpreter
 com.samsung.android.app.omcagent
 com.samsung.android.app.parentalcare
@@ -188,16 +202,20 @@ com.samsung.android.beaconmanager
 com.samsung.android.bixby.agent
 com.samsung.android.bixby.wakeup
 com.samsung.android.bixbyvision.framework
+com.samsung.android.cameraxservice
 com.samsung.android.carkey
 com.samsung.android.da.daagent
 com.samsung.android.dbsc
+com.samsung.android.dck.timesync
 com.samsung.android.dialer
 com.samsung.android.dqagent
+com.samsung.android.dsms
 com.samsung.android.dynamiclock
 com.samsung.android.easysetup
 com.samsung.android.fast
 com.samsung.android.forest
 com.samsung.android.gru
+com.samsung.android.hdmapp
 com.samsung.android.hwresourceshare
 com.samsung.android.hwresourceshare.storage
 com.samsung.android.inputshare
@@ -207,7 +225,9 @@ com.samsung.android.kidsinstaller
 com.samsung.android.knox.analytics.uploader
 com.samsung.android.knox.attestation
 com.samsung.android.knox.containercore
+com.samsung.android.knox.kpecore
 com.samsung.android.knox.pushmanager
+com.samsung.android.knox.zt.framework
 com.samsung.android.mapsagent
 com.samsung.android.mcfds
 com.samsung.android.mcfserver
@@ -217,9 +237,11 @@ com.samsung.android.mdx
 com.samsung.android.mdx.kit
 com.samsung.android.messaging
 com.samsung.android.mobileservice
+com.samsung.android.mocca
 com.samsung.android.mydevice
 com.samsung.android.net.wifi.wifiguider
 com.samsung.android.networkdiagnostic
+com.samsung.android.privateaccesstokens
 com.samsung.android.provider.filterprovider
 com.samsung.android.rampart
 com.samsung.android.rubin.app
@@ -229,6 +251,7 @@ com.samsung.android.samsungpositioning
 com.samsung.android.scloud
 com.samsung.android.sdk.handwriting
 com.samsung.android.sdm.config
+com.samsung.android.server.wifi.mobilewips
 com.samsung.android.service.peoplestripe
 com.samsung.android.service.stplatform
 com.samsung.android.service.tagservice
@@ -237,6 +260,7 @@ com.samsung.android.smartcallprovider
 com.samsung.android.smartsuggestions
 com.samsung.android.smartswitchassistant
 com.samsung.android.spayfw
+com.samsung.android.sskds
 com.samsung.android.stickercenter
 com.samsung.android.svcagent
 com.samsung.android.themestore
@@ -244,20 +268,27 @@ com.samsung.android.video
 com.samsung.android.vision.model
 com.samsung.android.visionintelligence
 com.samsung.android.visual.cloudcore
+com.samsung.android.vtcamerasettings
+com.samsung.android.wallpaper.live
 com.samsung.app.newtrim
 com.samsung.cmh
 com.samsung.faceservice
+com.samsung.gpuwatchapp
 com.samsung.internal.systemui.navbar.gestural_no_hint
 com.samsung.internal.systemui.navbar.sec_gestural
 com.samsung.internal.systemui.navbar.sec_gestural_no_hint
+com.samsung.ipservice
 com.samsung.knox.securefolder
 com.samsung.petservice
 com.samsung.safetyinformation
+com.samsung.sait.sohservice
 com.samsung.storyservice
 com.samsung.videoscan
+com.sec.android.CcInfo
 com.sec.android.RilServiceModeApp
 com.sec.android.app.SecSetupWizard
 com.sec.android.app.billing
+com.sec.android.app.bluetoothagent
 com.sec.android.app.camera
 com.sec.android.app.chromecustomizations
 com.sec.android.app.desktoplauncher
@@ -266,8 +297,12 @@ com.sec.android.app.hwmoduletest
 com.sec.android.app.magnifier
 com.sec.android.app.parser
 com.sec.android.app.servicemodeapp
+com.sec.android.app.setupwizardlegalprovider
+com.sec.android.app.soundalive
+com.sec.android.app.uwbtest
 com.sec.android.app.ve.vebgm
 com.sec.android.app.vepreload
+com.sec.android.app.wlantest
 com.sec.android.autodoodle.service
 com.sec.android.daemonapp
 com.sec.android.desktopmode.uiservice
@@ -275,14 +310,20 @@ com.sec.android.easyMover
 com.sec.android.easyMover.Agent
 com.sec.android.easyonehand
 com.sec.android.gallery3d
+com.sec.android.iaft
+com.sec.android.llmpolicy
 com.sec.android.mimage.avatarstickers
 com.sec.android.mimage.photoretouching
+com.sec.android.smartfpsadjuster
 com.sec.android.widgetapp.easymodecontactswidget
 com.sec.app.RilErrorNotifier
 com.sec.bcservice
+com.sec.enterprise.knox.cloudmdm.smdms
 com.sec.epdgtestapp
+com.sec.facatfunction
 com.sec.factory.camera
 com.sec.imslogger
+com.sec.location.nfwlocationprivacy
 com.sec.modem.settings
 com.sec.phone
 com.sec.spp.push
@@ -311,8 +352,10 @@ pm disable --user 0 com.android.egg
 pm disable --user 0 com.android.hotwordenrollment.okgoogle
 pm disable --user 0 com.android.hotwordenrollment.xgoogle
 pm disable --user 0 com.android.internal.systemui.navbar.gestural
+pm disable --user 0 com.android.microdroid.empty_payload
 pm disable --user 0 com.android.printspooler
 pm disable --user 0 com.android.providers.partnerbookmarks
+pm disable --user 0 com.android.theme.font.notoserifsource
 pm disable --user 0 com.android.traceur
 pm disable --user 0 com.android.virtualization.terminal
 pm disable --user 0 com.facebook.appmanager
@@ -326,12 +369,16 @@ pm disable --user 0 com.google.android.apps.messaging
 pm disable --user 0 com.google.android.apps.restore
 pm disable --user 0 com.google.android.apps.tachyon
 pm disable --user 0 com.google.android.as
+pm disable --user 0 com.google.android.as.oss
+pm disable --user 0 com.google.android.federatedcompute
 pm disable --user 0 com.google.android.feedback
 pm disable --user 0 com.google.android.gms.location.history
 pm disable --user 0 com.google.android.gms.supervision
 pm disable --user 0 com.google.android.health.connect.backuprestore
 pm disable --user 0 com.google.android.healthconnect.controller
+pm disable --user 0 com.google.android.ondevicepersonalization.services
 pm disable --user 0 com.google.android.onetimeinitializer
+pm disable --user 0 com.google.android.overlay.modules.healthfitness.forframework
 pm disable --user 0 com.google.android.partnersetup
 pm disable --user 0 com.google.android.printservice.recommendation
 pm disable --user 0 com.google.android.projection.gearhead
@@ -343,9 +390,13 @@ pm disable --user 0 com.google.ar.core
 pm disable --user 0 com.google.mainline.adservices
 pm disable --user 0 com.google.mainline.telemetry
 pm disable --user 0 com.hiya.star
+pm disable --user 0 com.knox.vpn.proxyhandler
 pm disable --user 0 com.microsoft.appmanager
 pm disable --user 0 com.microsoft.skydrive
 pm disable --user 0 com.mygalaxy.service
+pm disable --user 0 com.qti.qcc
+pm disable --user 0 com.qti.snapdragon.qdcm_ff
+pm disable --user 0 com.qualcomm.location
 pm disable --user 0 com.samsung.SMT
 pm disable --user 0 com.samsung.SMT.lang_en_us_l03
 pm disable --user 0 com.samsung.SMT.lang_zh_cn_l02
@@ -359,6 +410,7 @@ pm disable --user 0 com.samsung.android.aircommandmanager
 pm disable --user 0 com.samsung.android.allshare.service.mediashare
 pm disable --user 0 com.samsung.android.app.camera.sticker.facearavatar.preload
 pm disable --user 0 com.samsung.android.app.contacts
+pm disable --user 0 com.samsung.android.app.earphonetypec
 pm disable --user 0 com.samsung.android.app.interpreter
 pm disable --user 0 com.samsung.android.app.omcagent
 pm disable --user 0 com.samsung.android.app.parentalcare
@@ -376,16 +428,20 @@ pm disable --user 0 com.samsung.android.beaconmanager
 pm disable --user 0 com.samsung.android.bixby.agent
 pm disable --user 0 com.samsung.android.bixby.wakeup
 pm disable --user 0 com.samsung.android.bixbyvision.framework
+pm disable --user 0 com.samsung.android.cameraxservice
 pm disable --user 0 com.samsung.android.carkey
 pm disable --user 0 com.samsung.android.da.daagent
 pm disable --user 0 com.samsung.android.dbsc
+pm disable --user 0 com.samsung.android.dck.timesync
 pm disable --user 0 com.samsung.android.dialer
 pm disable --user 0 com.samsung.android.dqagent
+pm disable --user 0 com.samsung.android.dsms
 pm disable --user 0 com.samsung.android.dynamiclock
 pm disable --user 0 com.samsung.android.easysetup
 pm disable --user 0 com.samsung.android.fast
 pm disable --user 0 com.samsung.android.forest
 pm disable --user 0 com.samsung.android.gru
+pm disable --user 0 com.samsung.android.hdmapp
 pm disable --user 0 com.samsung.android.hwresourceshare
 pm disable --user 0 com.samsung.android.hwresourceshare.storage
 pm disable --user 0 com.samsung.android.inputshare
@@ -395,7 +451,9 @@ pm disable --user 0 com.samsung.android.kidsinstaller
 pm disable --user 0 com.samsung.android.knox.analytics.uploader
 pm disable --user 0 com.samsung.android.knox.attestation
 pm disable --user 0 com.samsung.android.knox.containercore
+pm disable --user 0 com.samsung.android.knox.kpecore
 pm disable --user 0 com.samsung.android.knox.pushmanager
+pm disable --user 0 com.samsung.android.knox.zt.framework
 pm disable --user 0 com.samsung.android.mapsagent
 pm disable --user 0 com.samsung.android.mcfds
 pm disable --user 0 com.samsung.android.mcfserver
@@ -405,9 +463,11 @@ pm disable --user 0 com.samsung.android.mdx
 pm disable --user 0 com.samsung.android.mdx.kit
 pm disable --user 0 com.samsung.android.messaging
 pm disable --user 0 com.samsung.android.mobileservice
+pm disable --user 0 com.samsung.android.mocca
 pm disable --user 0 com.samsung.android.mydevice
 pm disable --user 0 com.samsung.android.net.wifi.wifiguider
 pm disable --user 0 com.samsung.android.networkdiagnostic
+pm disable --user 0 com.samsung.android.privateaccesstokens
 pm disable --user 0 com.samsung.android.provider.filterprovider
 pm disable --user 0 com.samsung.android.rampart
 pm disable --user 0 com.samsung.android.rubin.app
@@ -417,6 +477,7 @@ pm disable --user 0 com.samsung.android.samsungpositioning
 pm disable --user 0 com.samsung.android.scloud
 pm disable --user 0 com.samsung.android.sdk.handwriting
 pm disable --user 0 com.samsung.android.sdm.config
+pm disable --user 0 com.samsung.android.server.wifi.mobilewips
 pm disable --user 0 com.samsung.android.service.peoplestripe
 pm disable --user 0 com.samsung.android.service.stplatform
 pm disable --user 0 com.samsung.android.service.tagservice
@@ -425,6 +486,7 @@ pm disable --user 0 com.samsung.android.smartcallprovider
 pm disable --user 0 com.samsung.android.smartsuggestions
 pm disable --user 0 com.samsung.android.smartswitchassistant
 pm disable --user 0 com.samsung.android.spayfw
+pm disable --user 0 com.samsung.android.sskds
 pm disable --user 0 com.samsung.android.stickercenter
 pm disable --user 0 com.samsung.android.svcagent
 pm disable --user 0 com.samsung.android.themestore
@@ -432,20 +494,27 @@ pm disable --user 0 com.samsung.android.video
 pm disable --user 0 com.samsung.android.vision.model
 pm disable --user 0 com.samsung.android.visionintelligence
 pm disable --user 0 com.samsung.android.visual.cloudcore
+pm disable --user 0 com.samsung.android.vtcamerasettings
+pm disable --user 0 com.samsung.android.wallpaper.live
 pm disable --user 0 com.samsung.app.newtrim
 pm disable --user 0 com.samsung.cmh
 pm disable --user 0 com.samsung.faceservice
+pm disable --user 0 com.samsung.gpuwatchapp
 pm disable --user 0 com.samsung.internal.systemui.navbar.gestural_no_hint
 pm disable --user 0 com.samsung.internal.systemui.navbar.sec_gestural
 pm disable --user 0 com.samsung.internal.systemui.navbar.sec_gestural_no_hint
+pm disable --user 0 com.samsung.ipservice
 pm disable --user 0 com.samsung.knox.securefolder
 pm disable --user 0 com.samsung.petservice
 pm disable --user 0 com.samsung.safetyinformation
+pm disable --user 0 com.samsung.sait.sohservice
 pm disable --user 0 com.samsung.storyservice
 pm disable --user 0 com.samsung.videoscan
+pm disable --user 0 com.sec.android.CcInfo
 pm disable --user 0 com.sec.android.RilServiceModeApp
 pm disable --user 0 com.sec.android.app.SecSetupWizard
 pm disable --user 0 com.sec.android.app.billing
+pm disable --user 0 com.sec.android.app.bluetoothagent
 pm disable --user 0 com.sec.android.app.camera
 pm disable --user 0 com.sec.android.app.chromecustomizations
 pm disable --user 0 com.sec.android.app.desktoplauncher
@@ -454,8 +523,12 @@ pm disable --user 0 com.sec.android.app.hwmoduletest
 pm disable --user 0 com.sec.android.app.magnifier
 pm disable --user 0 com.sec.android.app.parser
 pm disable --user 0 com.sec.android.app.servicemodeapp
+pm disable --user 0 com.sec.android.app.setupwizardlegalprovider
+pm disable --user 0 com.sec.android.app.soundalive
+pm disable --user 0 com.sec.android.app.uwbtest
 pm disable --user 0 com.sec.android.app.ve.vebgm
 pm disable --user 0 com.sec.android.app.vepreload
+pm disable --user 0 com.sec.android.app.wlantest
 pm disable --user 0 com.sec.android.autodoodle.service
 pm disable --user 0 com.sec.android.daemonapp
 pm disable --user 0 com.sec.android.desktopmode.uiservice
@@ -463,14 +536,20 @@ pm disable --user 0 com.sec.android.easyMover
 pm disable --user 0 com.sec.android.easyMover.Agent
 pm disable --user 0 com.sec.android.easyonehand
 pm disable --user 0 com.sec.android.gallery3d
+pm disable --user 0 com.sec.android.iaft
+pm disable --user 0 com.sec.android.llmpolicy
 pm disable --user 0 com.sec.android.mimage.avatarstickers
 pm disable --user 0 com.sec.android.mimage.photoretouching
+pm disable --user 0 com.sec.android.smartfpsadjuster
 pm disable --user 0 com.sec.android.widgetapp.easymodecontactswidget
 pm disable --user 0 com.sec.app.RilErrorNotifier
 pm disable --user 0 com.sec.bcservice
+pm disable --user 0 com.sec.enterprise.knox.cloudmdm.smdms
 pm disable --user 0 com.sec.epdgtestapp
+pm disable --user 0 com.sec.facatfunction
 pm disable --user 0 com.sec.factory.camera
 pm disable --user 0 com.sec.imslogger
+pm disable --user 0 com.sec.location.nfwlocationprivacy
 pm disable --user 0 com.sec.modem.settings
 pm disable --user 0 com.sec.phone
 pm disable --user 0 com.sec.spp.push
@@ -489,6 +568,7 @@ pm disable --user 0 org.ifaa.aidl.manager
 ## ADB Uninstall Command
 
 ```
+
 pm uninstall --user 0 android.autoinstalls.config.samsung
 pm uninstall --user 0 com.android.apps.tag
 pm uninstall --user 0 com.android.bips
@@ -499,8 +579,10 @@ pm uninstall --user 0 com.android.egg
 pm uninstall --user 0 com.android.hotwordenrollment.okgoogle
 pm uninstall --user 0 com.android.hotwordenrollment.xgoogle
 pm uninstall --user 0 com.android.internal.systemui.navbar.gestural
+pm uninstall --user 0 com.android.microdroid.empty_payload
 pm uninstall --user 0 com.android.printspooler
 pm uninstall --user 0 com.android.providers.partnerbookmarks
+pm uninstall --user 0 com.android.theme.font.notoserifsource
 pm uninstall --user 0 com.android.traceur
 pm uninstall --user 0 com.android.virtualization.terminal
 pm uninstall --user 0 com.facebook.appmanager
@@ -514,12 +596,16 @@ pm uninstall --user 0 com.google.android.apps.messaging
 pm uninstall --user 0 com.google.android.apps.restore
 pm uninstall --user 0 com.google.android.apps.tachyon
 pm uninstall --user 0 com.google.android.as
+pm uninstall --user 0 com.google.android.as.oss
+pm uninstall --user 0 com.google.android.federatedcompute
 pm uninstall --user 0 com.google.android.feedback
 pm uninstall --user 0 com.google.android.gms.location.history
 pm uninstall --user 0 com.google.android.gms.supervision
 pm uninstall --user 0 com.google.android.health.connect.backuprestore
 pm uninstall --user 0 com.google.android.healthconnect.controller
+pm uninstall --user 0 com.google.android.ondevicepersonalization.services
 pm uninstall --user 0 com.google.android.onetimeinitializer
+pm uninstall --user 0 com.google.android.overlay.modules.healthfitness.forframework
 pm uninstall --user 0 com.google.android.partnersetup
 pm uninstall --user 0 com.google.android.printservice.recommendation
 pm uninstall --user 0 com.google.android.projection.gearhead
@@ -531,9 +617,13 @@ pm uninstall --user 0 com.google.ar.core
 pm uninstall --user 0 com.google.mainline.adservices
 pm uninstall --user 0 com.google.mainline.telemetry
 pm uninstall --user 0 com.hiya.star
+pm uninstall --user 0 com.knox.vpn.proxyhandler
 pm uninstall --user 0 com.microsoft.appmanager
 pm uninstall --user 0 com.microsoft.skydrive
 pm uninstall --user 0 com.mygalaxy.service
+pm uninstall --user 0 com.qti.qcc
+pm uninstall --user 0 com.qti.snapdragon.qdcm_ff
+pm uninstall --user 0 com.qualcomm.location
 pm uninstall --user 0 com.samsung.SMT
 pm uninstall --user 0 com.samsung.SMT.lang_en_us_l03
 pm uninstall --user 0 com.samsung.SMT.lang_zh_cn_l02
@@ -547,11 +637,12 @@ pm uninstall --user 0 com.samsung.android.aircommandmanager
 pm uninstall --user 0 com.samsung.android.allshare.service.mediashare
 pm uninstall --user 0 com.samsung.android.app.camera.sticker.facearavatar.preload
 pm uninstall --user 0 com.samsung.android.app.contacts
-pm disable --user 0 com.samsung.android.app.interpreter
+pm uninstall --user 0 com.samsung.android.app.earphonetypec
+pm uninstall --user 0 com.samsung.android.app.interpreter
 pm uninstall --user 0 com.samsung.android.app.omcagent
 pm uninstall --user 0 com.samsung.android.app.parentalcare
 pm uninstall --user 0 com.samsung.android.app.routines
-pm disable --user 0 com.samsung.android.app.sketchbook
+pm uninstall --user 0 com.samsung.android.app.sketchbook
 pm uninstall --user 0 com.samsung.android.app.smartcapture
 pm uninstall --user 0 com.samsung.android.app.taskedge
 pm uninstall --user 0 com.samsung.android.app.watchmanagerstub
@@ -564,16 +655,20 @@ pm uninstall --user 0 com.samsung.android.beaconmanager
 pm uninstall --user 0 com.samsung.android.bixby.agent
 pm uninstall --user 0 com.samsung.android.bixby.wakeup
 pm uninstall --user 0 com.samsung.android.bixbyvision.framework
+pm uninstall --user 0 com.samsung.android.cameraxservice
 pm uninstall --user 0 com.samsung.android.carkey
 pm uninstall --user 0 com.samsung.android.da.daagent
 pm uninstall --user 0 com.samsung.android.dbsc
+pm uninstall --user 0 com.samsung.android.dck.timesync
 pm uninstall --user 0 com.samsung.android.dialer
 pm uninstall --user 0 com.samsung.android.dqagent
+pm uninstall --user 0 com.samsung.android.dsms
 pm uninstall --user 0 com.samsung.android.dynamiclock
 pm uninstall --user 0 com.samsung.android.easysetup
 pm uninstall --user 0 com.samsung.android.fast
 pm uninstall --user 0 com.samsung.android.forest
 pm uninstall --user 0 com.samsung.android.gru
+pm uninstall --user 0 com.samsung.android.hdmapp
 pm uninstall --user 0 com.samsung.android.hwresourceshare
 pm uninstall --user 0 com.samsung.android.hwresourceshare.storage
 pm uninstall --user 0 com.samsung.android.inputshare
@@ -583,7 +678,9 @@ pm uninstall --user 0 com.samsung.android.kidsinstaller
 pm uninstall --user 0 com.samsung.android.knox.analytics.uploader
 pm uninstall --user 0 com.samsung.android.knox.attestation
 pm uninstall --user 0 com.samsung.android.knox.containercore
+pm uninstall --user 0 com.samsung.android.knox.kpecore
 pm uninstall --user 0 com.samsung.android.knox.pushmanager
+pm uninstall --user 0 com.samsung.android.knox.zt.framework
 pm uninstall --user 0 com.samsung.android.mapsagent
 pm uninstall --user 0 com.samsung.android.mcfds
 pm uninstall --user 0 com.samsung.android.mcfserver
@@ -593,9 +690,11 @@ pm uninstall --user 0 com.samsung.android.mdx
 pm uninstall --user 0 com.samsung.android.mdx.kit
 pm uninstall --user 0 com.samsung.android.messaging
 pm uninstall --user 0 com.samsung.android.mobileservice
+pm uninstall --user 0 com.samsung.android.mocca
 pm uninstall --user 0 com.samsung.android.mydevice
 pm uninstall --user 0 com.samsung.android.net.wifi.wifiguider
 pm uninstall --user 0 com.samsung.android.networkdiagnostic
+pm uninstall --user 0 com.samsung.android.privateaccesstokens
 pm uninstall --user 0 com.samsung.android.provider.filterprovider
 pm uninstall --user 0 com.samsung.android.rampart
 pm uninstall --user 0 com.samsung.android.rubin.app
@@ -605,6 +704,7 @@ pm uninstall --user 0 com.samsung.android.samsungpositioning
 pm uninstall --user 0 com.samsung.android.scloud
 pm uninstall --user 0 com.samsung.android.sdk.handwriting
 pm uninstall --user 0 com.samsung.android.sdm.config
+pm uninstall --user 0 com.samsung.android.server.wifi.mobilewips
 pm uninstall --user 0 com.samsung.android.service.peoplestripe
 pm uninstall --user 0 com.samsung.android.service.stplatform
 pm uninstall --user 0 com.samsung.android.service.tagservice
@@ -613,6 +713,7 @@ pm uninstall --user 0 com.samsung.android.smartcallprovider
 pm uninstall --user 0 com.samsung.android.smartsuggestions
 pm uninstall --user 0 com.samsung.android.smartswitchassistant
 pm uninstall --user 0 com.samsung.android.spayfw
+pm uninstall --user 0 com.samsung.android.sskds
 pm uninstall --user 0 com.samsung.android.stickercenter
 pm uninstall --user 0 com.samsung.android.svcagent
 pm uninstall --user 0 com.samsung.android.themestore
@@ -620,20 +721,27 @@ pm uninstall --user 0 com.samsung.android.video
 pm uninstall --user 0 com.samsung.android.vision.model
 pm uninstall --user 0 com.samsung.android.visionintelligence
 pm uninstall --user 0 com.samsung.android.visual.cloudcore
+pm uninstall --user 0 com.samsung.android.vtcamerasettings
+pm uninstall --user 0 com.samsung.android.wallpaper.live
 pm uninstall --user 0 com.samsung.app.newtrim
 pm uninstall --user 0 com.samsung.cmh
 pm uninstall --user 0 com.samsung.faceservice
+pm uninstall --user 0 com.samsung.gpuwatchapp
 pm uninstall --user 0 com.samsung.internal.systemui.navbar.gestural_no_hint
 pm uninstall --user 0 com.samsung.internal.systemui.navbar.sec_gestural
 pm uninstall --user 0 com.samsung.internal.systemui.navbar.sec_gestural_no_hint
+pm uninstall --user 0 com.samsung.ipservice
 pm uninstall --user 0 com.samsung.knox.securefolder
 pm uninstall --user 0 com.samsung.petservice
 pm uninstall --user 0 com.samsung.safetyinformation
+pm uninstall --user 0 com.samsung.sait.sohservice
 pm uninstall --user 0 com.samsung.storyservice
 pm uninstall --user 0 com.samsung.videoscan
+pm uninstall --user 0 com.sec.android.CcInfo
 pm uninstall --user 0 com.sec.android.RilServiceModeApp
 pm uninstall --user 0 com.sec.android.app.SecSetupWizard
 pm uninstall --user 0 com.sec.android.app.billing
+pm uninstall --user 0 com.sec.android.app.bluetoothagent
 pm uninstall --user 0 com.sec.android.app.camera
 pm uninstall --user 0 com.sec.android.app.chromecustomizations
 pm uninstall --user 0 com.sec.android.app.desktoplauncher
@@ -642,8 +750,12 @@ pm uninstall --user 0 com.sec.android.app.hwmoduletest
 pm uninstall --user 0 com.sec.android.app.magnifier
 pm uninstall --user 0 com.sec.android.app.parser
 pm uninstall --user 0 com.sec.android.app.servicemodeapp
+pm uninstall --user 0 com.sec.android.app.setupwizardlegalprovider
+pm uninstall --user 0 com.sec.android.app.soundalive
+pm uninstall --user 0 com.sec.android.app.uwbtest
 pm uninstall --user 0 com.sec.android.app.ve.vebgm
 pm uninstall --user 0 com.sec.android.app.vepreload
+pm uninstall --user 0 com.sec.android.app.wlantest
 pm uninstall --user 0 com.sec.android.autodoodle.service
 pm uninstall --user 0 com.sec.android.daemonapp
 pm uninstall --user 0 com.sec.android.desktopmode.uiservice
@@ -651,14 +763,20 @@ pm uninstall --user 0 com.sec.android.easyMover
 pm uninstall --user 0 com.sec.android.easyMover.Agent
 pm uninstall --user 0 com.sec.android.easyonehand
 pm uninstall --user 0 com.sec.android.gallery3d
+pm uninstall --user 0 com.sec.android.iaft
+pm uninstall --user 0 com.sec.android.llmpolicy
 pm uninstall --user 0 com.sec.android.mimage.avatarstickers
 pm uninstall --user 0 com.sec.android.mimage.photoretouching
+pm uninstall --user 0 com.sec.android.smartfpsadjuster
 pm uninstall --user 0 com.sec.android.widgetapp.easymodecontactswidget
 pm uninstall --user 0 com.sec.app.RilErrorNotifier
 pm uninstall --user 0 com.sec.bcservice
+pm uninstall --user 0 com.sec.enterprise.knox.cloudmdm.smdms
 pm uninstall --user 0 com.sec.epdgtestapp
+pm uninstall --user 0 com.sec.facatfunction
 pm uninstall --user 0 com.sec.factory.camera
 pm uninstall --user 0 com.sec.imslogger
+pm uninstall --user 0 com.sec.location.nfwlocationprivacy
 pm uninstall --user 0 com.sec.modem.settings
 pm uninstall --user 0 com.sec.phone
 pm uninstall --user 0 com.sec.spp.push
@@ -676,16 +794,8 @@ pm uninstall --user 0 org.ifaa.aidl.manager
 
 ## Hail
 
-Usage:
-1. Install Hail: <https://github.com/aistra0528/Hail> from F-Droid <https://f-droid.org/packages/com.aistra.hail>.
-2. Start Shizuku. See [Shizuku](#shizuku) for more information.
-2. Copy the code block below.
-2. Open Hail.
-2. Go to `Settings > Work mode` and select `Shizuku - Disable`.
-2. Go to `Home`, click three dots at the top right corner, click `Import app > Import from Clipboard`.
-
 ```
-["android.autoinstalls.config.samsung","com.android.apps.tag","com.android.bips","com.android.bluetoothmidiservice","com.android.calllogbackup","com.android.dreams.phototable","com.android.egg","com.android.hotwordenrollment.okgoogle","com.android.hotwordenrollment.xgoogle","com.android.internal.systemui.navbar.gestural","com.android.printspooler","com.android.providers.partnerbookmarks","com.android.traceur","com.android.virtualization.terminal","com.facebook.appmanager","com.facebook.services","com.facebook.system","com.google.android.adservices.api","com.google.android.aicore","com.google.android.apps.accessibility.voiceaccess","com.google.android.apps.aiwallpapers","com.google.android.apps.messaging","com.google.android.apps.restore","com.google.android.apps.tachyon","com.google.android.as","com.google.android.feedback","com.google.android.gms.location.history","com.google.android.gms.supervision","com.google.android.health.connect.backuprestore","com.google.android.healthconnect.controller","com.google.android.onetimeinitializer","com.google.android.partnersetup","com.google.android.printservice.recommendation","com.google.android.projection.gearhead","com.google.android.safetycenter.resources","com.google.android.setupwizard","com.google.android.tts","com.google.android.youtube","com.google.ar.core","com.google.mainline.adservices","com.google.mainline.telemetry","com.hiya.star","com.microsoft.appmanager","com.microsoft.skydrive","com.mygalaxy.service","com.samsung.SMT","com.samsung.SMT.lang_en_us_l03","com.samsung.SMT.lang_zh_cn_l02","com.samsung.SMT.lang_zh_hk_f00","com.samsung.SMT.lang_zh_tw_f00","com.samsung.aasaservice","com.samsung.accessory.budsunitemgr","com.samsung.android.accessibility.talkback","com.samsung.android.aicore","com.samsung.android.aircommandmanager","com.samsung.android.allshare.service.mediashare","com.samsung.android.app.camera.sticker.facearavatar.preload","com.samsung.android.app.contacts","com.samsung.android.app.interpreter","com.samsung.android.app.omcagent","com.samsung.android.app.parentalcare","com.samsung.android.app.routines","com.samsung.android.app.sketchbook","com.samsung.android.app.smartcapture","com.samsung.android.app.taskedge","com.samsung.android.app.watchmanagerstub","com.samsung.android.aremoji","com.samsung.android.aremojieditor","com.samsung.android.authfw","com.samsung.android.aware.service","com.samsung.android.bbc.bbcagent","com.samsung.android.beaconmanager","com.samsung.android.bixby.agent","com.samsung.android.bixby.wakeup","com.samsung.android.bixbyvision.framework","com.samsung.android.carkey","com.samsung.android.da.daagent","com.samsung.android.dbsc","com.samsung.android.dialer","com.samsung.android.dqagent","com.samsung.android.dynamiclock","com.samsung.android.easysetup","com.samsung.android.fast","com.samsung.android.forest","com.samsung.android.gru","com.samsung.android.hwresourceshare","com.samsung.android.hwresourceshare.storage","com.samsung.android.inputshare","com.samsung.android.intellivoiceservice","com.samsung.android.ipsgeofence","com.samsung.android.kidsinstaller","com.samsung.android.knox.analytics.uploader","com.samsung.android.knox.attestation","com.samsung.android.knox.containercore","com.samsung.android.knox.pushmanager","com.samsung.android.mapsagent","com.samsung.android.mcfds","com.samsung.android.mcfserver","com.samsung.android.mdecservice","com.samsung.android.mdm","com.samsung.android.mdx","com.samsung.android.mdx.kit","com.samsung.android.messaging","com.samsung.android.mobileservice","com.samsung.android.mydevice","com.samsung.android.net.wifi.wifiguider","com.samsung.android.networkdiagnostic","com.samsung.android.provider.filterprovider","com.samsung.android.rampart","com.samsung.android.rubin.app","com.samsung.android.samsungpass","com.samsung.android.samsungpassautofill","com.samsung.android.samsungpositioning","com.samsung.android.scloud","com.samsung.android.sdk.handwriting","com.samsung.android.sdm.config","com.samsung.android.service.peoplestripe","com.samsung.android.service.stplatform","com.samsung.android.service.tagservice","com.samsung.android.shortcutbackupservice","com.samsung.android.smartcallprovider","com.samsung.android.smartsuggestions","com.samsung.android.smartswitchassistant","com.samsung.android.spayfw","com.samsung.android.stickercenter","com.samsung.android.svcagent","com.samsung.android.themestore","com.samsung.android.video","com.samsung.android.vision.model","com.samsung.android.visionintelligence","com.samsung.android.visual.cloudcore","com.samsung.app.newtrim","com.samsung.cmh","com.samsung.faceservice","com.samsung.internal.systemui.navbar.gestural_no_hint","com.samsung.internal.systemui.navbar.sec_gestural","com.samsung.internal.systemui.navbar.sec_gestural_no_hint","com.samsung.knox.securefolder","com.samsung.petservice","com.samsung.safetyinformation","com.samsung.storyservice","com.samsung.videoscan","com.sec.android.RilServiceModeApp","com.sec.android.app.SecSetupWizard","com.sec.android.app.billing","com.sec.android.app.camera","com.sec.android.app.chromecustomizations","com.sec.android.app.desktoplauncher","com.sec.android.app.factorykeystring","com.sec.android.app.hwmoduletest","com.sec.android.app.magnifier","com.sec.android.app.parser","com.sec.android.app.servicemodeapp","com.sec.android.app.ve.vebgm","com.sec.android.app.vepreload","com.sec.android.autodoodle.service","com.sec.android.daemonapp","com.sec.android.desktopmode.uiservice","com.sec.android.easyMover","com.sec.android.easyMover.Agent","com.sec.android.easyonehand","com.sec.android.gallery3d","com.sec.android.mimage.avatarstickers","com.sec.android.mimage.photoretouching","com.sec.android.widgetapp.easymodecontactswidget","com.sec.app.RilErrorNotifier","com.sec.bcservice","com.sec.epdgtestapp","com.sec.factory.camera","com.sec.imslogger","com.sec.modem.settings","com.sec.phone","com.sec.spp.push","com.sec.unifiedwfc","com.sec.usbsettings","com.sec.vsim.ericssonnsds.webapp","com.sem.factoryapp","com.skms.android.agent","com.swiftkey.swiftkeyconfigurator","com.tencent.soter.soterserver","com.touchtype.swiftkey","com.wsomacp","org.ifaa.aidl.manager"]
+["android.autoinstalls.config.samsung","com.android.apps.tag","com.android.bips","com.android.bluetoothmidiservice","com.android.calllogbackup","com.android.dreams.phototable","com.android.egg","com.android.hotwordenrollment.okgoogle","com.android.hotwordenrollment.xgoogle","com.android.internal.systemui.navbar.gestural","com.android.microdroid.empty_payload","com.android.printspooler","com.android.providers.partnerbookmarks","com.android.theme.font.notoserifsource","com.android.traceur","com.android.virtualization.terminal","com.facebook.appmanager","com.facebook.services","com.facebook.system","com.google.android.adservices.api","com.google.android.aicore","com.google.android.apps.accessibility.voiceaccess","com.google.android.apps.aiwallpapers","com.google.android.apps.messaging","com.google.android.apps.restore","com.google.android.apps.tachyon","com.google.android.as","com.google.android.as.oss","com.google.android.federatedcompute","com.google.android.feedback","com.google.android.gms.location.history","com.google.android.gms.supervision","com.google.android.health.connect.backuprestore","com.google.android.healthconnect.controller","com.google.android.ondevicepersonalization.services","com.google.android.onetimeinitializer","com.google.android.overlay.modules.healthfitness.forframework","com.google.android.partnersetup","com.google.android.printservice.recommendation","com.google.android.projection.gearhead","com.google.android.safetycenter.resources","com.google.android.setupwizard","com.google.android.tts","com.google.android.youtube","com.google.ar.core","com.google.mainline.adservices","com.google.mainline.telemetry","com.hiya.star","com.knox.vpn.proxyhandler","com.microsoft.appmanager","com.microsoft.skydrive","com.mygalaxy.service","com.qti.qcc","com.qti.snapdragon.qdcm_ff","com.qualcomm.location","com.samsung.SMT","com.samsung.SMT.lang_en_us_l03","com.samsung.SMT.lang_zh_cn_l02","com.samsung.SMT.lang_zh_hk_f00","com.samsung.SMT.lang_zh_tw_f00","com.samsung.aasaservice","com.samsung.accessory.budsunitemgr","com.samsung.android.accessibility.talkback","com.samsung.android.aicore","com.samsung.android.aircommandmanager","com.samsung.android.allshare.service.mediashare","com.samsung.android.app.camera.sticker.facearavatar.preload","com.samsung.android.app.contacts","com.samsung.android.app.earphonetypec","com.samsung.android.app.interpreter","com.samsung.android.app.omcagent","com.samsung.android.app.parentalcare","com.samsung.android.app.routines","com.samsung.android.app.sketchbook","com.samsung.android.app.smartcapture","com.samsung.android.app.taskedge","com.samsung.android.app.watchmanagerstub","com.samsung.android.aremoji","com.samsung.android.aremojieditor","com.samsung.android.authfw","com.samsung.android.aware.service","com.samsung.android.bbc.bbcagent","com.samsung.android.beaconmanager","com.samsung.android.bixby.agent","com.samsung.android.bixby.wakeup","com.samsung.android.bixbyvision.framework","com.samsung.android.cameraxservice","com.samsung.android.carkey","com.samsung.android.da.daagent","com.samsung.android.dbsc","com.samsung.android.dck.timesync","com.samsung.android.dialer","com.samsung.android.dqagent","com.samsung.android.dsms","com.samsung.android.dynamiclock","com.samsung.android.easysetup","com.samsung.android.fast","com.samsung.android.forest","com.samsung.android.gru","com.samsung.android.hdmapp","com.samsung.android.hwresourceshare","com.samsung.android.hwresourceshare.storage","com.samsung.android.inputshare","com.samsung.android.intellivoiceservice","com.samsung.android.ipsgeofence","com.samsung.android.kidsinstaller","com.samsung.android.knox.analytics.uploader","com.samsung.android.knox.attestation","com.samsung.android.knox.containercore","com.samsung.android.knox.kpecore","com.samsung.android.knox.pushmanager","com.samsung.android.knox.zt.framework","com.samsung.android.mapsagent","com.samsung.android.mcfds","com.samsung.android.mcfserver","com.samsung.android.mdecservice","com.samsung.android.mdm","com.samsung.android.mdx","com.samsung.android.mdx.kit","com.samsung.android.messaging","com.samsung.android.mobileservice","com.samsung.android.mocca","com.samsung.android.mydevice","com.samsung.android.net.wifi.wifiguider","com.samsung.android.networkdiagnostic","com.samsung.android.privateaccesstokens","com.samsung.android.provider.filterprovider","com.samsung.android.rampart","com.samsung.android.rubin.app","com.samsung.android.samsungpass","com.samsung.android.samsungpassautofill","com.samsung.android.samsungpositioning","com.samsung.android.scloud","com.samsung.android.sdk.handwriting","com.samsung.android.sdm.config","com.samsung.android.server.wifi.mobilewips","com.samsung.android.service.peoplestripe","com.samsung.android.service.stplatform","com.samsung.android.service.tagservice","com.samsung.android.shortcutbackupservice","com.samsung.android.smartcallprovider","com.samsung.android.smartsuggestions","com.samsung.android.smartswitchassistant","com.samsung.android.spayfw","com.samsung.android.sskds","com.samsung.android.stickercenter","com.samsung.android.svcagent","com.samsung.android.themestore","com.samsung.android.video","com.samsung.android.vision.model","com.samsung.android.visionintelligence","com.samsung.android.visual.cloudcore","com.samsung.android.vtcamerasettings","com.samsung.android.wallpaper.live","com.samsung.app.newtrim","com.samsung.cmh","com.samsung.faceservice","com.samsung.gpuwatchapp","com.samsung.internal.systemui.navbar.gestural_no_hint","com.samsung.internal.systemui.navbar.sec_gestural","com.samsung.internal.systemui.navbar.sec_gestural_no_hint","com.samsung.ipservice","com.samsung.knox.securefolder","com.samsung.petservice","com.samsung.safetyinformation","com.samsung.sait.sohservice","com.samsung.storyservice","com.samsung.videoscan","com.sec.android.CcInfo","com.sec.android.RilServiceModeApp","com.sec.android.app.SecSetupWizard","com.sec.android.app.billing","com.sec.android.app.bluetoothagent","com.sec.android.app.camera","com.sec.android.app.chromecustomizations","com.sec.android.app.desktoplauncher","com.sec.android.app.factorykeystring","com.sec.android.app.hwmoduletest","com.sec.android.app.magnifier","com.sec.android.app.parser","com.sec.android.app.servicemodeapp","com.sec.android.app.setupwizardlegalprovider","com.sec.android.app.soundalive","com.sec.android.app.uwbtest","com.sec.android.app.ve.vebgm","com.sec.android.app.vepreload","com.sec.android.app.wlantest","com.sec.android.autodoodle.service","com.sec.android.daemonapp","com.sec.android.desktopmode.uiservice","com.sec.android.easyMover","com.sec.android.easyMover.Agent","com.sec.android.easyonehand","com.sec.android.gallery3d","com.sec.android.iaft","com.sec.android.llmpolicy","com.sec.android.mimage.avatarstickers","com.sec.android.mimage.photoretouching","com.sec.android.smartfpsadjuster","com.sec.android.widgetapp.easymodecontactswidget","com.sec.app.RilErrorNotifier","com.sec.bcservice","com.sec.enterprise.knox.cloudmdm.smdms","com.sec.epdgtestapp","com.sec.facatfunction","com.sec.factory.camera","com.sec.imslogger","com.sec.location.nfwlocationprivacy","com.sec.modem.settings","com.sec.phone","com.sec.spp.push","com.sec.unifiedwfc","com.sec.usbsettings","com.sec.vsim.ericssonnsds.webapp","com.sem.factoryapp","com.skms.android.agent","com.swiftkey.swiftkeyconfigurator","com.tencent.soter.soterserver","com.touchtype.swiftkey","com.wsomacp","org.ifaa.aidl.manager"]
 ```
 
 ## Other Useful ADB Commands
@@ -742,12 +852,10 @@ for pkg in $(pm list packages --user 0 -f | sed "s/.*=//"); do
 done
 ```
 
-## Credits
+## Sources
 
-- Universal Android Debloater GUI: <https://github.com/0x192/universal-android-debloater>, a copy of <https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json> is at [uad_lists.json](uad_lists.json)
-- Shizuku: <https://github.com/thedjchi/Shizuku>
-- Hail: <https://github.com/aistra0528/Hail>
+This project refers a lot to the [`uad_lists.json`](https://raw.githubusercontent.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/main/resources/assets/uad_lists.json) of [Universal Android Debloater Next Generation](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation) and [`uad_lists.json`](https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json) from [Universal Android Debloater GUI](https://github.com/0x192/universal-android-debloater).
 
 ## License
 
-This repo is licensed under CC BY 4.0. See [LICENSE.txt](LICENSE.txt) for the legal code.
+This repo is licensed under GPL 3.0. See [LICENSE.txt](LICENSE.txt) for the legal code.
