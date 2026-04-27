@@ -854,7 +854,7 @@ done
 
 ## Sources
 
-This project refers a lot to the [`uad_lists.json`](https://raw.githubusercontent.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/main/resources/assets/uad_lists.json) of [Universal Android Debloater Next Generation](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation) and [`uad_lists.json`](https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json) from [Universal Android Debloater GUI](https://github.com/0x192/universal-android-debloater).
+This project refers a lot to the [`uad_lists.json`](https://raw.githubusercontent.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/main/resources/assets/uad_lists.json) of [Universal Android Debloater Next Generation](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation) and [`uad_lists.json`](https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json) from [Universal Android Debloater GUI](https://github.com/0x192/universal-android-debloater). A copy of the former is in [`Universal Android Debloater Next Generation/uad_lists.json`](Universal%20Android%20Debloater%20Next%20Generation/uad_lists.json), and a copy of the latter is in [`Universal Android Debloater GUI/uad_lists.json`](Universal%20Android%20Debloater%20GUI/uad_lists.json).
 
 ## License
 
