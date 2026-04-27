@@ -117,7 +117,7 @@ This is an incomplete list of apps not disabled/uninstalled in the list that you
 My current status as of the time writing this (April 28, 2026) is as follows:
 - Not rooted, Shizuku constantly on.
 - Uninstalled all apps in the list in this guide.
-- Disabled Chrome (`com.android.chrome`), Google (`com.google.android.googlequicksearchbox`), and Maps (`com.google.android.apps.maps`), which can be enabled in Hail when needed.
+- Disabled Chrome (`com.android.chrome`), Google (`com.google.android.googlequicksearchbox`), and Maps (`com.google.android.apps.maps`), which can be enabled temporarily in Hail when needed.
 - Network: Refer to [network.md](network.md).
 - Social media:
   - BiliBili: [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced).
