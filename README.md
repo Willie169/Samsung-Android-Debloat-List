@@ -26,7 +26,6 @@ Visit my <https://github.com/Willie169/Android-Non-Root> repo for more Android t
 - Disabling/uninstalling Samsung Location SDK will cause GPS location can not be recieved, so it is not disabled/uninstalled in the list.
 - Disabling/uninstalling Samsung Wallet Digital Key (`com.samsung.android.dkey`) may cause increase in background resources usage, so it is not disabled/uninstalled in the list.
 - Disabling/uninstalling Smart View (`com.samsung.android.smartmirroring`) may cause One UI Home (`com.sec.android.app.launcher`) and/or Video Player (`com.samsung.android.video`) to crash, so it is not disabled/uninstalled in the list.
-  <!-- - Disabling/uninstalling Enrollment Service (`com.sec.enterprise.knox.cloudmdm.smdms`), Find My Mobile (`com.samsung.android.fmm`), KLMS Agent (`com.samsung.klmsagent`), or KnoxVpnPacProcessor (`com.knox.vpn.proxyhandler`) may fail, so it is not disabled/uninstalled in the list. -->
 - If Android Setup (`com.google.android.setupwizard`) sends a notification after ADB operations, run the following inside ADB shell to turn it off:
   ```
   settings put global setup_wizard_has_run 1
