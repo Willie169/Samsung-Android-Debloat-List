@@ -854,6 +854,10 @@ Let vibration by the app of user 0 be allowed:
 ```
 appops set --user 0 <package_name> VIBRATE allow
 ```
+Enable `limit_ad_tracking` settings:
+```
+settings put secure limit_ad_tracking 1
+```
 
 ## Other Useful ADB Command Combinations
 
