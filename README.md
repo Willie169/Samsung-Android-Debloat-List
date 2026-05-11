@@ -80,7 +80,7 @@ This is an incomplete list of apps disabled/uninstalled in the list that you may
 - Digital Wellbeing (`com.samsung.android.forest`): [Mindful](https://github.com/akaMrNagar/Mindful) (`com.mindful.android`).
 - Drawing assist (`com.samsung.android.app.sketchbook`)
 - Galaxy Themes (`com.samsung.android.themestore`)
-- Gemini (`com.google.android.apps.bard`): [website](https://gemini.google.com/app) with browser's "Add to Home screen".
+- Gemini (`com.google.android.apps.bard`): [Gemini website](https://gemini.google.com/app) with browser's "Add to Home screen".
 - Google Location History (`com.google.android.gms.location.history`)
 - Hey Google Hotword (`com.android.hotwordenrollment.xgoogle`) and OK Google Hotword (`com.android.hotwordenrollment.okgoogle`)
 - Interpreter (`com.samsung.android.app.interpreter`)
@@ -125,7 +125,7 @@ This is an incomplete list of apps not disabled/uninstalled in the list that you
 - Game Booster (`com.samsung.android.game.gametools`) and Game Optimizing Service (`com.samsung.android.game.gos`)
 - Gmail (`com.google.android.gm`): [Thunderbird](https://github.com/thunderbird/thunderbird-android) (`net.thunderbird.android`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://f-droid.org/packages/net.thunderbird.android), [Proton Mail](https://github.com/ProtonMail/android-mail) (`ch.protonmail.android`) from [GitHub release](https://github.com/ProtonMail/android-mail/releases) (recommended) or [Google Play](https://play.google.com/store/apps/details?id=ch.protonmail.android), [You Have Mail](https://codeberg.org/angrypixel/you-have-mail) (`dev.lbeernaert.youhavemail`) from [F-Droid](https://f-droid.org/packages/dev.lbeernaert.youhavemail) [Tuta Mail](https://github.com/tutao/tutanota) (`de.tutao.tutanota`) from [F-Droid](https://f-droid.org/packages/de.tutao.tutanota).
 - Google (`com.google.android.googlequicksearchbox`): [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch), [Fennec F-Droid](https://hg.mozilla.org/mozilla-central/file/tip/mobile/android) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec F-Droid_fdroid) or [FFUpdater](https://github.com/Tobi823/ffupdater), [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play](https://play.google.com/store/apps/details?id=org.mozilla.firefox), [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play](https://play.google.com/store/apps/details?id=com.brave.browser), [Chromite ](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo).
-- Maps (`com.google.android.apps.maps`): [website](https://www.google.com/maps) with browser's "Add to Home screen", [GMaps WV](https://github.com/woheller69/maps) (`us.spotco.maps`) from [F-Droid](https://f-droid.org/packages/us.spotco.maps>), [OsmAnd~](https://github.com/osmandapp/OsmAnd) (`net.osmand.plus`) from [F-Droid](https://droidify.app/app/?id=net.osmand.plus&repo_address=https://guardianproject-wind.s3.amazonaws.com/fdroid/repo).
+- Maps (`com.google.android.apps.maps`): [OsmAnd~ / OsmAnd+](https://github.com/osmandapp/OsmAnd) (`net.osmand.plus`) from [F-Droid](https://droidify.app/app/?id=net.osmand.plus&repo_address=https://guardianproject-wind.s3.amazonaws.com/fdroid/repo), [Google Maps website](https://www.google.com/maps) with browser's "Add to Home screen", [GMaps WV](https://github.com/woheller69/maps) (`us.spotco.maps`) from [F-Droid](https://f-droid.org/packages/us.spotco.maps>), [osm2gmaps](https://codeberg.org/retiolus/osm2gmaps) (`net.retiolus.osm2gmaps`) from [F-Droid](https://f-droid.org/packages/net.retiolus.osm2gmaps), [Google Maps Unshortener website](https://mapu.retiolus.net).
 
 ## Raw List
 
@@ -828,15 +828,15 @@ My current status as of the time writing this (April 28, 2026) is as follows:
 - Network: Refer to [network.md](network.md).
 - Social media:
   - BiliBili: [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced).
-  - Discord: [website](https://discord.com/channels/@me) with Firefox's "Add to Home screen".
-  - Facebook: [website](https://www.facebook.com) with Firefox's "Add to Home screen".
-  - Instagram: [website](https://www.instagram.com) with Firefox's "Add to Home screen".
+  - Discord: [Discord website](https://discord.com/channels/@me).
+  - Facebook: [Facebook website](https://www.facebook.com).
+  - Instagram: [Instagram website](https://www.instagram.com).
   - Mastodon: [Mastodon](https://github.com/mastodon/mastodon-android) (`org.joinmastodon.android`) from (F-Droid](https://apt.izzysoft.de/fdroid/index/apk/org.joinmastodon.android) and [Mastodon Redirect](https://github.com/zacharee/MastodonRedirect) (`dev.zwander.mastodonredirect`) from [F-Droid](https://apt.izzysoft.de/fdroid/index/apk/dev.zwander.mastodonredirect).
   - Matrix: [Element X](https://github.com/element-hq/element-x-android) (`io.element.android.x`) from [F-Droid](https://f-droid.org/packages/io.element.android.x).
   - NicoNico: [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced).
-  - Reddit: [website](https://reddit.com) with Firefox's "Add to Home screen".
+  - Reddit: [Reddit website](https://reddit.com).
   - Telegram: [Forkgram / Fork Client](https://github.com/forkgram/TelegramAndroid) (`org.forkgram.messenger`) from [F-Droid](https://f-droid.org/packages/org.forkgram.messenger).
-  - X: [website](https://x.com) with Firefox's "Add to Home screen" and [Nitterium](https://github.com/kaleedtc/Nitterium) (`com.kaleedtc.nitterium`) from [F-Droid](https://apt.izzysoft.de/fdroid/index/apk/com.kaleedtc.nitterium).
+  - X (Twitter): [X (Twitter) website](https://x.com) and [Nitterium](https://github.com/kaleedtc/Nitterium) (`com.kaleedtc.nitterium`) from [F-Droid](https://apt.izzysoft.de/fdroid/index/apk/com.kaleedtc.nitterium).
   - YouTube: [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced).
 
 ## Other Useful ADB Commands
