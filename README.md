@@ -586,7 +586,6 @@ pm disable --user 0 org.ifaa.aidl.manager
 ## ADB Uninstall Command
 
 ```
-
 pm uninstall --user 0 android.autoinstalls.config.samsung
 pm uninstall --user 0 com.android.apps.tag
 pm uninstall --user 0 com.android.bips
