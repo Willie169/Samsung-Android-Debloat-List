@@ -876,6 +876,10 @@ Enable `limit_ad_tracking` settings:
 ```
 settings put secure limit_ad_tracking 1
 ```
+Fix Android VPN leak (need reboot):
+```
+device_config put tethering close_quic_connection -1
+```
 
 ## Other Useful ADB Command Combinations
 
