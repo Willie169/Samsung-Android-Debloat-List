@@ -906,18 +906,18 @@ appops set --user 0 <package_name> VIBRATE allow
 
 ## Other Useful ADB Command Combinations
 
-List uninstalled system apps of user 0 (Run outside ADB shell, assuming that interactive ADB shell can be accessed with `rish`):
+List uninstalled system apps of user 0 (run outside ADB shell, assuming that interactive ADB shell can be accessed with `rish`):
 ```
 diff <(echo 'pm list packages --user 0 && exit' | rish) <(echo 'pm list packages -u --user 0 && exit' | rish) | grep '^>' | sed "s/> package://" | sort | uniq
 ```
 
-On Android 14+, let persistent notifications posted by all apps of user 0 not be dismissible through the UI (i.e. behave as they did prior to Android 14) (Run in ADB shell):
+On Android 14+, let persistent notifications posted by all apps of user 0 not be dismissible through the UI (i.e. behave as they did prior to Android 14) (run in ADB shell):
 ```
 for pkg in $(pm list packages --user 0 -f | sed "s/.*=//"); do
   appops set --user 0 "$pkg" SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS allow
 done
 ```
-On Android 14+, let persistent notifications posted by all apps of user 0 be dismissible through the UI (Run in ADB shell):
+On Android 14+, let persistent notifications posted by all apps of user 0 be dismissible through the UI (run in ADB shell):
 ```
 for pkg in $(pm list packages --user 0 -f | sed "s/.*=//"); do
   appops set --user 0 "$pkg" SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS default
