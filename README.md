@@ -115,7 +115,8 @@ This is an incomplete list of apps disabled/uninstalled in the list that you may
 - Voice Access (`com.google.android.apps.accessibility.voiceaccess`)
 - Weather (`com.sec.android.daemonapp`): [Weather](https://github.com/breezy-weather/breezy-weather) (`org.breezyweather`) from [F-Droid](https://f-droid.org/packages/org.breezyweather).
 - WiFi Calling (`com.sec.unifiedwfc`)
-- YouTube (`com.google.android.youtube`): [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced), [Morphe](https://morphe.software) patching.
+- YouTube (`com.google.android.youtube`): [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced), [Morphe Manager](https://github.com/MorpheApp/morphe-manager) (`app.morphe.manager`) from [GitHub release](https://github.com/MorpheApp/morphe-manager/releases) patched YouTube with [MicroG
+    RE](https://github.com/MorpheApp/MicroG-RE) (`app.revanced.android.gms`) from [GitHub release](https://github.com/MorpheApp/MicroG-RE/releases).
 
 ## Not Disabled/Uninstalled
 
