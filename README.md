@@ -839,10 +839,6 @@ Fix Android VPN leak (need reboot):
 ```
 device_config put tethering close_quic_connection -1
 ```
-Disable DoH (need reboot, for people using DNS proxy to block DNS queries more easily): 
-```
-device_config put netd_native doh 0
-```
 
 ## My Current Status
 
