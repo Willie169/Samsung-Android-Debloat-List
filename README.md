@@ -840,6 +840,7 @@ My current status as of the time writing this (April 28, 2026) is as follows:
 - Applied [Privacy-Related ADB Settings](#privacy-related-adb-settings).
 - Applied many of the settings recommended in <https://thenewoil.org/en/guides/most-important/mobile-settings>.
 - Disabled Chrome (`com.android.chrome`), Gmail (`com.google.android.gm`), Google (`com.google.android.googlequicksearchbox`), Maps (`com.google.android.apps.maps`), and similar User apps, which can be enabled temporarily in Hail when I use them.
+- Browser: Refer to my [browser-privacy-guide](https://github.com/Willie169/browser-privacy-guide).
 - Network: Refer to [network.md](network.md).
 - Social media:
   - BiliBili: [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced).
