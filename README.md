@@ -309,12 +309,13 @@ for pkg in $(pm list packages --user 0 -f | sed "s/.*=//"); do
   appops set --user 0 "$pkg" SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS default
 done
 ```
-List uninstalled system apps of user 0: Run outside ADB shell, assuming that interactive ADB shell can be accessed with `rish`. One of the following scripts may work for you.
+List uninstalled system apps of user 0: Run outside ADB shell. It assumes specific diff versions and that interactive ADB shell can be accessed with `rish`, thus may not work for you.
 ```
-diff -u <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq
+diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq
 ```
+Compare uninstalled system apps of user 0 to raw.txt: Run outside ADB shell. It assumes specific diff versions and that interactive ADB shell can be accessed with `rish`, thus may not work for you.
 ```
-diff -u <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | grep '^>' | sed "s/> package://" | sort | uniq
+diff -U 0 <(diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq) raw.txt
 ```
 
 ## My Current Status
