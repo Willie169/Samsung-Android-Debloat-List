@@ -1,6 +1,6 @@
 # Samsung Android Debloat List
 
-This repo contains the list of apps I uninstalled on my Galaxy S24+ (SM-S9260) Android 16 device.
+This repo contains the list of apps I uninstalled on my Galaxy S24+ (SM-S9260) Android 16 One UI 8.0 device.
 
 ## Table of Contents
 
@@ -270,25 +270,19 @@ My current status is as follows:
 
 ## Credits
 
-A special thanks to the following people and projects for their invaluable findings and inspections. Copies of their files are made solely for archiving purposes and are subject to their own copyright status.
+A special thanks to the following people and projects for their invaluable findings and inspection. Copies of their files are made solely for archiving purposes and are subject to their own copyright status.
+- [Universal Android Debloater Next Generation](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation): [`uad_lists.json`](https://raw.githubusercontent.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/main/resources/assets/uad_lists.json) ([copy](Universal%20Android%20Debloater%20Next%20Generation/uad_lists.json))
+- [Universal Android Debloater GUI](https://github.com/0x192/universal-android-debloater): [`uad_lists.json`](https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json) ([copy](Universal%20Android%20Debloater%20GUI/uad_lists.json))
 - Ruvomain / [Successful-Dance1792 (Reddit)](https://www.reddit.com/user/Successful-Dance1792) / [Ruvyrom (XDA Forums)](https://xdaforums.com/m/ruvyrom.7629260):
   - [RUVOMAIN PROTOCOL - ONE UI 8.5 OPTIMIZATION (pastebin.com)](https://pastebin.com/k5JnfbSW) (<a href="Ruvomain/S24+ OneUI 8.5 Extreme Debloat Guide - Setup & Risk Tiers (Ruvomain Protocol).txt">copy</a>)
   - [Samsung Galaxy S24 Plus OneUI 8.5 Extreme Debloat (321 apps) (pastebin.com)](https://pastebin.com/FdfDYqZt) (<a href="Ruvomain/Samsung Galaxy S24 Plus OneUI 8.5 Extreme Debloat (321 apps).json">copy</a>)
-
-
-https://www.reddit.com/r/androidroot/s/jV6eWfhU1u
-https://xdaforums.com/t/guide-no-root-debloating-optimization-11h-sot-exynos-2400-knox-safe-no-pc-need.4789055
-
-https://xdaforums.com/m/ruvyrom.7629260/
-https://www.reddit.com/r/samsunggalaxy/s/TEfJq4I6fb
-
-
-https://www.reddit.com/r/GalaxyS25Ultra/comments/1nahf5n/safely_max_debloat_the_s25_ultra_without/
-https://www.reddit.com/r/GalaxyS22/comments/1fugk3f/the_combined_guide_to_debloatspeed_up_and_improve/
-https://www.reddit.com/r/S25Ultra/comments/1nanun9/how_to_debloat_and_optimize_the_s25_ultra_for/
-https://www.reddit.com/r/miui/comments/1ij39us/peak_performance_and_save_battery_without_root_no/
-
-- [Universal Android Debloater Next Generation](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation): A copy of [`uad_lists.json`](https://raw.githubusercontent.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/main/resources/assets/uad_lists.json) is in [`Universal Android Debloater Next Generation/uad_lists.json`](Universal%20Android%20Debloater%20Next%20Generation/uad_lists.json).
-- [Universal Android Debloater GUI](https://github.com/0x192/universal-android-debloater): A copy of [`uad_lists.json`](https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json) is in [`Universal Android Debloater GUI/uad_lists.json`](Universal%20Android%20Debloater%20GUI/uad_lists.json).
+  - <a href="https://www.reddit.com/r/androidroot/s/jV6eWfhU1u">[GUIDE] The "Flat Drain & Performance" Protocol: My Extreme S24+ OneUi 8.5 Debloat Setup (Non-Root) (Reddit)</a>
+  - <a href="https://www.reddit.com/r/samsunggalaxy/s/TEfJq4I6fb">Antutu score et battery life of my Galaxy S24+ with Exynos 2400 (Reddit)</a>
+  - <a href="https://xdaforums.com/t/guide-no-root-debloating-optimization-11h-sot-exynos-2400-knox-safe-no-pc-need.4789055">[GUIDE] No-Root Debloating & Optimization (11h+ SoT, Exynos 2400, Knox-Safe) [NO PC NEED] (XDA Forums)</a>
+- [HonkyHornyGoose (Reddit)](https://www.reddit.com/user/HonkyHornyGoose):
+  - <a href="https://www.reddit.com/r/GalaxyS25Ultra/comments/1nahf5n/safely_max_debloat_the_s25_ultra_without">Safely Max Debloat The S25 Ultra Without Bootloops Or Broken Functionality Of Important System Components (Reddit)</a>
+  - <a href="https://www.reddit.com/r/S25Ultra/comments/1nanun9/how_to_debloat_and_optimize_the_s25_ultra_for">How To Debloat And Optimize The S25 Ultra For Battery Optimization And Power Users (Reddit)</a>
+- [hurricane8485 (Reddit)](https://www.reddit.com/user/hurricane8485): <a href="https://www.reddit.com/r/GalaxyS22/comments/1fugk3f/the_combined_guide_to_debloatspeed_up_and_improve">The combined guide to debloat/speed up and improve S22's and other galaxy devices battery life (Reddit)</a>
+- [demonofparadise_213 (Reddit)](https://www.reddit.com/user/demonofparadise_213): <a href="https://www.reddit.com/r/miui/comments/1ij39us/peak_performance_and_save_battery_without_root_no">Peak performance and Save Battery without Root? NO PROBLEM!! (Reddit)</a>
 - [Mullvad shares workaround for Android 16 VPN leak that remains unfixed](https://cyberinsider.com/mullvad-shares-workaround-for-android-16-vpn-leak-that-remains-unfixed).
-
+- [GrapheneOS fixes Android VPN leak Google refused to patch](https://cyberinsider.com/grapheneos-fixes-android-vpn-leak-google-refused-to-patch)
