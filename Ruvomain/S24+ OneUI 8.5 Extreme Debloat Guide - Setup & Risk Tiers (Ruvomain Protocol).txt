@@ -1,0 +1,128 @@
+#RUVOMAIN PROTOCOL - ONE UI 8.5 OPTIMIZATION**
+# Status: Stable | Version: 1.3
+# Discussion & Support:
+[ https://www.reddit.com/r/androidroot/s/jV6eWfhU1u ]
+
+Goal: Achieve near-zero idle battery drain and maximum system responsiveness.
+Dependencies: Shizuku + Canta (or any PMsuite)
+
+**## CHANGELOG**
+* **[26.05.20] v1.0:** Initial release.
+* **[26.05.20] v1.1:** Added caution regarding 'Cell Broadcast' services, moved specific location packages to 'Experimental'.
+* **[26.05.20] v1.2: Added "Critical Safeguard" section to prevent system UI crashes, and integrated findings from Willie169's GitHub repository regarding package dependencies.
+* **[26.05.20] v1.3:** Added "Pro-Tip: Hardware & Charging Hygiene"
+
+Following my previous posts on my extreme S24+ debloat, many of you have asked me for the full method.
+[https://www.reddit.com/r/samsunggalaxy/s/Cb7t7AMiie]
+
+Here is the complete guide explaining the protocol, the risk levels, and my full package list:
+[https://pastebin.com/FdfDYqZt]
+
+You have two options:
+
+•Option 1 (Recommended for beginners): Read through the list provided below and manually check/select each package in Canta. This is the safest method to avoid any mistakes.
+
+•Option 2 (Fast): Download the JSON file in link and edit it in a text editor to remove any packages you want to keep, then import it directly into Canta. https://pastebin.com/FdfDYqZt
+
+###🛡️ SAFETY & RECOVERY (READ THIS)
+
+•Backup Your Data: Before running any debloat process, back up your personal data (photos, contacts, messages). Using tools like Samsung Smart Switch or Google One is recommended.
+
+•If you break a feature (e.g., Camera, Bluetooth, Notifications):*
+1. Open Canta.
+2. Search for the package name (or filterby 'Disabled').
+3. Click the package and select **"Restore/Enable"**.
+4. Reboot the device.
+*If the issue persists, post the exact package name on the [ https://www.reddit.com/r/androidroot/s/jV6eWfhU1u ] so I can investigate.*
+
+•The "Safety Net": While this debloat method is designed to besafe, mistakes can happen. If you accidentally remove a critical system component and experience a bootloop or system instability, don't panic: a Factory Reset will fully restore your device to its factory state. By proceeding, you acknowledge that you are comfortable with performing a factory reset if necessary.
+
+⚠️ IMPORTANT: READ BEFORE PROCEEDING
+This isn't a 'one-click' fix. You need to know what you are doing. If you are a beginner, stick to Tier 1. Do not touch Tier 3 unless you have already installed and tested your alternatives (GCam for Camera, SwiftKey/Gboard for Keyboard, etc.).
+
+⚠️CRITICAL SAFEGUARDS (Do NOT disable these)
+Based on community findings, disabling these core services will cause instability, system UI crashes, or loss of essential features:
+•Connectivity: com.samsung.android.wifi.softap.resources (Hotspot functionality).
+•Diagnostics: com.sec.android.diagmonagent (May cause randomsystem crashes).
+•Location: com.sec.location.nsflp2 (Samsung Location SDK - GPSwill fail).
+•UI/UX: com.samsung.android.smartmirroring (Smart View -disabling this causes One UI Home & Video Player crashes).
+•Security: com.android.nfc (NFC Service).
+•Accounts: com.osp.app.signin (Samsung Account).
+•UINavigation: Do not disable any package containing com.samsung.internal.systemui.navbar (Gestural/3-button navigation).
+
+🟢 TIER 1 (Safe Zone):
+Marketing, telemetry, Bixby, and redundant services.
+These are completely safe to remove and won't affect system stability.
+
+com.samsung.android.app.taskedge, com.samsung.android.beaconmanager, com.samsung.android.aware.service, 
+com.android.egg, 
+com.sec.android.mimage.avatarstickers, com.samsung.android.mcf.autohotspot, com.samsung.android.aremojieditor, com.sec.android.provider.badge, com.samsung.android.bbc.bbcagent, com.samsung.android.forest, com.samsung.android.bixby.agent, com.samsung.android.visionintelligence, com.samsung.android.bixbyvision.framework, com.samsung.android.rampart, com.samsung.android.brightnessbackupservice, com.samsung.android.app.earphonetypec, com.android.avatarpicker,
+com.samsung.cmh,
+com.samsung.android.bluelightfilter, com.samsung.android.mdx.kit, com.samsung.safetyinformation, 
+com.samsung.android.mcfds, com.samsung.android.inputshare, com.samsung.android.app.camera.sticker.facearavatar.preload, 
+com.sec.android.app.factorykeystring, com.android.devicediagnostics, com.samsung.android.dqagent,
+com.sec.android.app.parser,
+com.samsung.android.dsms,
+com.sec.android.easyonehand,
+com.android.dreams.basic, com.android.dreams.phototable,
+com.sec.android.mimage.photoretouching, com.samsung.app.newtrim, com.samsung.android.vtcamerasettings, com.samsung.android.aircommandmanager,
+com.samsung.faceservice
+
+🟡 TIER 2 (Utility Dependent):
+Includes services like Smart Switch, AR Core, and specific cloud backups.
+Only delete these if you are 100% sure you don't use the feature.
+
+com.sec.hearingadjust,
+com.sec.android.easyMover.Agent,  com.google.android.apps.restore,
+com.google.android.as,
+com.samsung.android.mydevice, com.samsung.android.mdecservice, com.samsung.android.app.omcagent,
+com.google.ar.core,
+com.samsung.android.scpm, com.samsung.android.net.wifi.wifiguider, com.samsung.android.audiomirroring, com.samsung.android.authfw, com.sec.android.app.bluetoothagent, com.android.bluetoothmidiservice, com.android.bookmarkprovider, com.android.calllogbackup, com.samsung.android.callbgprovider, com.android.cameraextensions,
+com.sec.android.CcInfo, , com.sec.android.app.chromecustomizations, com.android.backupconfirm, com.google.android.ondevicepersonalization.services, com.android.ons, com.android.providers.partnerbookmarks, com.android.wallpaperbackup,
+com.google.android.aicore, com.google.android.appsearch.apk, com.google.android.federatedcompute, com.google.android.health.connect.backuprestore, com.samsung.android.knox.attestation,
+com.samsung.android.knox.er, com.samsung.android.knox.mpos, com.samsung.android.smartswitchassistant, com.samsung.slsi.telephony.silentlogging, com.sec.android.app.qsfastpairoverlay, com.sec.bcservice,
+com.google.android.adservices.api, com.google.android.configupdater, com.samsung.android.dbsc, com.android.managedprovisioning, com.android.providers.contactkeys, com.samsung.android.app.parentalcare,
+com.sec.cpagent,
+com.samsung.android.dck.timesync, com.android.providers.userdictionary, com.samsung.android.carkey, com.samsung.knox.securefolder,
+com.android.dynsystem, com.sec.enterprise.knox.cloudmdm.smdms, com.samsung.android.sead,
+com.sec.epdgtestapp,
+com.sec.app.RilErrorNotifier,
+com.sec.facatfunction
+
+⚠️ 🔴 TIER 3 (Advanced/Replacement Required):
+Vital system apps (Camera, Contacts, Keyboard, Setup Wizard).
+DO NOT DELETE these unless you have already installed a working replacement (e.g., GCam, Gboard). Your phone will lose core functionality otherwise.
+
+com.sec.android.app.camera, com.sec.android.app.SecSetupWizard, com.touchtype.swiftkey,
+com.samsung.android.honeyboard, com.samsung.android.app.contacts, com.sec.android.widgetapp.easymodecontactswidget, com.google.android.setupwizard, android.autoinstalls.config.samsung, com.google.android.verifier, com.google.android.verifier.overlay
+
+com.google.android.cellbroadcastreceiver,
+com.google.android.cellbroadcastservice
+*⚠️ Note: Removing these will disable emergency alerts (AMBER, severe weather warnings, etc.) in your region.
+
+...and any other package starting with`com.sec.android.app` or `com.samsung.android.app`.
+^^^ *⚠️ **CRITICAL WARNING:** This is NOT a command to delete everything starting with these prefixes. Many core system apps (including your Launcher, Settings, and SystemUI) start with these names. **Only** remove individual apps from these groups if you are 100% certain they are redundant and you have a tested replacement installed. If you are unsure, **DO NOT REMOVE IT.***
+-------------------------------------------------------
+Pro-Tip: Hardware & Charging Hygiene
+
+Software optimization is only half the battle. Tomaintain 95%+ battery health:
+
+1. **Charging:**
+Use a **USB-C PD3.0 / PPS-certified charger**. Avoid standard USB-A ports (like those in cars) for daily charging, as they are oftenlimited to 5W and cause inefficient heat/charge cycles.
+
+2. **Charging Habits:**
+My personal stats are based on charging with a 65W PD-compatible charger. Heat is your battery's worst enemy.
+
+3. **Usage:**
+Android Auto + GPS is the heaviest drain. If your phone feels warm in the car, that's normal—it's not your debloat, it's the hardware workload.
+-------------------------------------------------------
+CREDITS & COMMUNITY
+A special thanks to
+- Willie169 (https://github.com/Willie169/Samsung-Android-Debloat-List)
+for his invaluable findings on package dependencies and systemstability.
+- ElvisVan on reddit (https://www.reddit.com/u/ElvisVan007/s/fp5Kv59Ife)
+This protocol is constantly evolving thanks to the community's feedback.
+-------------------------------------------------------
+•Optimized with The Ruvomain Protocol™
+
+•Stay clean, stay fast, stay Ruvomain.
