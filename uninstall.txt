@@ -98,7 +98,6 @@ pm uninstall --user 0 com.samsung.android.beaconmanager
 pm uninstall --user 0 com.samsung.android.bixby.agent
 pm uninstall --user 0 com.samsung.android.bixby.wakeup
 pm uninstall --user 0 com.samsung.android.bixbyvision.framework
-pm uninstall --user 0 com.samsung.android.bluelightfilter
 pm uninstall --user 0 com.samsung.android.brightnessbackupservice
 pm uninstall --user 0 com.samsung.android.callbgprovider
 pm uninstall --user 0 com.samsung.android.cameraxservice
