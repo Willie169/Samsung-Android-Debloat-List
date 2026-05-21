@@ -311,10 +311,10 @@ done
 ```
 List uninstalled system apps of user 0: Run outside ADB shell, assuming that interactive ADB shell can be accessed with `rish`. One of the following scripts may work for you.
 ```
-diff <(echo 'pm list packages -s --user 0 && exit' | rish) <(echo 'pm list packages -s -u --user 0 && exit' | rish) | grep '^+' | sed "s/^\+package://" | sort | uniq
+diff <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | grep '^+' | sed "s/^\+package://" | sort | uniq
 ```
 ```
-diff <(echo 'pm list packages -s --user 0 && exit' | rish) <(echo 'pm list packages -s -u --user 0 && exit' | rish) | grep '^>' | sed "s/> package://" | sort | uniq
+diff <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | grep '^>' | sed "s/> package://" | sort | uniq
 ```
 
 ## My Current Status
