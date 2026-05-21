@@ -8,6 +8,7 @@ This repo contains the list of apps I uninstalled on my Galaxy S24+ (SM-S9260) A
 * [Usage](#usage)
 * [Disabled/Uninstalled](#disableduninstalled)
 * [Not Disabled/Uninstalled](#not-disableduninstalled)
+* [Non-ADB Settings](#non-adb-settings)
 * [ADB Settings](#adb-settings)
 * [Useful ADB Commands](#useful-adb-commands)
 * [My Current Status](#my-current-status)
@@ -53,6 +54,13 @@ This repo contains the list of apps I uninstalled on my Galaxy S24+ (SM-S9260) A
 You can use ADB, on phone via [Shizuku](https://github.com/thedjchi/Shizuku) or adb pair on Termux or from a computer via [Android SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools), or root, or other apps utilizing them, such as a terminal app with `rish` and `rish_shizuku.dex` provided by Shizuku, [Hail](https://github.com/aistra0528/Hail) with Shizuku, or [Canta](https://github.com/samolego/Canta) with Shizuku, on phone, or [Universal Android Debloater Next Generation](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation) from a computer, to disable (`pm disable --user 0 <package_name>`), enable (`pm enable --user 0 <package_name>`), uninstall (`pm uninstall --user 0 <package_name>`), and reinstall (for system apps) (`pm install-existing --user 0 <package_name>`) apps.
 
 Shizuku is an Android app that allows other apps to use system-level APIs that require ADB/root privileges. I recommend using [thedjchi's fork](https://github.com/thedjchi/Shizuku) fork and manage its installation using [Obtainium](https://github.com/ImranR98/Obtainium). Please visit the [official wiki](https://github.com/thedjchi/Shizuku/wiki) and [thedjchi's repo](https://github.com/thedjchi/Shizuku) for setup, info, troubleshooting steps, etc.
+
+My debloat list is aimed at
+- increase system performance,
+- decrease battery drain,
+- enhance privacy by reducing data sent to Google and Samsung, and
+- save space
+without breaking the user experience.
 
 The list is provided in five formats:
 - Raw list: [raw.txt](raw.txt)
@@ -152,6 +160,10 @@ This is a non-exhaustive list of apps not disabled/uninstalled in the list that 
 - Maps (`com.google.android.apps.maps`): [OsmAnd~ / OsmAnd+](https://github.com/osmandapp/OsmAnd) (`net.osmand.plus`) from [F-Droid](https://droidify.app/app/?id=net.osmand.plus&repo_address=https://guardianproject-wind.s3.amazonaws.com/fdroid/repo), [Google Maps website](https://www.google.com/maps) with browser's "Add to Home screen", [GMaps WV](https://github.com/woheller69/maps) (`us.spotco.maps`) from [F-Droid](https://f-droid.org/packages/us.spotco.maps>), [osm2gmaps](https://codeberg.org/retiolus/osm2gmaps) (`net.retiolus.osm2gmaps`) from [F-Droid](https://f-droid.org/packages/net.retiolus.osm2gmaps), [Google Maps Unshortener website](https://mapu.retiolus.net).
 - My Files (`com.sec.android.app.myfiles`): [Amaze File Manager](https://github.com/TeamAmaze/AmazeFileManager) from [F-Droid](https://f-droid.org/packages/com.amaze.filemanager), [Material Files](https://github.com/zhanghai/MaterialFiles) from [F-Droid](https://f-droid.org/packages/me.zhanghai.android.files).
 
+## Non-ADB Settings
+
+- Settings > Location > Location services: Turn off Google Location Sharing, Location Accuracy, Timeline, Wi-Fi scanning, and Bluetooth scanning. You can enable Location Accuracy, Wi-Fi scanning, and/or Bluetooth scanning temporarily when using map apps to improve accuracy and disable afterwards.
+
 ## ADB Settings
 
 Here's some recommended ADB settings, which can be run in ADB shell.
@@ -250,8 +262,7 @@ My current status is as follows:
 - Not rooted.
 - [Shizuku](https://github.com/thedjchi/Shizuku) constantly on.
 - Uninstalled all apps in the list in this guide.
-- Applied [Privacy-Related ADB Settings](#privacy-related-adb-settings).
-- Applied many of the settings recommended in <https://thenewoil.org/en/guides/most-important/mobile-settings>.
+- Applied [Non-ADB Settings](#non-adb-settings) and [ADB Settings](#adb-settings).
 - Disabled Chrome (`com.android.chrome`), Gmail (`com.google.android.gm`), Google (`com.google.android.googlequicksearchbox`), Maps (`com.google.android.apps.maps`), and similar User apps, which can be enabled temporarily in Hail when I use them.
 - Browser: Refer to my [browser-privacy-guide](https://github.com/Willie169/browser-privacy-guide).
 - Network: Refer to [network.md](network.md).
