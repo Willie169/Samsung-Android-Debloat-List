@@ -36,13 +36,13 @@ This repo contains the list of apps I uninstalled on my Galaxy S24+ (SM-S9260) A
 - Phone (`com.samsung.android.dialer`) is disabled/uninstalled in the list because I'm using [Fossify Phone](https://github.com/FossifyOrg/Phone) (`org.fossify.phone`) from [F-Droid](https://f-droid.org/packages/org.fossify.phone). Enable/install it if you use it.
 - Speech Recognition and Synthesis from Google (`com.google.android.tts`), Samsung text-to-speech engine (`com.samsung.SMT`), and the voices pre-installed on my phone, SamsungTTS US English Voice 1 (`com.samsung.SMT.lang_en_us_l03`), SamsungTTS 简体中文 语音 1 (`com.samsung.SMT.lang_zh_cn_l02`), SamsungTTS Cantonese Voice 1 (`com.samsung.SMT.lang_zh_hk_f00`), SamsungTTS Taiwanese Mandarin Voice 1 (`com.samsung.SMT.lang_zh_tw_f00`), are disabled/uninstalled in the list because I use [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine). Enable/install Samsung text-to-speech engine and the voices you want if you use them. Pre-installed voices differ across regions and all start with `com.samsung.SMT.lang_` , you can disable them with the ADB command:
   ```
-  for pkg in $(pm list packages --user 0 -f | sed "s/.*=//" | grep com.samsung.SMT.lang_); do
+  for pkg in $(pm list packages --user 0 | grep 'package:com.samsung.SMT.lang_' | sed 's/^package://'); do
     pm disable --user 0 $pkg
   done
   ```
   or uninstall them with the ADB command:
   ```
-  for pkg in $(pm list packages --user 0 -f | sed "s/.*=//" | grep com.samsung.SMT.lang_); do
+  for pkg in $(pm list packages --user 0 | grep 'package:com.samsung.SMT.lang_' | sed 's/^package://'); do
     pm uninstall --user 0 $pkg
   done
   ```
@@ -249,27 +249,51 @@ List installed apps of user 0:
 ```
 pm list packages --user 0
 ```
+List installed apps of user 0 and their associated APK files:
+```
+pm list packages -f --user 0
+```
+List disabled apps of user 0:
+```
+pm list packages -d --user 0
+```
+List enabled apps of user 0:
+```
+pm list packages -e --user 0
+```
+List system apps of user 0:
+```
+pm list packages -s --user 0
+```
+List user apps of user 0:
+```
+pm list packages -3 --user 0
+```
 List installed apps and uninstalled system apps of user 0:
 ```
 pm list packages -u --user 0
 ```
-Grant write secure settings permission to the app of user 0:
+List installed apps of user 0 and their installers:
+```
+pm list packages -f --user 0
+```
+Grant write secure settings permission to an app of user 0:
 ```
 pm grant --user 0 <package_name> android.permission.WRITE_SECURE_SETTINGS
 ```
-On Android 14+, let persistent notifications posted by the app of user 0 not be dismissible through the UI (i.e. behave as they did prior to Android 14):
+On Android 14+, let persistent notifications posted by an app of user 0 not be dismissible through the UI (i.e. behave as they did prior to Android 14):
 ```
 appops set --user 0 <package_name> SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS allow
 ```
-On Android 14+, let persistent notifications posted by the app of user 0 be dismissible through the UI:
+On Android 14+, let persistent notifications posted by an app of user 0 be dismissible through the UI:
 ```
 appops set --user 0 <package_name> SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS default
 ```
-Let vibration by the app of user 0 be ignored:
+Let vibration by an app of user 0 be ignored:
 ```
 appops set --user 0 <package_name> VIBRATE ignore
 ```
-Let vibration by the app of user 0 be allowed:
+Let vibration by an app of user 0 be allowed:
 ```
 appops set --user 0 <package_name> VIBRATE allow
 ```
@@ -287,10 +311,10 @@ done
 ```
 List uninstalled system apps of user 0: Run outside ADB shell, assuming that interactive ADB shell can be accessed with `rish`. One of the following scripts may work for you.
 ```
-diff <(echo 'pm list packages --user 0 && exit' | rish) <(echo 'pm list packages -u --user 0 && exit' | rish) | grep '^>' | sed "s/> package://" | sort | uniq
+diff <(echo 'pm list packages -s --user 0 && exit' | rish) <(echo 'pm list packages -s -u --user 0 && exit' | rish) | grep '^+' | sed "s/^\+package://" | sort | uniq
 ```
 ```
-diff <(echo 'pm list packages --user 0 && exit' | rish) <(echo 'pm list packages -u --user 0 && exit' | rish) | grep '^+' | sed "s/^\+package://" | sort | uniq
+diff <(echo 'pm list packages -s --user 0 && exit' | rish) <(echo 'pm list packages -s -u --user 0 && exit' | rish) | grep '^>' | sed "s/> package://" | sort | uniq
 ```
 
 ## My Current Status
