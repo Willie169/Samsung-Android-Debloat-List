@@ -6,7 +6,6 @@ com.android.bluetoothmidiservice
 com.android.bookmarkprovider
 com.android.calllogbackup
 com.android.devicediagnostics
-com.android.dreams.basic
 com.android.dreams.phototable
 com.android.dynsystem
 com.android.egg
@@ -73,7 +72,6 @@ com.samsung.SMT.lang_zh_hk_f00
 com.samsung.SMT.lang_zh_tw_f00
 com.samsung.aasaservice
 com.samsung.accessory.budsunitemgr
-com.samsung.android.accessibility.talkback
 com.samsung.android.aicore
 com.samsung.android.aircommandmanager
 com.samsung.android.allshare.service.mediashare

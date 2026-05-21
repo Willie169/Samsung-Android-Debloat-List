@@ -6,7 +6,6 @@ pm uninstall --user 0 com.android.bluetoothmidiservice
 pm uninstall --user 0 com.android.bookmarkprovider
 pm uninstall --user 0 com.android.calllogbackup
 pm uninstall --user 0 com.android.devicediagnostics
-pm uninstall --user 0 com.android.dreams.basic
 pm uninstall --user 0 com.android.dreams.phototable
 pm uninstall --user 0 com.android.dynsystem
 pm uninstall --user 0 com.android.egg
@@ -73,7 +72,6 @@ pm uninstall --user 0 com.samsung.SMT.lang_zh_hk_f00
 pm uninstall --user 0 com.samsung.SMT.lang_zh_tw_f00
 pm uninstall --user 0 com.samsung.aasaservice
 pm uninstall --user 0 com.samsung.accessory.budsunitemgr
-pm uninstall --user 0 com.samsung.android.accessibility.talkback
 pm uninstall --user 0 com.samsung.android.aicore
 pm uninstall --user 0 com.samsung.android.aircommandmanager
 pm uninstall --user 0 com.samsung.android.allshare.service.mediashare

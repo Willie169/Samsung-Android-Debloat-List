@@ -29,9 +29,6 @@
       "packageName": "com.android.devicediagnostics"
     },
     {
-      "packageName": "com.android.dreams.basic"
-    },
-    {
       "packageName": "com.android.dreams.phototable"
     },
     {
@@ -228,9 +225,6 @@
     },
     {
       "packageName": "com.samsung.accessory.budsunitemgr"
-    },
-    {
-      "packageName": "com.samsung.android.accessibility.talkback"
     },
     {
       "packageName": "com.samsung.android.aicore"

@@ -6,7 +6,6 @@ pm disable --user 0 com.android.bluetoothmidiservice
 pm disable --user 0 com.android.bookmarkprovider
 pm disable --user 0 com.android.calllogbackup
 pm disable --user 0 com.android.devicediagnostics
-pm disable --user 0 com.android.dreams.basic
 pm disable --user 0 com.android.dreams.phototable
 pm disable --user 0 com.android.dynsystem
 pm disable --user 0 com.android.egg
@@ -73,7 +72,6 @@ pm disable --user 0 com.samsung.SMT.lang_zh_hk_f00
 pm disable --user 0 com.samsung.SMT.lang_zh_tw_f00
 pm disable --user 0 com.samsung.aasaservice
 pm disable --user 0 com.samsung.accessory.budsunitemgr
-pm disable --user 0 com.samsung.android.accessibility.talkback
 pm disable --user 0 com.samsung.android.aicore
 pm disable --user 0 com.samsung.android.aircommandmanager
 pm disable --user 0 com.samsung.android.allshare.service.mediashare

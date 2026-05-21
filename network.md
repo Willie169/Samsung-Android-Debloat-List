@@ -2,7 +2,7 @@ Here's my current (April 28, 2026) network connection configuration on Android. 
 
 ## Configuration
 
-- Island (F-Droid) manages Work Profile
+- Insular (F-Droid) manages Work Profile
 - TrackerControl (F-Droid) in Personal Profile as VPN of Personal Profile
   - Tracker blocker
   - UDP tracker blocker
