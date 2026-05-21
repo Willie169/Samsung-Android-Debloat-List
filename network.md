@@ -21,6 +21,7 @@ Here's my current network connection configuration on Android.
 - [Tailscale](https://github.com/tailscale/tailscale-android) (`com.tailscale.ipn`) from [F-Droid](https://f-droid.org/packages/com.tailscale.ipn) in Work Profile as VPN of Work Profile when needed
 - [InviZible Pro: Tor & Firewall, DNSCrypt & I2P](https://github.com/Gedsh/InviZible) (`pan.alexander.tordnscrypt.stable`) from [F-Droid](https://f-droid.org/packages/pan.alexander.tordnscrypt.stable) VPN mode in Work Profile as VPN of Work Profile when needed
 - [Tailscale](https://github.com/tailscale/tailscale-android) (`com.tailscale.ipn`) from [F-Droid](https://f-droid.org/packages/com.tailscale.ipn) in Personal Profile as VPN of Personal Profile when Tailscale UDP multicast is needed in Personal Profile
+- [Snowflake Volunteer](https://github.com/blocoio/snowflake) (`io.bloco.snowflake`) from [F-Droid](https://f-droid.org/packages/io.bloco.snowflake) in Work Profile when charging to helping bypass censorship.
 
 A more detailed guide about the apps and my old configuration is in my [Android-Non-Root](https://github.com/Willie169/Android-Non-Root) repo. I'll update them when I have time.
 
