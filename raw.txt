@@ -51,7 +51,6 @@ com.google.android.projection.gearhead
 com.google.android.safetycenter.resources
 com.google.android.setupwizard
 com.google.android.tts
-com.google.android.verifier
 com.google.android.youtube
 com.google.ar.core
 com.google.audio.hearing.visualization.accessibility.scribe

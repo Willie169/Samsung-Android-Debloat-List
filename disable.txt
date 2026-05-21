@@ -51,7 +51,6 @@ pm disable --user 0 com.google.android.projection.gearhead
 pm disable --user 0 com.google.android.safetycenter.resources
 pm disable --user 0 com.google.android.setupwizard
 pm disable --user 0 com.google.android.tts
-pm disable --user 0 com.google.android.verifier
 pm disable --user 0 com.google.android.youtube
 pm disable --user 0 com.google.ar.core
 pm disable --user 0 com.google.audio.hearing.visualization.accessibility.scribe
