@@ -428,6 +428,9 @@
       "packageName": "com.samsung.android.networkdiagnostic"
     },
     {
+      "packageName": "com.samsung.android.nfc"
+    },
+    {
       "packageName": "com.samsung.android.privateaccesstokens"
     },
     {

@@ -139,6 +139,7 @@ pm uninstall --user 0 com.samsung.android.mocca
 pm uninstall --user 0 com.samsung.android.mydevice
 pm uninstall --user 0 com.samsung.android.net.wifi.wifiguider
 pm uninstall --user 0 com.samsung.android.networkdiagnostic
+pm uninstall --user 0 com.samsung.android.nfc
 pm uninstall --user 0 com.samsung.android.privateaccesstokens
 pm uninstall --user 0 com.samsung.android.provider.filterprovider
 pm uninstall --user 0 com.samsung.android.rampart

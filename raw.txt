@@ -139,6 +139,7 @@ com.samsung.android.mocca
 com.samsung.android.mydevice
 com.samsung.android.net.wifi.wifiguider
 com.samsung.android.networkdiagnostic
+com.samsung.android.nfc
 com.samsung.android.privateaccesstokens
 com.samsung.android.provider.filterprovider
 com.samsung.android.rampart

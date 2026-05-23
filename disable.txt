@@ -139,6 +139,7 @@ pm disable --user 0 com.samsung.android.mocca
 pm disable --user 0 com.samsung.android.mydevice
 pm disable --user 0 com.samsung.android.net.wifi.wifiguider
 pm disable --user 0 com.samsung.android.networkdiagnostic
+pm disable --user 0 com.samsung.android.nfc
 pm disable --user 0 com.samsung.android.privateaccesstokens
 pm disable --user 0 com.samsung.android.provider.filterprovider
 pm disable --user 0 com.samsung.android.rampart
