@@ -1,6 +1,6 @@
 # Samsung Android Debloat List
 
-This repo contains the list of apps I uninstalled on my Galaxy S24+ (SM-S9260) Android 16 One UI 8.0 device.
+This repo contains the list of apps I uninstalled on my Samsung Galaxy S24+ (SM-S9260) Android 16 One UI 8.0 device.
 
 ## Table of Contents
 
