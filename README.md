@@ -67,17 +67,17 @@ My debloat list and settings recommendations are aimed at
 without breaking the user experience.
 
 The list is provided in five formats:
-- Raw list: [raw.txt](raw.txt)
-- ADB disable command: [disable.txt](disable.txt)
-- ADB uninstall command: [uninstall.txt](uninstall.txt)
-- Hail: [hail.txt](hail.txt)
-- Canta: [canta.json](canta.json)
+- Raw list: [raw.txt](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/raw.txt)
+- ADB disable command: [disable.txt](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/disable.txt)
+- ADB uninstall command: [uninstall.txt](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/uninstall.txt)
+- Hail: [hail.txt](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/hail.txt)
+- Canta: [canta.json](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/canta.json)
 
 ADB disable and uninstall commands can be used directly in ADB shell. They assume user 0 by default, which can be changed to other user by changing the number after `--user`. Work profile is typically user 10 or 11. Make changes if you want. Reboot your phone after execution. If any app you disabled/uninstalled is back automatically, disable/uninstall them and reboot again. If they persist, it's probably for a reason and I suggest to leave them there.
 
 Hail format can be used in [Hail](https://github.com/aistra0528/Hail) (`com.aistra.hail`) from [F-Droid](https://f-droid.org/packages/com.aistra.hail) to disable apps. The steps are as follows:
 1. Start Shizuku.
-2. Copy the content of [hail.txt](hail.txt).
+2. Copy the content of [hail.txt](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/hail.txt).
 2. Make changes if you want.
 2. Open Hail, go to `Settings > Work mode` and select `Shizuku - Disable`.
 2. Click `Allow all the time` in `Allow Hail to access Shizuku` pop-up.
@@ -86,7 +86,7 @@ Hail format can be used in [Hail](https://github.com/aistra0528/Hail) (`com.aist
 
 Canta format can be used in [Canta](https://github.com/samolego/Canta) (`io.github.samolego.canta`) from [F-Droid](https://f-droid.org/packages/io.github.samolego.canta) to uninstall apps. The steps are as follows:
 1. Start Shizuku.
-2. Copy the content of [canta.json](canta.json).
+2. Copy the content of [canta.json](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/canta.json).
 2. Make changes if you want.
 2. Open Canta, go to `3 dots > Presets > Import preset > Import from Clipboard`.
 2. Click `Apply Preset` under `Samsung Android Debloat List`.
