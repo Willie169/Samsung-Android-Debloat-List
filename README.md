@@ -228,6 +228,10 @@ settings put secure multi_press_timeout 250
 settings put secure tap_duration_threshold 0.0
 settings put secure touch_blocking_period 0.0
 ```
+Disable screen share protections for apps and notification:
+```
+settings put global disable_screen_share_protections_for_apps_and_notifications 1
+```
 Misc:
 ```
 settings put global activity_starts_logging_enabled 0
