@@ -13,7 +13,6 @@ pm disable --user 0 com.android.hotwordenrollment.okgoogle
 pm disable --user 0 com.android.hotwordenrollment.xgoogle
 pm disable --user 0 com.android.microdroid.empty_payload
 pm disable --user 0 com.android.ons
-pm disable --user 0 com.android.printspooler
 pm disable --user 0 com.android.providers.contactkeys
 pm disable --user 0 com.android.providers.partnerbookmarks
 pm disable --user 0 com.android.providers.userdictionary

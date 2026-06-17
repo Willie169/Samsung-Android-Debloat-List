@@ -13,7 +13,6 @@ pm uninstall --user 0 com.android.hotwordenrollment.okgoogle
 pm uninstall --user 0 com.android.hotwordenrollment.xgoogle
 pm uninstall --user 0 com.android.microdroid.empty_payload
 pm uninstall --user 0 com.android.ons
-pm uninstall --user 0 com.android.printspooler
 pm uninstall --user 0 com.android.providers.contactkeys
 pm uninstall --user 0 com.android.providers.partnerbookmarks
 pm uninstall --user 0 com.android.providers.userdictionary

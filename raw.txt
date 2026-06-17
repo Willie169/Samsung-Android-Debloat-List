@@ -13,7 +13,6 @@ com.android.hotwordenrollment.okgoogle
 com.android.hotwordenrollment.xgoogle
 com.android.microdroid.empty_payload
 com.android.ons
-com.android.printspooler
 com.android.providers.contactkeys
 com.android.providers.partnerbookmarks
 com.android.providers.userdictionary
