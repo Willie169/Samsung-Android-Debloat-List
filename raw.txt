@@ -109,6 +109,7 @@ com.samsung.android.easysetup
 com.samsung.android.fast
 com.samsung.android.forest
 com.samsung.android.game.gametools
+com.samsung.android.globalpostprocmgr
 com.samsung.android.gru
 com.samsung.android.hdmapp
 com.samsung.android.hwresourceshare

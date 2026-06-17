@@ -109,6 +109,7 @@ pm disable --user 0 com.samsung.android.easysetup
 pm disable --user 0 com.samsung.android.fast
 pm disable --user 0 com.samsung.android.forest
 pm disable --user 0 com.samsung.android.game.gametools
+pm disable --user 0 com.samsung.android.globalpostprocmgr
 pm disable --user 0 com.samsung.android.gru
 pm disable --user 0 com.samsung.android.hdmapp
 pm disable --user 0 com.samsung.android.hwresourceshare

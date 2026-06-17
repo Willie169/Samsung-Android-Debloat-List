@@ -109,6 +109,7 @@ pm uninstall --user 0 com.samsung.android.easysetup
 pm uninstall --user 0 com.samsung.android.fast
 pm uninstall --user 0 com.samsung.android.forest
 pm uninstall --user 0 com.samsung.android.game.gametools
+pm uninstall --user 0 com.samsung.android.globalpostprocmgr
 pm uninstall --user 0 com.samsung.android.gru
 pm uninstall --user 0 com.samsung.android.hdmapp
 pm uninstall --user 0 com.samsung.android.hwresourceshare

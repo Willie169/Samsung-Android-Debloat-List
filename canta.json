@@ -338,6 +338,9 @@
       "packageName": "com.samsung.android.game.gametools"
     },
     {
+      "packageName": "com.samsung.android.globalpostprocmgr"
+    },
+    {
       "packageName": "com.samsung.android.gru"
     },
     {

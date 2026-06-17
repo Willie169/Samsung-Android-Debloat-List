@@ -4,7 +4,7 @@ Here's my current network connection configuration on Android.
 
 - [Insular](https://gitlab.com/secure-system/Insular) (`com.oasisfeng.island.fdroid`) from [F-Droid](https://f-droid.org/packages/com.oasisfeng.island.fdroid) manages Work Profile. You can also use [Shelter](https://gitea.angry.im/PeterCxy/Shelter) (`net.typeblog.shelter`) from [F-Droid](https://droidify.app/app/?id=net.typeblog.shelter&repo_address=https://fdroid.typeblog.net).
 - [TrackerControl](https://github.com/TrackerControl/tracker-control-android) (`net.kollnig.missioncontrol.fdroid`) from [F-Droid](https://f-droid.org/packages/net.kollnig.missioncontrol.fdroid) in Personal Profile as VPN of Personal Profile
-  - Tracker blocker
+  - Tracker blocker: You can see what domains each app (tried to) connect to. I disabled internet connection for all system apps that do unnecessary internet connection. System apps that I didn't do so to avoid breaking things include: Google Play Services, Google Services Framework, Captive Portal Login, and App update.
   - UDP tracker blocker
   - Port forwarding: 53/UDP -> 5354, 53/TCP -> 5354, 853/UDP -> 5354, 853/TCP -> 5354
   - Socks5 proxy: -> 1080
