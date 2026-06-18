@@ -1,6 +1,6 @@
 # Samsung Android Debloat List
 
-This repo contains the list of apps I uninstalled on my Samsung Galaxy S24+ (SM-S9260) Android 16 One UI 8.0 device.
+This repo contains the list of apps I uninstalled on my Samsung Galaxy S24+ (SM-S9260) Android 16 One UI 8 device.
 
 ## Table of Contents
 
@@ -174,7 +174,7 @@ Set them in settings:
 - Connections > Bluetooth: Disabled when not in use
 - Connections > NFC and contactless payments: Disabled when not in use
 - Connections > Ultra-wideband (UWB): Disabled when not in use
-- Connections > More connection settings > Private DNS > Private DNS provider hostname: A trusted DNS provider, such as `cloudflare.com`. If you are using DNS proxy, VPN, or other approaches to manage DNS resolving, ignore this. For my setup, refer to [network.md](network.md).
+- Connections > More connection settings > Private DNS > Private DNS provider hostname: A trusted DNS provider, such as `cloudflare.com`. If you are using DNS proxy, VPN, or other approaches to manage DNS resolving, ignore this. For my setup, refer to my [**android-privacy-network-connection-configurations**](https://github.com/Willie169/android-privacy-network-connection-configurations) repo.
 - Galaxy AI: Disabled.
 - Notifications > App notifications: Disable on apps you don't need real-time notifications from.
 - Notifications > Lock screen: Disabled.
@@ -335,7 +335,7 @@ My current status is as follows:
 - Disabled Chrome (`com.android.chrome`), Gmail (`com.google.android.gm`), Google (`com.google.android.googlequicksearchbox`), Maps (`com.google.android.apps.maps`), and similar User apps, which can be enabled temporarily in Hail when I use them.
 - Don't login to Google account in Work profile and use [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store) to install apps from Google Play in it.
 - Browser: [Fennec F-Droid](https://gitlab.com/relan/fennecbuild) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec F-Droid_fdroid) or [FFUpdater](https://github.com/Tobi823/ffupdater), [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play](https://play.google.com/store/apps/details?id=org.mozilla.firefox), [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play](https://play.google.com/store/apps/details?id=com.brave.browser), [Chromite ](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo). Refer to my [browser-privacy-guide](https://github.com/Willie169/browser-privacy-guide).
-- Network: Refer to [network.md](network.md).
+- Network: Refer to my [**android-privacy-network-connection-configurations**](https://github.com/Willie169/android-privacy-network-connection-configurations) repo.
 - Social media:
   - BiliBili: [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced).
   - Discord: [Discord website](https://discord.com/channels/@me).
