@@ -1,6 +1,6 @@
 # Samsung Android Debloat List
 
-This repo contains the list of apps I uninstalled on my Samsung Galaxy S24+ (SM-S9260) Android 16 One UI 8 device.
+This repo contains the list of apps I uninstalled on my Samsung Galaxy S24+ (SM-S9260) Android 16 One UI 8 device. For network connection configurations, which is also important for privacy, refer to my [**android-privacy-network-connection-configurations**](https://github.com/Willie169/android-privacy-network-connection-configurations) repo.
 
 ## Table of Contents
 
