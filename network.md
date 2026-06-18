@@ -3,7 +3,8 @@ Here's my current network connection configuration on Android.
 ## Apps Configurations
 
 - [Insular](https://gitlab.com/secure-system/Insular) (`com.oasisfeng.island.fdroid`) from [F-Droid](https://f-droid.org/packages/com.oasisfeng.island.fdroid) manages Work Profile. You can also use [Shelter](https://gitea.angry.im/PeterCxy/Shelter) (`net.typeblog.shelter`) from [F-Droid](https://droidify.app/app/?id=net.typeblog.shelter&repo_address=https://fdroid.typeblog.net).
-- [TrackerControl (TC)](https://github.com/TrackerControl/tracker-control-android) (`net.kollnig.missioncontrol.fdroid`) from [F-Droid](https://f-droid.org/packages/net.kollnig.missioncontrol.fdroid) in Personal Profile as VPN of Personal Profile
+- [TrackerControl (TC)](https://github.com/TrackerControl/tracker-control-android) (`net.kollnig.missioncontrol.fdroid`) from [F-Droid](https://f-droid.org/packages/net.kollnig.missioncontrol.fdroid) in Personal Profile as VPN of Personal Profile except the rare case of [Tailscale Personal Profile](#tailscale-personal-profile)
+  - Both Always-on VPN and Block connections without VPN turned on
   - Tracker blocker
   - UDP tracker blocker
   - Port forwarding: 53/UDP -> 5354, 53/TCP -> 5354, 853/UDP -> 5354, 853/TCP -> 5354
@@ -21,6 +22,7 @@ Here's my current network connection configuration on Android.
     - Socks5 proxy: -> 1080 (when [without Tor](#without-tor)) or 9051 (when [with Tor](#with-tor))
   - Tor server when [with Tor](#with-tor)
     - Socks5 server at port 9051
+    - Socks5 outbound proxy: -> 1080
 - [Sock5](https://github.com/heiher/socks5) (`hev.socks5`) from [GitHub release](https://github.com/heiher/socks5/releases) in Work Profile:
   - Listen Address: 127.0.0.1
   - Listen Port: 1080
@@ -33,6 +35,7 @@ Here's my current network connection configuration on Android.
   - Auth Password: (empty)
 - [Tailscale](https://github.com/tailscale/tailscale-android) (`com.tailscale.ipn`) from [F-Droid](https://f-droid.org/packages/com.tailscale.ipn) in Work Profile as VPN of Work Profile when using Tailscale
 - [InviZible Pro: Tor & Firewall, DNSCrypt & I2P](https://github.com/Gedsh/InviZible) (`pan.alexander.tordnscrypt.stable`) from [F-Droid](https://f-droid.org/packages/pan.alexander.tordnscrypt.stable) VPN mode in Work Profile as VPN of Work Profile when not using Tailscale
+  - Both Always-on VPN and Block connections without VPN turned on
   - DNSCrypt server at port 5355
     - DNSCrypt servers: adguard-dns-unfiltered-doh/adguard-dns-unfiltered-doh-ipv6/cloudflare/cloudflare-ipv6
     - Bootstrap resolver: 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001, 94.140.14.140, 94.140.14.141, 2a10:50c0::1:ff, 2a10:50c0::2:ff
@@ -56,10 +59,10 @@ Here's my current network connection configuration on Android.
 
 ## With Tor
 
-UDP and Tailscale in Personal Profile won't work in this configuration.
+UDP in Personal Profile won't work in this configuration.
 
-- Personal Profile DNS over UDP or TCP requests at port 53 or 853 -> TrackerControl port forwarding to port 5354 -> Personal Profile InviZible Pro DNSCrypt server at port 5354 outbound through Socks5 proxy at port 9051 -> Personal Profile InviZible Pro Tor Socks5 server at port 9051 -> DNS resolved
-- Personal Profile other requests -> TrackerControl outbound through Socks5 proxy at port 9051 -> Personal Profile InviZible Pro Tor Socks5 server at port 9051 -> Outbound
+- Personal Profile DNS over UDP or TCP requests at port 53 or 853 -> TrackerControl port forwarding to port 5354 -> Personal Profile InviZible Pro DNSCrypt server at port 5354 outbound through Socks5 proxy at port 9051 -> Personal Profile InviZible Pro Tor Socks5 server at port 9051 -> outbound through Socks5 proxy at port 1080 -> Socks5 Sock5 server at port 1080 -> Work Profile VPN -> DNS resolved
+- Personal Profile other requests -> TrackerControl outbound through Socks5 proxy at port 9051 -> Personal Profile InviZible Pro Tor Socks5 server at port 9051 -> outbound through Socks5 proxy at port 1080 -> Socks5 Sock5 server at port 1080 -> Work Profile VPN -> outbound
 - Work Profile requests -> Work Profile VPN -> Outbound
 
 ## Tailscale Personal Profile
