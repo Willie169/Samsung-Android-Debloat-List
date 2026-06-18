@@ -169,6 +169,7 @@ This is a non-exhaustive list of apps not disabled/uninstalled in the list that 
 ## Non-ADB Settings
 
 Set them in settings:
+- Do not login to Samsung account.
 - Connections > Wi-Fi > Advanced settings > Manage networks: Remove old networks you no longer use.
 - Connections > Wi-Fi > Advanced settings > Allow WEP networks: Disabled
 - Connections > Bluetooth: Disabled when not in use
