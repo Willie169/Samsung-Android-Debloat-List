@@ -352,7 +352,7 @@ My current status is as follows:
 
 ## Credits
 
-A special thanks to the following people and projects for their invaluable findings and inspection. Copies of their files are made solely for archiving purposes and are subject to their own copyright status.
+A special thanks to the following people and projects for their invaluable findings and inspection. Copies of their files are made solely for archiving purposes and are subjected to their own copyright status.
 - [Universal Android Debloater Next Generation](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation): [`uad_lists.json`](https://raw.githubusercontent.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/main/resources/assets/uad_lists.json) ([copy](Universal%20Android%20Debloater%20Next%20Generation/uad_lists.json))
 - [Universal Android Debloater GUI](https://github.com/0x192/universal-android-debloater): [`uad_lists.json`](https://raw.githubusercontent.com/0x192/universal-android-debloater/refs/heads/main/resources/assets/uad_lists.json) ([copy](Universal%20Android%20Debloater%20GUI/uad_lists.json))
 - Ruvomain / [Successful-Dance1792 (Reddit)](https://www.reddit.com/user/Successful-Dance1792) / [Ruvyrom (XDA Forums)](https://xdaforums.com/m/ruvyrom.7629260):
