@@ -81,7 +81,6 @@ pm disable --user 0 com.samsung.android.app.omcagent
 pm disable --user 0 com.samsung.android.app.parentalcare
 pm disable --user 0 com.samsung.android.app.routines
 pm disable --user 0 com.samsung.android.app.sketchbook
-pm disable --user 0 com.samsung.android.app.smartcapture
 pm disable --user 0 com.samsung.android.app.taskedge
 pm disable --user 0 com.samsung.android.app.watchmanagerstub
 pm disable --user 0 com.samsung.android.aremoji

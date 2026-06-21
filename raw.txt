@@ -81,7 +81,6 @@ com.samsung.android.app.omcagent
 com.samsung.android.app.parentalcare
 com.samsung.android.app.routines
 com.samsung.android.app.sketchbook
-com.samsung.android.app.smartcapture
 com.samsung.android.app.taskedge
 com.samsung.android.app.watchmanagerstub
 com.samsung.android.aremoji
