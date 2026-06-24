@@ -50,7 +50,6 @@ pm uninstall --user 0 com.google.android.projection.gearhead
 pm uninstall --user 0 com.google.android.safetycenter.resources
 pm uninstall --user 0 com.google.android.setupwizard
 pm uninstall --user 0 com.google.android.tts
-pm uninstall --user 0 com.google.android.youtube
 pm uninstall --user 0 com.google.ar.core
 pm uninstall --user 0 com.google.audio.hearing.visualization.accessibility.scribe
 pm uninstall --user 0 com.google.mainline.adservices

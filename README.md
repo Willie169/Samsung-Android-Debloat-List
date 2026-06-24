@@ -148,7 +148,6 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list that you 
 - Voice Access (`com.google.android.apps.accessibility.voiceaccess`)
 - Weather (`com.sec.android.daemonapp`): [Weather](https://github.com/breezy-weather/breezy-weather) (`org.breezyweather`) from [F-Droid](https://f-droid.org/packages/org.breezyweather).
 - WiFi Calling (`com.sec.unifiedwfc`)
-- YouTube (`com.google.android.youtube`): [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced), [Morphe Manager](https://github.com/MorpheApp/morphe-manager) (`app.morphe.manager`) from [GitHub release](https://github.com/MorpheApp/morphe-manager/releases) patched YouTube with [MicroG-RE](https://github.com/MorpheApp/MicroG-RE) (`app.revanced.android.gms`) from [GitHub release](https://github.com/MorpheApp/MicroG-RE/releases).
 
 ## Not Disabled/Uninstalled
 
@@ -165,6 +164,7 @@ This is a non-exhaustive list of apps not disabled/uninstalled in the list that 
 - Google Play Store Store (`com.android.vending`): [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store).
 - Maps (`com.google.android.apps.maps`): [OsmAnd~ / OsmAnd+](https://github.com/osmandapp/OsmAnd) (`net.osmand.plus`) from [F-Droid](https://droidify.app/app/?id=net.osmand.plus&repo_address=https://guardianproject-wind.s3.amazonaws.com/fdroid/repo), [Google Maps website](https://www.google.com/maps) with browser's "Add to Home screen", [GMaps WV](https://github.com/woheller69/maps) (`us.spotco.maps`) from [F-Droid](https://f-droid.org/packages/us.spotco.maps>), [osm2gmaps](https://codeberg.org/retiolus/osm2gmaps) (`net.retiolus.osm2gmaps`) from [F-Droid](https://f-droid.org/packages/net.retiolus.osm2gmaps), [Google Maps Unshortener website](https://mapu.retiolus.net).
 - My Files (`com.sec.android.app.myfiles`): [Amaze File Manager](https://github.com/TeamAmaze/AmazeFileManager) from [F-Droid](https://f-droid.org/packages/com.amaze.filemanager), [Material Files](https://github.com/zhanghai/MaterialFiles) from [F-Droid](https://f-droid.org/packages/me.zhanghai.android.files).
+- YouTube (`com.google.android.youtube`): [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced), [Morphe Manager](https://github.com/MorpheApp/morphe-manager) (`app.morphe.manager`) from [GitHub release](https://github.com/MorpheApp/morphe-manager/releases) patched YouTube with [MicroG-RE](https://github.com/MorpheApp/MicroG-RE) (`app.revanced.android.gms`) from [GitHub release](https://github.com/MorpheApp/MicroG-RE/releases).
 
 ## Non-ADB Settings
 
