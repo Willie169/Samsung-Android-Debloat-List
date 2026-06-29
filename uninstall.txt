@@ -37,6 +37,7 @@ pm uninstall --user 0 com.google.android.as.oss
 pm uninstall --user 0 com.google.android.configupdater
 pm uninstall --user 0 com.google.android.federatedcompute
 pm uninstall --user 0 com.google.android.feedback
+pm uninstall --user 0 com.google.android.gm
 pm uninstall --user 0 com.google.android.gms.location.history
 pm uninstall --user 0 com.google.android.gms.supervision
 pm uninstall --user 0 com.google.android.health.connect.backuprestore

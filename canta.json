@@ -122,6 +122,9 @@
       "packageName": "com.google.android.feedback"
     },
     {
+      "packageName": "com.google.android.gm"
+    },
+    {
       "packageName": "com.google.android.gms.location.history"
     },
     {

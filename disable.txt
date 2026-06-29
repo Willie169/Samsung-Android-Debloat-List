@@ -37,6 +37,7 @@ pm disable --user 0 com.google.android.as.oss
 pm disable --user 0 com.google.android.configupdater
 pm disable --user 0 com.google.android.federatedcompute
 pm disable --user 0 com.google.android.feedback
+pm disable --user 0 com.google.android.gm
 pm disable --user 0 com.google.android.gms.location.history
 pm disable --user 0 com.google.android.gms.supervision
 pm disable --user 0 com.google.android.health.connect.backuprestore
