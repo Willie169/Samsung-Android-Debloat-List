@@ -238,6 +238,12 @@ Disable screen share protections for apps and notification:
 ```
 settings put global disable_screen_share_protections_for_apps_and_notifications 1
 ```
+Disable phantom process killer to resolve `Process completed (signal 9) - press Enter` error: See <https://willie169.github.io/Android-Non-Root/#process-completed-signal-9---press-enter-error> for more information.
+```
+/system/bin/device_config set_sync_disabled_for_tests persistent
+/system/bin/device_config put activity_manager max_phantom_processes 2147483647
+settings put global settings_enable_monitor_phantom_procs false
+```
 Misc:
 ```
 settings put global activity_starts_logging_enabled 0
