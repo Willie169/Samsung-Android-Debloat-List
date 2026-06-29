@@ -223,10 +223,6 @@ settings put global setup_wizard_has_run 1
 settings put secure user_setup_complete 1
 settings put global device_provisioned 1
 ```
-Enable `limit_ad_tracking`:
-```
-settings put secure limit_ad_tracking 1
-```
 Fix Android VPN leak (need reboot):
 ```
 device_config put tethering close_quic_connection -1
@@ -325,11 +321,11 @@ for pkg in $(pm list packages --user 0 -f | sed "s/.*=//"); do
   appops set --user 0 "$pkg" SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS default
 done
 ```
-List uninstalled system apps of user 0: Run outside ADB shell. It assumes specific diff versions and that interactive ADB shell can be accessed with `rish`, thus may not work for you.
+List uninstalled system apps of user 0: Run outside ADB shell, assuming specific diff versions and that interactive ADB shell can be accessed with `rish`.
 ```
 diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq
 ```
-Compare uninstalled system apps of user 0 to raw.txt: Run outside ADB shell. It assumes specific diff versions and that interactive ADB shell can be accessed with `rish`, thus may not work for you.
+Compare uninstalled system apps of user 0 to raw.txt: Run outside ADB shell, assuming specific diff versions and that interactive ADB shell can be accessed with `rish`.
 ```
 diff -U 0 <(diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq) raw.txt
 ```
