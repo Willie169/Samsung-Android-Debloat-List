@@ -50,6 +50,7 @@ com.google.android.projection.gearhead
 com.google.android.safetycenter.resources
 com.google.android.setupwizard
 com.google.android.tts
+com.google.android.youtube
 com.google.ar.core
 com.google.audio.hearing.visualization.accessibility.scribe
 com.google.mainline.adservices
@@ -193,6 +194,7 @@ com.sec.android.app.hwmoduletest
 com.sec.android.app.magnifier
 com.sec.android.app.parser
 com.sec.android.app.qsfastpairoverlay
+com.sec.android.app.samsungapps
 com.sec.android.app.servicemodeapp
 com.sec.android.app.setupwizardlegalprovider
 com.sec.android.app.soundalive

@@ -161,6 +161,9 @@
       "packageName": "com.google.android.tts"
     },
     {
+      "packageName": "com.google.android.youtube"
+    },
+    {
       "packageName": "com.google.ar.core"
     },
     {
@@ -588,6 +591,9 @@
     },
     {
       "packageName": "com.sec.android.app.qsfastpairoverlay"
+    },
+    {
+      "packageName": "com.sec.android.app.samsungapps"
     },
     {
       "packageName": "com.sec.android.app.servicemodeapp"

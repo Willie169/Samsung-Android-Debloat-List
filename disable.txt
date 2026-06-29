@@ -50,6 +50,7 @@ pm disable --user 0 com.google.android.projection.gearhead
 pm disable --user 0 com.google.android.safetycenter.resources
 pm disable --user 0 com.google.android.setupwizard
 pm disable --user 0 com.google.android.tts
+pm disable --user 0 com.google.android.youtube
 pm disable --user 0 com.google.ar.core
 pm disable --user 0 com.google.audio.hearing.visualization.accessibility.scribe
 pm disable --user 0 com.google.mainline.adservices
@@ -193,6 +194,7 @@ pm disable --user 0 com.sec.android.app.hwmoduletest
 pm disable --user 0 com.sec.android.app.magnifier
 pm disable --user 0 com.sec.android.app.parser
 pm disable --user 0 com.sec.android.app.qsfastpairoverlay
+pm disable --user 0 com.sec.android.app.samsungapps
 pm disable --user 0 com.sec.android.app.servicemodeapp
 pm disable --user 0 com.sec.android.app.setupwizardlegalprovider
 pm disable --user 0 com.sec.android.app.soundalive
