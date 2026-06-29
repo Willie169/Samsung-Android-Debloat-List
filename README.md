@@ -175,7 +175,7 @@ Set the following items in settings. Note that some of them need to be set for w
 - Connections > Bluetooth: Disabled when not in use
 - Connections > NFC and contactless payments: Disabled when not in use
 - Connections > Ultra-wideband (UWB): Disabled when not in use
-- Connections > More connection settings > Private DNS > Private DNS provider hostname: A trusted DNS provider, such as `security.cloudflare-dns.com`. If you are using DNS proxy, VPN, or other approaches to manage DNS resolving, ignore this. For my setup, refer to my [**android-privacy-network-connection-configurations**](https://github.com/Willie169/android-privacy-network-connection-configurations) repo.
+- Connections > More connection settings > Private DNS > Private DNS provider hostname: A trusted DNS provider, such as `security.cloudflare-dns.com`. If you are using DNS proxy, VPN, or other approaches to manage DNS resolving, ignore this. Note that setting this will interfere some VPN apps, and this settings is for the whole device instead of one profile. For my setup, refer to my [**android-privacy-network-connection-configurations**](https://github.com/Willie169/android-privacy-network-connection-configurations) repo.
 - Connected devices > Quick Share > Who can share with you: Off, Your devices, or Contacts
 - Connected devices > Music Share: Disabled when not in use
 - Galaxy AI: Disabled.
