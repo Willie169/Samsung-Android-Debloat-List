@@ -114,7 +114,7 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list that you 
 - Digital Wellbeing (`com.samsung.android.forest`): [Mindful](https://github.com/akaMrNagar/Mindful) (`com.mindful.android`).
 - Drawing assist (`com.samsung.android.app.sketchbook`)
 - Dynamic System Updates (`com.android.dynsystem`): Since it's not usable on this device after all.
-- Galaxy Store (`com.sec.android.app.samsungapps`): Since it requires a Samsung account. [APKMirror](https://www.apkmirror.com) with [Obtainium](https://github.com/ImranR98/Obtainium).
+- Galaxy Store (`com.sec.android.app.samsungapps`): Since it requires a Samsung account. You can download and install Samsung apps from [APKMirror](https://www.apkmirror.com) and optionally track them with [Obtainium](https://github.com/ImranR98/Obtainium).
 - Galaxy Themes (`com.samsung.android.themestore`)
 - Game Booster (`com.samsung.android.game.gametools`)
 - Gemini (`com.google.android.apps.bard`): [Gemini website](https://gemini.google.com/app) with browser's "Add to Home screen".
