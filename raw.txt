@@ -40,6 +40,7 @@ com.google.android.feedback
 com.google.android.gm
 com.google.android.gms.location.history
 com.google.android.gms.supervision
+com.google.android.googlequicksearchbox
 com.google.android.health.connect.backuprestore
 com.google.android.healthconnect.controller
 com.google.android.ondevicepersonalization.services

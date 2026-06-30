@@ -40,6 +40,7 @@ pm uninstall --user 0 com.google.android.feedback
 pm uninstall --user 0 com.google.android.gm
 pm uninstall --user 0 com.google.android.gms.location.history
 pm uninstall --user 0 com.google.android.gms.supervision
+pm uninstall --user 0 com.google.android.googlequicksearchbox
 pm uninstall --user 0 com.google.android.health.connect.backuprestore
 pm uninstall --user 0 com.google.android.healthconnect.controller
 pm uninstall --user 0 com.google.android.ondevicepersonalization.services

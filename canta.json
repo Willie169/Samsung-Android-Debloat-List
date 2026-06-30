@@ -131,6 +131,9 @@
       "packageName": "com.google.android.gms.supervision"
     },
     {
+      "packageName": "com.google.android.googlequicksearchbox"
+    },
+    {
       "packageName": "com.google.android.health.connect.backuprestore"
     },
     {
