@@ -196,6 +196,7 @@ com.sec.android.app.hwmoduletest
 com.sec.android.app.magnifier
 com.sec.android.app.parser
 com.sec.android.app.qsfastpairoverlay
+com.sec.android.app.quicktool
 com.sec.android.app.samsungapps
 com.sec.android.app.servicemodeapp
 com.sec.android.app.setupwizardlegalprovider

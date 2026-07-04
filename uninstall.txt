@@ -196,6 +196,7 @@ pm uninstall --user 0 com.sec.android.app.hwmoduletest
 pm uninstall --user 0 com.sec.android.app.magnifier
 pm uninstall --user 0 com.sec.android.app.parser
 pm uninstall --user 0 com.sec.android.app.qsfastpairoverlay
+pm uninstall --user 0 com.sec.android.app.quicktool
 pm uninstall --user 0 com.sec.android.app.samsungapps
 pm uninstall --user 0 com.sec.android.app.servicemodeapp
 pm uninstall --user 0 com.sec.android.app.setupwizardlegalprovider
