@@ -69,6 +69,19 @@ Go to [Not Disabled/Uninstalled](#not-disableduninstalled) for a non-exhaustive 
 
 I recommend using [Droid-fy](https://github.com/Droid-ify/client) (`com.looker.droidify`) from [F-Droid](https://f-droid.org/packages/com.looker.droidify) to install apps from F-Droid repositories (hereafter referred to as F-Droid), [FFUpdater](https://github.com/Tobi823/ffupdater) to install open source browsers, and using [Obtainium](https://github.com/ImranR98/Obtainium) (`dev.imranr.obtainium.fdroid`) to install apps from other sources such as GitHub release. For people who don't login to a Google account in Google Play Store, I recommend using [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store) to install apps from Google Play Store.
 
+Samsung text-to-speech engine (`com.samsung.SMT`), SamsungTTS US English Voice 1 (`com.samsung.SMT.lang_en_us_l03`), SamsungTTS 简体中文 语音 1 (`com.samsung.SMT.lang_zh_cn_l02`), SamsungTTS Cantonese Voice 1 (`com.samsung.SMT.lang_zh_hk_f00`), and SamsungTTS Taiwanese Mandarin Voice 1 (`com.samsung.SMT.lang_zh_tw_f00`) are disabled/uninstalled in the list. I recommend using [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine) or [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator), which can be set in Accessibility > TalkBack > Settings > Text-to-speech > Preferred engine,  because they don't collect your data and use Piper or Coqui voices, which I think is of better quality than Speech Recognition and Synthesis from Google (`com.google.android.tts`) and Samsung text-to-speech engine (`com.samsung.SMT`). However, pre-installed voices differ across regions. Since they all start with `com.samsung.SMT.lang_`, you can disable them with the ADB command:
+```
+for pkg in $(pm list packages --user 0 | grep 'package:com.samsung.SMT.lang_' | sed 's/^package://'); do
+pm disable --user 0 $pkg
+done
+```
+and uninstall them with the ADB command:
+```
+for pkg in $(pm list packages --user 0 | grep 'package:com.samsung.SMT.lang_' | sed 's/^package://'); do
+pm uninstall --user 0 $pkg
+done
+```
+
 Go to [Non-ADB Settings](#non-adb-settings) and [ADB Settings](#adb-settings) section for some recommended settings.
 
 Go to my [Android-Non-Root](https://github.com/Willie169/Android-Non-Root) for more Android guides and [browser-privacy-guide](https://github.com/Willie169/browser-privacy-guide) for more browser guides.
@@ -77,36 +90,23 @@ Go to my [Android-Non-Root](https://github.com/Willie169/Android-Non-Root) for m
 
 This is a non-exhaustive list of apps disabled/uninstalled in the list, some of which with my recommended alternatives.
 
-- Google Messages (`com.google.android.apps.messaging`), ContactKeys Storage (`com.android.providers.contactkeys`), Samsung Messages (`com.samsung.android.messaging`), Contacts (`com.samsung.android.app.contacts`), Choose a picture (`com.android.avatarpicker`), and Phone (`com.samsung.android.dialer`): [Fossify Messages](https://github.com/FossifyOrg/Messages) (`org.fossify.messages`) from [F-Droid](https://f-droid.org/packages/org.fossify.messages), [Fossify Contacts](https://github.com/FossifyOrg/Contacts) (`org.fossify.contacts`) from [F-Droid](https://f-droid.org/packages/org.fossify.contacts), [Fossify Phone](https://github.com/FossifyOrg/Phone) (`org.fossify.phone`) from [F-Droid](https://f-droid.org/packages/org.fossify.phone).
-- Camera (`com.sec.android.app.camera`) and Filter Provider (`com.samsung.android.provider.filterprovider`): [Open Camera](https://sourceforge.net/p/opencamera/code) (`net.sourceforge.opencamera`) from [F-Droid](https://f-droid.org/packages/net.sourceforge.opencamera), [QR Scanner (PFA)](https://github.com/SecUSo/privacy-friendly-qr-scanner) from [F-Droid](https://f-droid.org/packages/com.secuso.privacyFriendlyCodeScanner), [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch). Note that if you disable/uninstall Filter Provider (`com.samsung.android.provider.filterprovider`) but still use Camera (`com.sec.android.app.camera`), Camera (`com.sec.android.app.camera`) may crash.
-- Gallery (`com.sec.android.gallery3d`), Gallery (`com.samsung.android.widget.pictureframe`), Gallery stories (`com.samsung.storyservice`), CMHProvider (`com.samsung.cmh`), FaceService (`com.samsung.faceservice`), Editor Lite (`com.samsung.app.newtrim`), Galaxy editing service (`com.samsung.android.globalpostprocmgr`), and Photo Editor (`com.sec.android.mimage.photoretouching`): [Fossify Gallery](https://github.com/FossifyOrg/Gallery) (`org.fossify.gallery`) from [F-Droid](https://f-droid.org/packages/org.fossify.gallery), [Image Toolbox](https://github.com/T8RIN/ImageToolbox) (`ru.tech.imageresizershrinker`) from [F-Droid](https://apt.izzysoft.de/fdroid/index/apk/ru.tech.imageresizershrinker). Note that disabling/uninstalling them will make you unable to preview photos in Camera (`com.sec.android.app.camera`).
-- Speech Recognition and Synthesis from Google (`com.google.android.tts`): [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine), [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator).
-- Samsung text-to-speech engine (`com.samsung.SMT`), SamsungTTS US English Voice 1 (`com.samsung.SMT.lang_en_us_l03`), SamsungTTS 简体中文 语音 1 (`com.samsung.SMT.lang_zh_cn_l02`), SamsungTTS Cantonese Voice 1 (`com.samsung.SMT.lang_zh_hk_f00`), and SamsungTTS Taiwanese Mandarin Voice 1 (`com.samsung.SMT.lang_zh_tw_f00`): [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine), [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator). Note that pre-installed voices differ across regions. Since they all start with `com.samsung.SMT.lang_`, you can disable them with the ADB command:
-  ```
-  for pkg in $(pm list packages --user 0 | grep 'package:com.samsung.SMT.lang_' | sed 's/^package://'); do
-    pm disable --user 0 $pkg
-  done
-  ```
-  and uninstall them with the ADB command:
-  ```
-  for pkg in $(pm list packages --user 0 | grep 'package:com.samsung.SMT.lang_' | sed 's/^package://'); do
-    pm uninstall --user 0 $pkg
-  done
-  ```
 - Android Switch (`com.google.android.apps.restore`)
 - Android System Intelligence (`com.google.android.as`)
 - AudioMirroring (`com.samsung.android.audiomirroring`)
 - Bixby (`com.samsung.android.bixby.agent`), Bixby Vision (`com.samsung.android.visionintelligence`), BixbyVision Framework (`com.samsung.android.bixbyvision.framework`), and Voice wake-up (`com.samsung.android.bixby.wakeup`)
+- Camera (`com.sec.android.app.camera`) and Filter Provider (`com.samsung.android.provider.filterprovider`): [Open Camera](https://sourceforge.net/p/opencamera/code) (`net.sourceforge.opencamera`) from [F-Droid](https://f-droid.org/packages/net.sourceforge.opencamera), [QR Scanner (PFA)](https://github.com/SecUSo/privacy-friendly-qr-scanner) from [F-Droid](https://f-droid.org/packages/com.secuso.privacyFriendlyCodeScanner), [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch). Note that if you disable/uninstall Filter Provider (`com.samsung.android.provider.filterprovider`) but still use Camera (`com.sec.android.app.camera`), Camera (`com.sec.android.app.camera`) may crash.
 - Digital Wellbeing (`com.samsung.android.forest`): [Mindful](https://github.com/akaMrNagar/Mindful) (`com.mindful.android`).
 - Drawing assist (`com.samsung.android.app.sketchbook`)
 - Dynamic System Updates (`com.android.dynsystem`): Since it's not usable on this device after all.
 - Galaxy Store (`com.sec.android.app.samsungapps`): Since it requires a Samsung account. You can download and install Samsung apps from [APKMirror](https://www.apkmirror.com).
 - Galaxy Themes (`com.samsung.android.themestore`)
+- Gallery (`com.sec.android.gallery3d`), Gallery (`com.samsung.android.widget.pictureframe`), Gallery stories (`com.samsung.storyservice`), CMHProvider (`com.samsung.cmh`), FaceService (`com.samsung.faceservice`), Editor Lite (`com.samsung.app.newtrim`), Galaxy editing service (`com.samsung.android.globalpostprocmgr`), and Photo Editor (`com.sec.android.mimage.photoretouching`): [Fossify Gallery](https://github.com/FossifyOrg/Gallery) (`org.fossify.gallery`) from [F-Droid](https://f-droid.org/packages/org.fossify.gallery), [Image Toolbox](https://github.com/T8RIN/ImageToolbox) (`ru.tech.imageresizershrinker`) from [F-Droid](https://apt.izzysoft.de/fdroid/index/apk/ru.tech.imageresizershrinker). Note that disabling/uninstalling them will make you unable to preview photos in Camera (`com.sec.android.app.camera`).
 - Game Booster (`com.samsung.android.game.gametools`)
 - Gemini (`com.google.android.apps.bard`): [Gemini website](https://gemini.google.com/app) with browser's "Add to Home screen".
 - Gmail (`com.google.android.gm`): [Thunderbird](https://github.com/thunderbird/thunderbird-android) (`net.thunderbird.android`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://f-droid.org/packages/net.thunderbird.android), [Proton Mail](https://github.com/ProtonMail/android-mail) (`ch.protonmail.android`) from [GitHub release](https://github.com/ProtonMail/android-mail/releases) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=ch.protonmail.android), [Tuta Mail](https://github.com/tutao/tutanota) (`de.tutao.tutanota`) from [F-Droid](https://f-droid.org/packages/de.tutao.tutanota).
 - Google (`com.google.android.googlequicksearchbox`): [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch), [Fennec F-Droid](https://gitlab.com/relan/fennecbuild) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec F-Droid_fdroid) or [FFUpdater](https://github.com/Tobi823/ffupdater), [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.firefox), [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=com.brave.browser), [Chromite ](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo), [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser) from FFUpdater, [Google Play Store](https://play.google.com/store/apps/details?id=org.torproject.torbrowser), or [F-Droid](https://droidify.app/app/?id=org.torproject.torbrowser&repo_address=https://guardianproject.info/fdroid/archive).
 - Google Location History (`com.google.android.gms.location.history`)
+- Google Messages (`com.google.android.apps.messaging`), ContactKeys Storage (`com.android.providers.contactkeys`), Samsung Messages (`com.samsung.android.messaging`), Contacts (`com.samsung.android.app.contacts`), Choose a picture (`com.android.avatarpicker`), and Phone (`com.samsung.android.dialer`): [Fossify Messages](https://github.com/FossifyOrg/Messages) (`org.fossify.messages`) from [F-Droid](https://f-droid.org/packages/org.fossify.messages), [Fossify Contacts](https://github.com/FossifyOrg/Contacts) (`org.fossify.contacts`) from [F-Droid](https://f-droid.org/packages/org.fossify.contacts), [Fossify Phone](https://github.com/FossifyOrg/Phone) (`org.fossify.phone`) from [F-Droid](https://f-droid.org/packages/org.fossify.phone).
 - Hey Google Hotword (`com.android.hotwordenrollment.xgoogle`) and OK Google Hotword (`com.android.hotwordenrollment.okgoogle`)
 - Interpreter (`com.samsung.android.app.interpreter`)
 - Link to Windows (`com.microsoft.appmanager`) and Link to Windows Service (`com.samsung.android.mdx`): [RustDesk](https://github.com/rustdesk/rustdesk) (`com.carriez.flutter_hbb`) from [F-Droid](https://f-droid.org/packages/com.carriez.flutter_hbb).
@@ -115,6 +115,7 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Meta App Installer (`com.facebook.system`), Meta App Manager (`com.facebook.appmanager`), and Meta Services (`com.facebook.services`): Disabling them won't affect Facebook (`com.facebook.katana`), Messenger (`com.facebook.orca`), or any other app.
 - Microsoft SwiftKey Keyboard (`com.touchtype.swiftkey`) and Microsoft SwiftKey Factory Settings (`com.swiftkey.swiftkeyconfigurator`): GBoard (`com.google.android.inputmethod.latin`) from [Google Play Store](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) and disable its internet access from TrackerControl.
 - Modes and Routines (`com.samsung.android.app.routines`)
+- NFC (`com.samsung.android.nfc`)
 - Neayby Service (`com.samsung.android.allshare.service.mediashare`), Nearby devices (`com.samsung.android.mydevice`), Nearby device scanning (`com.samsung.android.easysetup`), Nearby device scanning agent (`com.samsung.android.beaconmanager`)
 - OneDrive (`com.microsoft.skydrive`)
 - PrintSpooler (`com.android.printspooler`)
@@ -125,13 +126,14 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Samsung DeX Home (`com.sec.android.app.desktoplauncher`) and Samsung DeX (`com.sec.android.desktopmode.uiservice`)
 - Samsung Pass (`com.samsung.android.samsungpass`) and Autofill with Samsung Pass (`com.samsung.android.samsungpassautofill`): [Bitwarden](https://github.com/bitwarden/android) (`com.x8bit.bitwarden`) from [F-Droid](https://droidify.app/app/?id=com.x8bit.bitwarden&repo_address=https://mobileapp.bitwarden.com/fdroid/repo).
 - Samsung PaymentFramework (`com.samsung.android.spayfw`), `com.samsung.android.knox.mpos`
+- Samsung text-to-speech engine (`com.samsung.SMT`), SamsungTTS US English Voice 1 (`com.samsung.SMT.lang_en_us_l03`), SamsungTTS 简体中文 语音 1 (`com.samsung.SMT.lang_zh_cn_l02`), SamsungTTS Cantonese Voice 1 (`com.samsung.SMT.lang_zh_hk_f00`), and SamsungTTS Taiwanese Mandarin Voice 1 (`com.samsung.SMT.lang_zh_tw_f00`): [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine), [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator).
 - Secure Folder (`com.samsung.knox.securefolder`)
 - Smart Call (`com.samsung.android.smartcallprovider`) and Hiya Service (`com.hiya.star`)
 - Smart Switch (`com.sec.android.easyMover`), and Smart Switch Agent (`com.sec.android.easyMover.Agent`)
 - SmartThings Companion (`com.samsung.android.service.stplatform`)
+- Speech Recognition and Synthesis from Google (`com.google.android.tts`): [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine), [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator).
 - Studio (`com.sec.android.app.vepreload`): [Miniter](https://github.com/mlm-games/Miniter) (`org.mlm.miniter`) from [F-Droid](https://f-droid.org/packages/org.mlm.miniter).
 - Tags (`com.android.apps.tag`)
-- TalkBack (`com.samsung.android.accessibility.talkback`)
 - Tasks (`com.samsung.android.app.taskedge`) and People (`com.samsung.android.service.peoplestripe`) of Edge panels
 - Terminal (`com.android.virtualization.terminal`): Since it's not usable on this device after all.
 - Tools (`com.sec.android.app.quicktool`)
@@ -140,36 +142,35 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Weather (`com.sec.android.daemonapp`): [Weather](https://github.com/breezy-weather/breezy-weather) (`org.breezyweather`) from [F-Droid](https://f-droid.org/packages/org.breezyweather).
 - WiFi Calling (`com.sec.unifiedwfc`)
 - YouTube (`com.google.android.youtube`): [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced), [Morphe Manager](https://github.com/MorpheApp/morphe-manager) (`app.morphe.manager`) from [GitHub release](https://github.com/MorpheApp/morphe-manager/releases) patched YouTube with [MicroG-RE](https://github.com/MorpheApp/MicroG-RE) (`app.revanced.android.gms`) from [GitHub release](https://github.com/MorpheApp/MicroG-RE/releases).
-- NFC (`com.samsung.android.nfc`)
 
 ## Not Disabled/Uninstalled
 
 This is a non-exhaustive list of apps not disabled/uninstalled in the list, some of which with reasons and/or my recommended alternatives.
 
-- Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.gestural`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural_no_hint`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural_no_hint`): needed for Gestural Navigation Bar (i.e., swipe gestures).
 - 3 Button Navigation Bar (`com.android.internal.systemui.navbar.threebutton`): needed for 3 Button Navigation Bar.
 - Adapt sound (`com.sec.hearingadjust`)
 - Basic Daydreams (`com.android.dreams.basic`): This is not Google Daydream VR but an interactive screen saver mode.
+- CameraExtensionsProxy (`com.android.cameraextensions`): needed for some camera apps or their functionalities.
 - Chrome (`com.android.chrome`): [Fennec F-Droid](https://gitlab.com/relan/fennecbuild) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec F-Droid_fdroid) or [FFUpdater](https://github.com/Tobi823/ffupdater), [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.firefox), [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=com.brave.browser), [Chromite ](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo), [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser) from FFUpdater, [Google Play Store](https://play.google.com/store/apps/details?id=org.torproject.torbrowser), or [F-Droid](https://droidify.app/app/?id=org.torproject.torbrowser&repo_address=https://guardianproject.info/fdroid/archive).
+- DiagMonAgent (`com.sec.android.diagmonagent`): disabling/uninstalling it may cause crashes.
 - Edge panels, Clipboard edge (`com.samsung.android.app.clipboardedge`), and Samsung Keyboard (`com.samsung.android.honeyboard`) (Clipboard edge depends on Samsung Keyboard): [SmartEdge](https://github.com/Imtiaz-Official/Smart-Edge) (`com.imi.smartedge.sidebar.panel`) from [F-Droid](https://f-droid.org/packages/com.imi.smartedge.sidebar.panel) or [GitHub release](https://github.com/Imtiaz-Official/Smart-Edge/releases) (recommended due to frequent updates), [Glide](https://github.com/dagimg-dot/Glide) (`com.dagimg.glide`) from [GitHub release](https://github.com/dagimg-dot/Glide/releases), GBoard (`com.google.android.inputmethod.latin`) from [Google Play Store](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin).
 - Eye comfort shield (`com.samsung.android.bluelightfilter`)
+- Find My Mobile (`com.samsung.android.fmm`): disabling/uninstalling it may cause crashes.
+- Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.gestural`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural_no_hint`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural`), Gestural Navigation Bar (`com.samsung.internal.systemui.navbar.sec_gestural_no_hint`): needed for Gestural Navigation Bar (i.e., swipe gestures).
 - Google Play Store Store (`com.android.vending`): [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store). Do not disable or uninstall it in personal profile if work profile still uses it.
 - Maps (`com.google.android.apps.maps`): [OsmAnd~ / OsmAnd+](https://github.com/osmandapp/OsmAnd) (`net.osmand.plus`) from [F-Droid](https://droidify.app/app/?id=net.osmand.plus&repo_address=https://guardianproject-wind.s3.amazonaws.com/fdroid/repo), [Google Maps website](https://www.google.com/maps) with browser's "Add to Home screen", [GMaps WV](https://github.com/woheller69/maps) (`us.spotco.maps`) from [F-Droid](https://f-droid.org/packages/us.spotco.maps>), [osm2gmaps](https://codeberg.org/retiolus/osm2gmaps) (`net.retiolus.osm2gmaps`) from [F-Droid](https://f-droid.org/packages/net.retiolus.osm2gmaps), [Google Maps Unshortener website](https://mapu.retiolus.net).
 - My Files (`com.sec.android.app.myfiles`): [Amaze File Manager](https://github.com/TeamAmaze/AmazeFileManager) from [F-Droid](https://f-droid.org/packages/com.amaze.filemanager), [Material Files](https://github.com/zhanghai/MaterialFiles) from [F-Droid](https://f-droid.org/packages/me.zhanghai.android.files).
-- `com.samsung.android.wifi.softap.resources`: disabling/uninstalling it may cause mobile data and/or mobile hotspot to fail.
-- DiagMonAgent (`com.sec.android.diagmonagent`): disabling/uninstalling it may cause crashes.
 - NFC Service (`com.android.nfc`): disabling/uninstalling it may cause crashes.
-- Find My Mobile (`com.samsung.android.fmm`): disabling/uninstalling it may cause crashes.
+- Print Spooler (`com.android.printspooler`): needed for Save as PDF in Print.
 - Samsung Account (`com.osp.app.signin`): disabling/uninstalling it may cause crashes.
 - Samsung Location SDK (`com.sec.location.nsflp2`): disabling/uninstalling it may cause GPS location not be able to be recieved.
 - Samsung Wallet Digital Key (`com.samsung.android.dkey`): disabling/uninstalling it may cause increase in background resources usage.
 - Smart View (`com.samsung.android.smartmirroring`): disabling/uninstalling it may cause crashes One UI Home (`com.sec.android.app.launcher`) and/or Video Player (`com.samsung.android.video`) to crash.
-- CameraExtensionsProxy (`com.android.cameraextensions`): needed for some camera apps or their functionalities.
-- Print Spooler (`com.android.printspooler`): needed for Save as PDF in Print.
 - Smart capture (`com.samsung.android.app.smartcapture`): needed for screenshot notification, some screen recording functionalities, and screen mirroring (e.g. [scrcpy](https://github.com/Genymobile/scrcpy)).
-- TalkBack (`com.samsung.android.accessibility.talkback`); needed for Text-to-speech settings.
+- TalkBack (`com.samsung.android.accessibility.talkback`): needed for Text-to-speech settings.
 - Work Setup (`com.android.managedprovisioning`): needed for work profile managing apps such as [Insular](https://gitlab.com/secure-system/Insular) (`com.oasisfeng.island.fdroid`) from [F-Droid](https://f-droid.org/packages/com.oasisfeng.island.fdroid) and [Shelter](https://gitea.angry.im/PeterCxy/Shelter) (`net.typeblog.shelter`) from [F-Droid](https://droidify.app/app/?id=net.typeblog.shelter&repo_address=https://fdroid.typeblog.net).
 - `com.android.backupconfirm`: needed for ADB backup.
+- `com.samsung.android.wifi.softap.resources`: disabling/uninstalling it may cause mobile data and/or mobile hotspot to fail.
 
 ## Non-ADB Settings
 
@@ -215,7 +216,7 @@ Set the following items in settings. Note that some of them need to be set for w
 - Google > All services > Connected apps: Review apps.
 - Apps: Uninstall or disable apps you don't use.
 - Apps > 3 dots > Special access: Disable permissions you don't need. I recommend using [Permission Pilot](https://github.com/d4rken-org/permission-pilot) (`eu.darken.myperm`) from [F-Droid](https://f-droid.org/packages/eu.darken.myperm) and go to its settings > Permission Watcher > Enable watcher to detect permission changes and notify you.
-- Accessibility > TalkBack > Settings > Text-to-speech > Preferred engine: I recommend using [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine) or [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator). They don't collect your data and use Piper or Coqui voices, which I think is of better quality than Speech Recognition and Synthesis from Google (`com.google.android.tts`) and Samsung text-to-speech engine (`com.samsung.SMT`).
+- Accessibility > TalkBack > Settings > Text-to-speech > Preferred engine: I recommend using [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine) or [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator) because they don't collect your data and use Piper or Coqui voices, which I think is of better quality than Speech Recognition and Synthesis from Google (`com.google.android.tts`) and Samsung text-to-speech engine (`com.samsung.SMT`).
 - Accessibility > Installed apps > Review apps.
 
 ## ADB Settings
