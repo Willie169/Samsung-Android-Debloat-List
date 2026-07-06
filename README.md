@@ -264,7 +264,7 @@ settings put system send_security_reports 0
 
 ## Useful ADB Commands
 
-Run in ADB shell.
+Run in ADB shell unless otherwise specified.
 
 List users:
 ```
@@ -314,14 +314,6 @@ On Android 14+, let persistent notifications posted by an app of user 0 be dismi
 ```
 appops set --user 0 <package_name> SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS default
 ```
-Let vibration by an app of user 0 be ignored:
-```
-appops set --user 0 <package_name> VIBRATE ignore
-```
-Let vibration by an app of user 0 be allowed:
-```
-appops set --user 0 <package_name> VIBRATE allow
-```
 On Android 14+, let persistent notifications posted by all apps of user 0 not be dismissible through the UI (i.e. behave as they did prior to Android 14) (run in ADB shell):
 ```
 for pkg in $(pm list packages --user 0 -f | sed "s/.*=//"); do
@@ -333,6 +325,18 @@ On Android 14+, let persistent notifications posted by all apps of user 0 be dis
 for pkg in $(pm list packages --user 0 -f | sed "s/.*=//"); do
   appops set --user 0 "$pkg" SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS default
 done
+```
+Let vibration by an app of user 0 be ignored:
+```
+appops set --user 0 <package_name> VIBRATE ignore
+```
+Let vibration by an app of user 0 be allowed:
+```
+appops set --user 0 <package_name> VIBRATE allow
+```
+Change locale of an app of user 0 to a locale:
+```
+cmd locale set-app-locales <package_name> --user 0 --locales <locale_name>
 ```
 List uninstalled system apps of user 0: Run outside ADB shell, assuming specific diff versions and that interactive ADB shell can be accessed with `rish`.
 ```
