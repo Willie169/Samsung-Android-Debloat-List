@@ -334,7 +334,7 @@ Let vibration by an app of user 0 be allowed:
 ```
 appops set --user 0 <package_name> VIBRATE allow
 ```
-Change locale of an app of user 0 to a locale:
+Change locale of an app of user 0 to a locale (e.g., en-US, zh-TW):
 ```
 cmd locale set-app-locales <package_name> --user 0 --locales <locale_name>
 ```
