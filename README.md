@@ -65,7 +65,7 @@ User apps are typically not listed here since it can be disabled/uninstalled nor
 
 Go to [Disabled/Uninstalled](#disableduninstalled) for a non-exhaustive list of apps disabled/uninstalled in the list, some of which with my recommended alternatives.
 
-Go to [Not Disabled/Uninstalled](#not-disableduninstalled) for a non-exhaustive list of apps not disabled/uninstalled in the list, some of which with reasons and/or my recommended alternatives.
+Go to [Not Disabled/Uninstalled](#not-disableduninstalled) for a non-exhaustive list of apps not disabled/uninstalled in the list, some of which with my recommended alternatives and/or reasons.
 
 I recommend using [Droid-fy](https://github.com/Droid-ify/client) (`com.looker.droidify`) from [F-Droid](https://f-droid.org/packages/com.looker.droidify) to install apps from F-Droid repositories (hereafter referred to as F-Droid), [FFUpdater](https://github.com/Tobi823/ffupdater) to install open source browsers, and using [Obtainium](https://github.com/ImranR98/Obtainium) (`dev.imranr.obtainium.fdroid`) to install apps from other sources such as GitHub release. For people who don't login to a Google account in Google Play Store, I recommend using [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store) to install apps from Google Play Store.
 
@@ -131,6 +131,7 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Smart Call (`com.samsung.android.smartcallprovider`) and Hiya Service (`com.hiya.star`)
 - Smart Switch (`com.sec.android.easyMover`), and Smart Switch Agent (`com.sec.android.easyMover.Agent`)
 - SmartThings Companion (`com.samsung.android.service.stplatform`)
+- Sound quality and effects (`com.sec.android.app.soundalive`): [RootlessJamesDSP](https://github.com/timschneeb/RootlessJamesDSP) from [F-Droid](https://f-droid.org/packages/me.timschneeberger.rootlessjamesdsp).
 - Speech Recognition and Synthesis from Google (`com.google.android.tts`): [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine), [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator).
 - Studio (`com.sec.android.app.vepreload`): [Miniter](https://github.com/mlm-games/Miniter) (`org.mlm.miniter`) from [F-Droid](https://f-droid.org/packages/org.mlm.miniter).
 - Tags (`com.android.apps.tag`)
