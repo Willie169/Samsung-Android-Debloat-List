@@ -84,7 +84,7 @@ done
 
 Go to [Non-ADB Settings](#non-adb-settings) and [ADB Settings](#adb-settings) section for some recommended settings.
 
-Go to my [Android-Non-Root](https://github.com/Willie169/Android-Non-Root) for more Android guides and [browser-privacy-guide](https://github.com/Willie169/browser-privacy-guide) for more browser guides.
+Go to my [Android-Non-Root](https://github.com/Willie169/Android-Non-Root) for more Android guides and [combinedfox](https://github.com/Willie169/combinedfox) for more browser guides.
 
 ## Disabled/Uninstalled
 
@@ -356,7 +356,7 @@ My current status is as follows:
 - Applied [Non-ADB Settings](#non-adb-settings) and [ADB Settings](#adb-settings).
 - Uninstalled Chrome (`com.android.chrome`) and Maps (`com.google.android.apps.maps`) in personal profile.
 - Don't login to Google account in personal profile and use [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store) to install apps from Google Play Store in it.
-- Browser: [Fennec F-Droid](https://gitlab.com/relan/fennecbuild) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec F-Droid_fdroid) or [FFUpdater](https://github.com/Tobi823/ffupdater), [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.firefox), [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=com.brave.browser), [Chromite ](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo). Refer to my [browser-privacy-guide](https://github.com/Willie169/browser-privacy-guide).
+- Browser: [Fennec F-Droid](https://gitlab.com/relan/fennecbuild) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec F-Droid_fdroid) or [FFUpdater](https://github.com/Tobi823/ffupdater), [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.firefox), [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=com.brave.browser), [Chromite ](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo). Refer to my [combinedfox](https://github.com/Willie169/combinedfox).
 - Network: Refer to my [**android-privacy-network-connection-configurations**](https://github.com/Willie169/android-privacy-network-connection-configurations) repo.
 - Social media:
   - BiliBili: [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced).
