@@ -207,7 +207,7 @@ Set the following items in settings. Note that some of them need to be set for w
 - Security and privacy > More privacy settings > Activity controls: Review settings.
 - Security and privacy > More privacy settings > Ads > Delete advertising ID
 - Security and privacy > More privacy settings > Usage & diagonstics: Disabled
-- Location > Location services > turn off Google Location Sharing, Location Accuracy, Timeline, Wi-Fi scanning, and Bluetooth scanning: They are battery-consuming and/or may have privacy concerns depending on your threat model. You can enable Location Accuracy and Wi-Fi scanning when using map apps to improve accuracy if your threat model is okay with it. If you don't need location, disable Location. If you don't need location in work profile, disable Location for work profile.
+- Location > Location services > turn off Google Location Sharing, Location Accuracy, Timeline, Wi-Fi scanning, and Bluetooth scanning: They are battery-consuming and/or may have privacy concerns depending on your threat model. You can enable Location Accuracy and Wi-Fi scanning to improve location accuracy if your threat model is okay with it. If you don't need location, disable Location. If you don't need location in work profile, disable Location for work profile.
 - Google > All services > Ads > Delete advertising ID
 - Google > All services > Location Accuracy: Disabled
 - Google > All services > Personalize using shared data: Disable all
