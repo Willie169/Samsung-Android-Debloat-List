@@ -185,9 +185,6 @@
       "packageName": "com.hiya.star"
     },
     {
-      "packageName": "com.knox.vpn.proxyhandler"
-    },
-    {
       "packageName": "com.microsoft.appmanager"
     },
     {
@@ -375,9 +372,6 @@
     },
     {
       "packageName": "com.samsung.android.knox.containercore"
-    },
-    {
-      "packageName": "com.samsung.android.knox.er"
     },
     {
       "packageName": "com.samsung.android.knox.kpecore"
@@ -672,9 +666,6 @@
     },
     {
       "packageName": "com.sec.bcservice"
-    },
-    {
-      "packageName": "com.sec.enterprise.knox.cloudmdm.smdms"
     },
     {
       "packageName": "com.sec.epdgtestapp"

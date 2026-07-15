@@ -58,7 +58,6 @@ com.google.audio.hearing.visualization.accessibility.scribe
 com.google.mainline.adservices
 com.google.mainline.telemetry
 com.hiya.star
-com.knox.vpn.proxyhandler
 com.microsoft.appmanager
 com.microsoft.skydrive
 com.mygalaxy.service
@@ -122,7 +121,6 @@ com.samsung.android.kidsinstaller
 com.samsung.android.knox.analytics.uploader
 com.samsung.android.knox.attestation
 com.samsung.android.knox.containercore
-com.samsung.android.knox.er
 com.samsung.android.knox.kpecore
 com.samsung.android.knox.mpos
 com.samsung.android.knox.pushmanager
@@ -221,7 +219,6 @@ com.sec.android.smartfpsadjuster
 com.sec.android.widgetapp.easymodecontactswidget
 com.sec.app.RilErrorNotifier
 com.sec.bcservice
-com.sec.enterprise.knox.cloudmdm.smdms
 com.sec.epdgtestapp
 com.sec.facatfunction
 com.sec.factory.camera
