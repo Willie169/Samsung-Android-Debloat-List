@@ -167,7 +167,7 @@ This is a non-exhaustive list of apps not disabled/uninstalled in the list, some
 - Samsung Location SDK (`com.sec.location.nsflp2`): disabling/uninstalling it may cause GPS location not be able to be recieved.
 - Samsung Wallet Digital Key (`com.samsung.android.dkey`): disabling/uninstalling it may cause increase in background resources usage.
 - Smart View (`com.samsung.android.smartmirroring`): disabling/uninstalling it may cause crashes One UI Home (`com.sec.android.app.launcher`) and/or Video Player (`com.samsung.android.video`) to crash.
-- Smart capture (`com.samsung.android.app.smartcapture`): needed for screenshot notification, some screen recording functionalities, and screen mirroring (e.g. [scrcpy](https://github.com/Genymobile/scrcpy)).
+- Smart capture (`com.samsung.android.app.smartcapture`): needed for some screenshot  and screen recording functionalities such as screenshot popup, down-scrolling, and notification, and screen mirroring such as that One UI Home (`com.sec.android.app.launcher`) will crash when using [scrcpy](https://github.com/Genymobile/scrcpy) if Smart capture is disabled/uninstalled.
 - TalkBack (`com.samsung.android.accessibility.talkback`): needed for Text-to-speech settings.
 - Work Setup (`com.android.managedprovisioning`): needed for work profile managing apps such as [Insular](https://gitlab.com/secure-system/Insular) (`com.oasisfeng.island.fdroid`) from [F-Droid](https://f-droid.org/packages/com.oasisfeng.island.fdroid) and [Shelter](https://gitea.angry.im/PeterCxy/Shelter) (`net.typeblog.shelter`) from [F-Droid](https://droidify.app/app/?id=net.typeblog.shelter&repo_address=https://fdroid.typeblog.net).
 - `com.android.backupconfirm`: needed for ADB backup.
