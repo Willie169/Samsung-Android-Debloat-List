@@ -112,6 +112,7 @@ com.samsung.android.game.gametools
 com.samsung.android.globalpostprocmgr
 com.samsung.android.gru
 com.samsung.android.hdmapp
+com.samsung.android.honeyboard
 com.samsung.android.hwresourceshare
 com.samsung.android.hwresourceshare.storage
 com.samsung.android.inputshare
