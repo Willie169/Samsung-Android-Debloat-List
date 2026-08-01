@@ -248,8 +248,8 @@ settings put global disable_screen_share_protections_for_apps_and_notifications 
 ```
 Disable phantom process killer to resolve `Process completed (signal 9) - press Enter` error: See <https://willie169.github.io/Android-Non-Root/#process-completed-signal-9---press-enter-error> for more information.
 ```
-/system/bin/device_config set_sync_disabled_for_tests persistent
-/system/bin/device_config put activity_manager max_phantom_processes 2147483647
+device_config set_sync_disabled_for_tests persistent
+device_config put activity_manager max_phantom_processes 2147483647
 settings put global settings_enable_monitor_phantom_procs false
 ```
 Misc:
@@ -261,6 +261,18 @@ settings put secure send_action_app_error 0
 settings put system rakuten_denwa 0
 settings put system remote_control 0
 settings put system send_security_reports 0
+```
+To apply all of them assuming that interactive ADB shell can be accessed with `rish`. Execute [`adb-settings-rish.sh`](adb-settings-rish.sh) in this repo:
+```
+wget https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/adb-settings-rish.sh
+chmod +x adb-settings-rish.sh
+./adb-settings-rish.sh
+```
+To apply all of them assuming that ADB is connected with `adb shell` available. Execute [`adb-settings-adb.sh`](adb-settings-adb.sh) in this repo:
+```
+wget https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/adb-settings-adb.sh
+chmod +x adb-settings-adb.sh
+./adb-settings-adb.sh
 ```
 
 ## Useful ADB Commands
@@ -343,7 +355,7 @@ List uninstalled system apps of user 0: Run outside ADB shell, assuming specific
 ```
 diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq
 ```
-Compare uninstalled system apps of user 0 to raw.txt: Run outside ADB shell, assuming specific diff versions and that interactive ADB shell can be accessed with `rish`.
+Compare uninstalled system apps of user 0 to `raw.txt`: Run outside ADB shell, assuming specific diff versions and that interactive ADB shell can be accessed with `rish`.
 ```
 diff -U 0 <(diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq) raw.txt
 ```
