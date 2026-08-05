@@ -112,7 +112,6 @@ pm disable --user 0 com.samsung.android.game.gametools
 pm disable --user 0 com.samsung.android.globalpostprocmgr
 pm disable --user 0 com.samsung.android.gru
 pm disable --user 0 com.samsung.android.hdmapp
-pm disable --user 0 com.samsung.android.honeyboard
 pm disable --user 0 com.samsung.android.hwresourceshare
 pm disable --user 0 com.samsung.android.hwresourceshare.storage
 pm disable --user 0 com.samsung.android.inputshare
