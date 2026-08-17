@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo 'settings put global setup_wizard_has_run 1
 settings put secure user_setup_complete 1
 settings put global device_provisioned 1
