@@ -19,4 +19,4 @@ settings put secure send_action_app_error 0
 settings put system rakuten_denwa 0
 settings put system remote_control 0
 settings put system send_security_reports 0
-' | adb shell
+' | adb "$@" shell

@@ -274,6 +274,7 @@ wget https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/re
 chmod +x adb-settings-adb.sh
 ./adb-settings-adb.sh
 ```
+Arguments passed to it will be passed to ADB.
 
 ## Useful ADB Commands
 
