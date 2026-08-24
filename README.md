@@ -137,7 +137,7 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Tags (`com.android.apps.tag`)
 - Tasks (`com.samsung.android.app.taskedge`) and People (`com.samsung.android.service.peoplestripe`) of Edge panels
 - Terminal (`com.android.virtualization.terminal`): It's not usable on this device after all.
-- Tools (`com.sec.android.app.quicktool`)
+- Tools (`com.sec.android.app.quicktool`): MA Measure (`com.vayunmathur.measure`) from [F-Droid](https://droidify.app/app/?id=com.vayunmathur.measure&repo_address=https://ma.vayunmathur.com/fdroid/repo).
 - Video Player (`com.samsung.android.video`): [VLC](https://code.videolan.org/videolan/vlc-android) (`org.videolan.vlc`) from [F-Droid](https://f-droid.org/packages/org.videolan.vlc).
 - Voice Access (`com.google.android.apps.accessibility.voiceaccess`)
 - Weather (`com.sec.android.daemonapp`): [Weather](https://github.com/breezy-weather/breezy-weather) (`org.breezyweather`) from [F-Droid](https://f-droid.org/packages/org.breezyweather).
