@@ -321,6 +321,10 @@ Grant write secure settings permission to an app of user 0:
 ```
 pm grant --user 0 <package_name> android.permission.WRITE_SECURE_SETTINGS
 ```
+Revoke write secure settings permission to an app of user 0:
+```
+pm revoke --user 0 <package_name> android.permission.WRITE_SECURE_SETTINGS
+```
 On Android 14+, let persistent notifications posted by an app of user 0 not be dismissible through the UI (i.e. behave as they did prior to Android 14):
 ```
 appops set --user 0 <package_name> SYSTEM_EXEMPT_FROM_DISMISSIBLE_NOTIFICATIONS allow
