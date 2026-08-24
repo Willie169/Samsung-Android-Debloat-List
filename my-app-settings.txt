@@ -1,0 +1,11 @@
+appops set --user 0 com.zarz.spotiflac VIBRATE ignore
+appops set --user 0 com.mrsep.musicrecognizer VIBRATE ignore
+pm grant app.lawnchair android.permission.WRITE_SECURE_SETTINGS
+pm grant com.arlosoft.macrodroid android.permission.WRITE_SECURE_SETTINGS
+pm grant com.termux android.permission.WRITE_SECURE_SETTINGS
+pm grant com.termux.x11 android.permission.WRITE_SECURE_SETTINGS
+pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
+pm grant eu.darken.sdmse android.permission.WRITE_SECURE_SETTINGS
+pm grant moe.shizuku.privileged.api android.permission.WRITE_SECURE_SETTINGS
+pm grant org.autojs.autojs6 android.permission.WRITE_SECURE_SETTINGS
+pm grant s1m.savertuner android.permission.WRITE_SECURE_SETTINGS

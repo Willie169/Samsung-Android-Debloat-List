@@ -1,2 +1,0 @@
-appops set --user 0 com.zarz.spotiflac VIBRATE ignore
-appops set --user 0 com.mrsep.musicrecognizer VIBRATE ignore
