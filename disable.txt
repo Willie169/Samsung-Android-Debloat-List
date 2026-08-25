@@ -5,6 +5,7 @@ pm disable --user 0 com.android.bips
 pm disable --user 0 com.android.bluetoothmidiservice
 pm disable --user 0 com.android.bookmarkprovider
 pm disable --user 0 com.android.calllogbackup
+pm disable --user 0 com.android.chrome
 pm disable --user 0 com.android.devicediagnostics
 pm disable --user 0 com.android.dreams.phototable
 pm disable --user 0 com.android.dynsystem

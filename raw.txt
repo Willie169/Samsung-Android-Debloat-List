@@ -5,6 +5,7 @@ com.android.bips
 com.android.bluetoothmidiservice
 com.android.bookmarkprovider
 com.android.calllogbackup
+com.android.chrome
 com.android.devicediagnostics
 com.android.dreams.phototable
 com.android.dynsystem

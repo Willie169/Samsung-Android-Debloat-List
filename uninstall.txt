@@ -5,6 +5,7 @@ pm uninstall --user 0 com.android.bips
 pm uninstall --user 0 com.android.bluetoothmidiservice
 pm uninstall --user 0 com.android.bookmarkprovider
 pm uninstall --user 0 com.android.calllogbackup
+pm uninstall --user 0 com.android.chrome
 pm uninstall --user 0 com.android.devicediagnostics
 pm uninstall --user 0 com.android.dreams.phototable
 pm uninstall --user 0 com.android.dynsystem

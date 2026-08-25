@@ -26,6 +26,9 @@
       "packageName": "com.android.calllogbackup"
     },
     {
+      "packageName": "com.android.chrome"
+    },
+    {
       "packageName": "com.android.devicediagnostics"
     },
     {
