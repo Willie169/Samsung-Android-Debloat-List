@@ -3,6 +3,7 @@ appops set --user 0 com.mrsep.musicrecognizer VIBRATE ignore
 appops set --user 0 com.mindful.android VIBRATE ignore
 pm grant app.lawnchair android.permission.WRITE_SECURE_SETTINGS
 pm grant com.arlosoft.macrodroid android.permission.WRITE_SECURE_SETTINGS
+pm grant com.arlosoft.macrodroid.entree android.permission.WRITE_SECURE_SETTINGS
 pm grant com.termux android.permission.WRITE_SECURE_SETTINGS
 pm grant com.termux.x11 android.permission.WRITE_SECURE_SETTINGS
 pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
