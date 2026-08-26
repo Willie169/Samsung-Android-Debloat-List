@@ -357,13 +357,13 @@ Change locale of an app of user 0 to a locale (e.g., en-US, zh-TW):
 ```
 cmd locale set-app-locales <package_name> --user 0 --locales <locale_name>
 ```
-List uninstalled system apps of user 0: Run outside ADB shell, assuming specific diff versions and that interactive ADB shell can be accessed with `rish`.
+List uninstalled system apps of user 0: Run outside ADB shell, assuming that interactive ADB shell can be accessed with `rish`.
 ```
-diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq
+diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed -E 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq
 ```
-Compare uninstalled system apps of user 0 to `raw.txt`: Run outside ADB shell, assuming specific diff versions and that interactive ADB shell can be accessed with `rish`.
+Compare uninstalled system apps of user 0 to `raw.txt`: Run outside ADB shell, assuming that interactive ADB shell can be accessed with `rish`.
 ```
-diff -U 0 <(diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq) raw.txt
+diff -U 0 <(diff -U 0 <(echo 'pm list packages --user 0 && exit' | rish | sort) <(echo 'pm list packages -u --user 0 && exit' | rish | sort) | sed -E 's/^\+\+\+//' | grep '^+' | sed 's/^\+package://' | sort | uniq) raw.txt
 ```
 
 ## My Current Status
