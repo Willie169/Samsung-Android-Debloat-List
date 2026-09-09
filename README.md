@@ -5,6 +5,8 @@ This repo contains the list of apps I uninstalled on my Samsung Galaxy S24+ (SM-
 ## Table of Contents
 
 * [Usage](#usage)
+* [App Managers](#app-managers)
+* [Browsers](#browsers)
 * [Disabled/Uninstalled](#disableduninstalled)
 * [Not Disabled/Uninstalled](#not-disableduninstalled)
 * [Non-ADB Settings](#non-adb-settings)
@@ -63,11 +65,11 @@ Canta format can be used in [Canta](https://github.com/samolego/Canta) (`io.gith
 
 User apps are typically not listed here since it can be disabled/uninstalled normally.
 
+Go to [App Managers](#app-managers) for recommended app managers to install and automatically update apps and [Browsers](#browsers) for recommend browsers.
+
 Go to [Disabled/Uninstalled](#disableduninstalled) for a non-exhaustive list of apps disabled/uninstalled in the list, some of which with my recommended alternatives.
 
 Go to [Not Disabled/Uninstalled](#not-disableduninstalled) for a non-exhaustive list of apps not disabled/uninstalled in the list, some of which with my recommended alternatives and/or reasons.
-
-I recommend using [Droid-fy](https://github.com/Droid-ify/client) (`com.looker.droidify`) from [F-Droid](https://f-droid.org/packages/com.looker.droidify) to install apps from F-Droid repositories (hereafter referred to as F-Droid), [FFUpdater](https://github.com/Tobi823/ffupdater) to install open source browsers, and using [Obtainium](https://github.com/ImranR98/Obtainium) (`dev.imranr.obtainium`) to install apps from other sources such as GitHub release. For people who don't login to a Google account in Google Play Store, I recommend using [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store) to install apps from Google Play Store.
 
 Samsung text-to-speech engine (`com.samsung.SMT`), SamsungTTS US English Voice 1 (`com.samsung.SMT.lang_en_us_l03`), SamsungTTS 简体中文 语音 1 (`com.samsung.SMT.lang_zh_cn_l02`), SamsungTTS Cantonese Voice 1 (`com.samsung.SMT.lang_zh_hk_f00`), and SamsungTTS Taiwanese Mandarin Voice 1 (`com.samsung.SMT.lang_zh_tw_f00`) are disabled/uninstalled in the list. I recommend using [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine) or [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator), which can be set in Accessibility > TalkBack > Settings > Text-to-speech > Preferred engine,  because they don't collect your data and use Piper or Coqui voices, which I think is of better quality than Speech Recognition and Synthesis from Google (`com.google.android.tts`) and Samsung text-to-speech engine (`com.samsung.SMT`). However, pre-installed voices differ across regions. Since they all start with `com.samsung.SMT.lang_`, you can disable them with the ADB command:
 ```
@@ -86,6 +88,33 @@ Go to [Non-ADB Settings](#non-adb-settings) and [ADB Settings](#adb-settings) se
 
 Go to my [Android-Non-Root](https://github.com/Willie169/Android-Non-Root) for more Android guides and [combinedfox](https://github.com/Willie169/combinedfox) for more browser guides.
 
+## App Managers
+
+I recommend the following app managers to install and automatically update apps:
+- [Obtainium](https://github.com/ImranR98/Obtainium) (`dev.imranr.obtainium`) from [GitHub release](https://github.com/ImranR98/Obtainium/releases) for almost all apps. It supports various sources such as GitHub, GitLab, and Codeberg releases, [APKPure](https://apkpure.com), F-Droid official and third-party repos, [Tencent App Store](https://sj.qq.com), direct links, etc. with many useful features such as filtering APKs by Regex. Some crowdsourced app configurations are available in [official site](https://apps.obtainium.imranr.dev)
+- [Droid-fy](https://github.com/Droid-ify/client) (`com.looker.droidify`) from [F-Droid](https://f-droid.org/packages/com.looker.droidify) for apps from F-Droid official and third-party repos.
+- [FFUpdater](https://github.com/Tobi823/ffupdater) from [GitHub release](https://github.com/Tobi823/ffupdater/releases) for some browsers, Thunderbird, and Orbot
+- [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) (`com.aurora.store`) from [F-Droid](https://f-droid.org/packages/com.aurora.store) for apps from Google Play Store.
+- Google Play Store, which requires a Google account, for apps from it, for people who agree the compromises come with it.
+
+F-Droid official and third-party repos are hereafter referred to as F-Droid, and apps from F-Droid third-party repos are provided with Droid-fy deeplinks of the form
+```
+https://droidify.app/app/?id=<pkg_name>&repo_address=<repo>
+```
+To use it at other F-Droid client, add `<repo>` and find the app with package name `<pkg_name>`. To use it at Obtainium, paste `<repo>` in App source URL, select F-Droid third-party repo in Override source, and `<pkg_name>` in App ID or name *.
+
+## Browsers
+
+Refer to my [combinedfox](https://github.com/Willie169/combinedfox) repo for more information.
+
+- [IronFox](https://gitlab.com/ironfox-oss/IronFox) from [GitLab releases](https://gitlab.com/ironfox-oss/IronFox) (recommended) or [F-Droid](https://droidify.app/app/?id=org.ironfoxoss.ironfox&repo_address=https://fdroid.ironfoxoss.org/fdroid/repo)
+- [Fennec F-Droid](https://gitlab.com/relan/fennecbuild) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec_fdroid)
+- [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [Obtainium](https://apps.obtainium.imranr.dev/apps?category=browser) (recommended), FFUpdater, or [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.firefox)
+- [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser) from [F-Droid](https://droidify.app/app/?id=org.torproject.torbrowser&repo_address=https://guardianproject.info/fdroid/archive) (recommended), FFUpdater, or [Google Play Store](https://play.google.com/store/apps/details?id=org.torproject.torbrowser)
+- [Cromite](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [GitHub releases](https://github.com/uazo/cromite) (recommended), FFUpdater, or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo)
+- [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) from [Obtainium](https://apps.obtainium.imranr.dev/apps?category=browser) (recommended), FFUpdater, [F-Droid](https://droidify.app/app/?id=com.brave.browser&repo_address=https://brave-browser-apk-release.s3.brave.com/fdroid/repo), or [Google Play Store](https://play.google.com/store/apps/details?id=com.brave.browser)
+- [Titanium Browser for Android](https://github.com/jqssun/android-titanium-browser) from [GitHub release](https://github.com/jqssun/android-titanium-browser/releases) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=io.github.jqssun.helium)
+
 ## Disabled/Uninstalled
 
 This is a non-exhaustive list of apps disabled/uninstalled in the list, some of which with my recommended alternatives.
@@ -95,7 +124,7 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - AudioMirroring (`com.samsung.android.audiomirroring`)
 - Bixby (`com.samsung.android.bixby.agent`), Bixby Vision (`com.samsung.android.visionintelligence`), BixbyVision Framework (`com.samsung.android.bixbyvision.framework`), and Voice wake-up (`com.samsung.android.bixby.wakeup`)
 - Camera (`com.sec.android.app.camera`) and Filter Provider (`com.samsung.android.provider.filterprovider`): [Open Camera](https://sourceforge.net/p/opencamera/code) (`net.sourceforge.opencamera`) from [F-Droid](https://f-droid.org/packages/net.sourceforge.opencamera), [QR Scanner (PFA)](https://github.com/SecUSo/privacy-friendly-qr-scanner) from [F-Droid](https://f-droid.org/packages/com.secuso.privacyFriendlyCodeScanner), [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch). Note that if you disable/uninstall Filter Provider (`com.samsung.android.provider.filterprovider`) but still use Camera (`com.sec.android.app.camera`), Camera (`com.sec.android.app.camera`) may crash.
-- Chrome (`com.android.chrome`): [Fennec F-Droid](https://gitlab.com/relan/fennecbuild) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec_fdroid) or [FFUpdater](https://github.com/Tobi823/ffupdater), [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.firefox), [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=com.brave.browser), [Chromite ](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo), [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser) from FFUpdater, [Google Play Store](https://play.google.com/store/apps/details?id=org.torproject.torbrowser), or [F-Droid](https://droidify.app/app/?id=org.torproject.torbrowser&repo_address=https://guardianproject.info/fdroid/archive).
+- Chrome (`com.android.chrome`): See [Browsers](#browsers)
 - Digital Wellbeing (`com.samsung.android.forest`): [Mindful](https://github.com/akaMrNagar/Mindful) (`com.mindful.android`).
 - Drawing assist (`com.samsung.android.app.sketchbook`)
 - Dynamic System Updates (`com.android.dynsystem`): It's not usable on this device after all.
@@ -104,8 +133,8 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Gallery (`com.sec.android.gallery3d`), Gallery (`com.samsung.android.widget.pictureframe`), Gallery stories (`com.samsung.storyservice`), CMHProvider (`com.samsung.cmh`), FaceService (`com.samsung.faceservice`), Editor Lite (`com.samsung.app.newtrim`), Galaxy editing service (`com.samsung.android.globalpostprocmgr`), and Photo Editor (`com.sec.android.mimage.photoretouching`): [Fossify Gallery](https://github.com/FossifyOrg/Gallery) (`org.fossify.gallery`) from [F-Droid](https://f-droid.org/packages/org.fossify.gallery), [Image Toolbox](https://github.com/T8RIN/ImageToolbox) (`ru.tech.imageresizershrinker`) from [F-Droid](https://apt.izzysoft.de/fdroid/index/apk/ru.tech.imageresizershrinker). Note that disabling or uninstalling them will make you unable to preview photos in Camera (`com.sec.android.app.camera`).
 - Game Booster (`com.samsung.android.game.gametools`)
 - Gemini (`com.google.android.apps.bard`): [Gemini website](https://gemini.google.com/app) with browser's "Add to Home screen".
-- Gmail (`com.google.android.gm`): [Thunderbird](https://github.com/thunderbird/thunderbird-android) (`net.thunderbird.android`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://f-droid.org/packages/net.thunderbird.android), [Proton Mail](https://github.com/ProtonMail/android-mail) (`ch.protonmail.android`) from [GitHub release](https://github.com/ProtonMail/android-mail/releases) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=ch.protonmail.android), [Tuta Mail](https://github.com/tutao/tutanota) (`de.tutao.tutanota`) from [F-Droid](https://f-droid.org/packages/de.tutao.tutanota).
-- Google (`com.google.android.googlequicksearchbox`): [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch), [Fennec F-Droid](https://gitlab.com/relan/fennecbuild) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec F-Droid_fdroid) or [FFUpdater](https://github.com/Tobi823/ffupdater), [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.firefox), [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=com.brave.browser), [Chromite ](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [FFUpdater](https://github.com/Tobi823/ffupdater) (recommended) or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo), [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser) from FFUpdater, [Google Play Store](https://play.google.com/store/apps/details?id=org.torproject.torbrowser), or [F-Droid](https://droidify.app/app/?id=org.torproject.torbrowser&repo_address=https://guardianproject.info/fdroid/archive).
+- Gmail (`com.google.android.gm`): [Thunderbird](https://github.com/thunderbird/thunderbird-android) (`net.thunderbird.android`) from [GitHub release](https://github.com/thunderbird/thunderbird-android/releases), FFUpdater, or [F-Droid](https://f-droid.org/packages/net.thunderbird.android), [Proton Mail](https://github.com/ProtonMail/android-mail) (`ch.protonmail.android`) from [GitHub release](https://github.com/ProtonMail/android-mail/releases) or [Google Play Store](https://play.google.com/store/apps/details?id=ch.protonmail.android), [Tuta Mail](https://github.com/tutao/tutanota) (`de.tutao.tutanota`) from [F-Droid](https://f-droid.org/packages/de.tutao.tutanota) or [Google Play Store](https://play.google.com/store/apps/details?id=de.tutao.tutanota).
+- Google (`com.google.android.googlequicksearchbox`): [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch), and see [Browsers](#browsers).
 - Google Location History (`com.google.android.gms.location.history`)
 - Google Messages (`com.google.android.apps.messaging`), ContactKeys Storage (`com.android.providers.contactkeys`), Samsung Messages (`com.samsung.android.messaging`), Contacts (`com.samsung.android.app.contacts`), Choose a picture (`com.android.avatarpicker`), and Phone (`com.samsung.android.dialer`): [Fossify Messages](https://github.com/FossifyOrg/Messages) (`org.fossify.messages`) from [F-Droid](https://f-droid.org/packages/org.fossify.messages), [Fossify Contacts](https://github.com/FossifyOrg/Contacts) (`org.fossify.contacts`) from [F-Droid](https://f-droid.org/packages/org.fossify.contacts), [Fossify Phone](https://github.com/FossifyOrg/Phone) (`org.fossify.phone`) from [F-Droid](https://f-droid.org/packages/org.fossify.phone).
 - Hey Google Hotword (`com.android.hotwordenrollment.xgoogle`) and OK Google Hotword (`com.android.hotwordenrollment.okgoogle`)
