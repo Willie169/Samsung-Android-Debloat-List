@@ -112,11 +112,11 @@ To use it at other F-Droid client, add `<repo>` and find the app with package na
 
 ## Browsers
 
-- [IronFox](https://gitlab.com/ironfox-oss/IronFox) from [GitLab releases](https://gitlab.com/ironfox-oss/IronFox) (recommended) or [F-Droid](https://droidify.app/app/?id=org.ironfoxoss.ironfox&repo_address=https://fdroid.ironfoxoss.org/fdroid/repo)
+- [IronFox](https://gitlab.com/ironfox-oss/IronFox) from [GitLab release](https://gitlab.com/ironfox-oss/IronFox) (recommended) or [F-Droid](https://droidify.app/app/?id=org.ironfoxoss.ironfox&repo_address=https://fdroid.ironfoxoss.org/fdroid/repo)
 - [Fennec F-Droid](https://gitlab.com/relan/fennecbuild) from [F-Droid](https://f-droid.org/packages/org.mozilla.Fennec_fdroid)
 - [Firefox](https://github.com/mozilla-mobile/firefox-android) (`org.mozilla.firefox`) from [Obtainium](https://apps.obtainium.imranr.dev/apps?category=browser) (recommended), FFUpdater, or [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.firefox)
 - [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser) from [F-Droid](https://droidify.app/app/?id=org.torproject.torbrowser&repo_address=https://guardianproject.info/fdroid/archive) (recommended), FFUpdater, or [Google Play Store](https://play.google.com/store/apps/details?id=org.torproject.torbrowser)
-- [Cromite](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [GitHub releases](https://github.com/uazo/cromite) (recommended), FFUpdater, or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo)
+- [Cromite](https://github.com/uazo/cromite) (`org.cromite.cromite`) from [GitHub release](https://github.com/uazo/cromite) (recommended), FFUpdater, or [F-Droid](https://droidify.app/app/?id=org.cromite.cromite&repo_address=https://www.cromite.org/fdroid/repo)
 - [Brave](https://github.com/brave/brave-browser) (`com.brave.browser`) from [Obtainium](https://apps.obtainium.imranr.dev/apps?category=browser) (recommended), FFUpdater, [F-Droid](https://droidify.app/app/?id=com.brave.browser&repo_address=https://brave-browser-apk-release.s3.brave.com/fdroid/repo), or [Google Play Store](https://play.google.com/store/apps/details?id=com.brave.browser)
 - [Titanium Browser for Android](https://github.com/jqssun/android-titanium-browser) from [GitHub release](https://github.com/jqssun/android-titanium-browser) (recommended) or [Google Play Store](https://play.google.com/store/apps/details?id=io.github.jqssun.helium)
 
