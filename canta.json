@@ -242,6 +242,9 @@
       "packageName": "com.samsung.android.app.contacts"
     },
     {
+      "packageName": "com.samsung.android.app.dressroom"
+    },
+    {
       "packageName": "com.samsung.android.app.earphonetypec"
     },
     {
@@ -483,6 +486,9 @@
     },
     {
       "packageName": "com.samsung.android.smartcallprovider"
+    },
+    {
+      "packageName": "com.samsung.android.smartface"
     },
     {
       "packageName": "com.samsung.android.smartsuggestions"

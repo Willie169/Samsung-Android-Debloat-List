@@ -33,12 +33,19 @@ without breaking the user experience.
 
 The list is provided in five formats:
 - Raw list: [raw.txt](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/raw.txt)
-- ADB disable command: [disable.txt](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/disable.txt)
-- ADB uninstall command: [uninstall.txt](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/uninstall.txt)
+- ADB disable command: [disable.sh](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/disable.sh)
+- ADB uninstall command: [uninstall.sh](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/uninstall.sh)
 - Hail: [hail.txt](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/hail.txt)
 - Canta: [canta.json](https://raw.githubusercontent.com/Willie169/Samsung-Android-Debloat-List/refs/heads/main/canta.json)
 
-ADB disable and uninstall commands can be used directly in ADB shell. They assume user 0 by default, which can be changed to other user by changing the number after `--user`. work profile is typically user 10 or 11. Make changes if you want. Reboot your phone after execution. If any app you disabled/uninstalled is back automatically, disable/uninstall them and reboot again. If they persist, it's probably for a reason and I suggest to leave them there.
+ADB disable and uninstall commands can be used directly in ADB shell. For example,
+```
+cat disable.sh | adb shell
+cat disable.sh | rish
+cat uninstall.sh | adb shell
+cat uninstall.sh | rish
+```
+They will disable/uninstall for all users. Work profile is typically user 10 or 11. Make changes if you want. 
 
 Hail format can be used in [Hail](https://github.com/aistra0528/Hail) (`com.aistra.hail`) from [F-Droid](https://f-droid.org/packages/com.aistra.hail) to disable apps. The steps are as follows:
 1. Start Shizuku.
@@ -47,7 +54,6 @@ Hail format can be used in [Hail](https://github.com/aistra0528/Hail) (`com.aist
 2. Open Hail, go to `Settings > Work mode` and select `Shizuku - Disable`.
 2. Click `Allow all the time` in `Allow Hail to access Shizuku` pop-up.
 2. Go to `Home`, click three dots at the top right corner, click `Import app > Import from Clipboard`.
-2. Reboot your phone after execution. If any app you disabled is back automatically, disable them and reboot again. If they persist, it's probably for a reason and I suggest to leave them there.
 
 Canta format can be used in [Canta](https://github.com/samolego/Canta) (`io.github.samolego.canta`) from [F-Droid](https://f-droid.org/packages/io.github.samolego.canta) to uninstall apps. The steps are as follows:
 1. Start Shizuku.
@@ -61,7 +67,8 @@ Canta format can be used in [Canta](https://github.com/samolego/Canta) (`io.gith
 2. Click `Grant permission to Canta in Shizuku`.
 2. Click `Allow all the time` in `Allow Canta to access Shizuku` pop-up.
 2. Click `Ok`.
-2. Reboot your phone after execution. If any app you uninstalled is back automatically, uninstall them and reboot again. If they persist, it's probably for a reason and I suggest to leave them there.
+
+Reboot your phone after execution. If any app you disabled/uninstalled is back automatically, disable/uninstall them and reboot again. If they persist, it's probably for a reason and I suggest to leave them there.
 
 User apps are typically not listed here since it can be disabled/uninstalled normally.
 
@@ -123,7 +130,7 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Android System Intelligence (`com.google.android.as`)
 - AudioMirroring (`com.samsung.android.audiomirroring`)
 - Bixby (`com.samsung.android.bixby.agent`), Bixby Vision (`com.samsung.android.visionintelligence`), BixbyVision Framework (`com.samsung.android.bixbyvision.framework`), and Voice wake-up (`com.samsung.android.bixby.wakeup`)
-- Camera (`com.sec.android.app.camera`) and Filter Provider (`com.samsung.android.provider.filterprovider`): [Open Camera](https://sourceforge.net/p/opencamera/code) (`net.sourceforge.opencamera`) from [F-Droid](https://f-droid.org/packages/net.sourceforge.opencamera), [QR Scanner (PFA)](https://github.com/SecUSo/privacy-friendly-qr-scanner) from [F-Droid](https://f-droid.org/packages/com.secuso.privacyFriendlyCodeScanner), [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch). Note that if you disable/uninstall Filter Provider (`com.samsung.android.provider.filterprovider`) but still use Camera (`com.sec.android.app.camera`), Camera (`com.sec.android.app.camera`) may crash.
+- Camera (`com.sec.android.app.camera`), Filter Provider (`com.samsung.android.provider.filterprovider`), and SmartFaceService (`com.samsung.android.smartface`): [Open Camera](https://sourceforge.net/p/opencamera/code) (`net.sourceforge.opencamera`) from [F-Droid](https://f-droid.org/packages/net.sourceforge.opencamera), [QR Scanner (PFA)](https://github.com/SecUSo/privacy-friendly-qr-scanner) from [F-Droid](https://f-droid.org/packages/com.secuso.privacyFriendlyCodeScanner), [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch). Note that if you disable/uninstall Filter Provider (`com.samsung.android.provider.filterprovider`) but still use Camera (`com.sec.android.app.camera`), Camera (`com.sec.android.app.camera`) may crash.
 - Chrome (`com.android.chrome`): See [Browsers](#browsers)
 - Digital Wellbeing (`com.samsung.android.forest`): [Mindful](https://github.com/akaMrNagar/Mindful) (`com.mindful.android`).
 - Drawing assist (`com.samsung.android.app.sketchbook`)
@@ -136,7 +143,7 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Gmail (`com.google.android.gm`): [Thunderbird](https://github.com/thunderbird/thunderbird-android) (`net.thunderbird.android`) from [GitHub release](https://github.com/thunderbird/thunderbird-android/releases), FFUpdater, or [F-Droid](https://f-droid.org/packages/net.thunderbird.android), [Proton Mail](https://github.com/ProtonMail/android-mail) (`ch.protonmail.android`) from [GitHub release](https://github.com/ProtonMail/android-mail/releases) or [Google Play Store](https://play.google.com/store/apps/details?id=ch.protonmail.android), [Tuta Mail](https://github.com/tutao/tutanota) (`de.tutao.tutanota`) from [F-Droid](https://f-droid.org/packages/de.tutao.tutanota) or [Google Play Store](https://play.google.com/store/apps/details?id=de.tutao.tutanota).
 - Google (`com.google.android.googlequicksearchbox`): [CircleToSearch](https://github.com/AKS-Labs/CircleToSearch) (`com.akslabs.circletosearch`) from [GitHub release](https://github.com/AKS-Labs/CircleToSearch/releases) or [F-Droid](https://f-droid.org/packages/com.akslabs.circletosearch), and see [Browsers](#browsers).
 - Google Location History (`com.google.android.gms.location.history`)
-- Google Messages (`com.google.android.apps.messaging`), ContactKeys Storage (`com.android.providers.contactkeys`), Samsung Messages (`com.samsung.android.messaging`), Contacts (`com.samsung.android.app.contacts`), Choose a picture (`com.android.avatarpicker`), and Phone (`com.samsung.android.dialer`): [Fossify Messages](https://github.com/FossifyOrg/Messages) (`org.fossify.messages`) from [F-Droid](https://f-droid.org/packages/org.fossify.messages), [Fossify Contacts](https://github.com/FossifyOrg/Contacts) (`org.fossify.contacts`) from [F-Droid](https://f-droid.org/packages/org.fossify.contacts), [Fossify Phone](https://github.com/FossifyOrg/Phone) (`org.fossify.phone`) from [F-Droid](https://f-droid.org/packages/org.fossify.phone).
+- Google Messages (`com.google.android.apps.messaging`), ContactKeys Storage (`com.android.providers.contactkeys`), Contacts (`com.samsung.android.app.contacts`), Choose a picture (`com.android.avatarpicker`), and Phone (`com.samsung.android.dialer`): [Fossify Messages](https://github.com/FossifyOrg/Messages) (`org.fossify.messages`) from [F-Droid](https://f-droid.org/packages/org.fossify.messages), [Fossify Contacts](https://github.com/FossifyOrg/Contacts) (`org.fossify.contacts`) from [F-Droid](https://f-droid.org/packages/org.fossify.contacts), [Fossify Phone](https://github.com/FossifyOrg/Phone) (`org.fossify.phone`) from [F-Droid](https://f-droid.org/packages/org.fossify.phone).
 - Hey Google Hotword (`com.android.hotwordenrollment.xgoogle`) and OK Google Hotword (`com.android.hotwordenrollment.okgoogle`)
 - Interpreter (`com.samsung.android.app.interpreter`)
 - Link to Windows (`com.microsoft.appmanager`) and Link to Windows Service (`com.samsung.android.mdx`): [RustDesk](https://github.com/rustdesk/rustdesk) (`com.carriez.flutter_hbb`) from [F-Droid](https://f-droid.org/packages/com.carriez.flutter_hbb).
@@ -154,6 +161,7 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Samsung Cloud (`com.samsung.android.scloud`)
 - Samsung Cloud Assistant (`com.samsung.android.scpm`): Disabling or uninstalling it may cause Sound quality and effects (`com.sec.android.app.soundalive`) to crash. Both are disabled/uninstalled in the list. If you use Sound quality and effects, enable both of them.
 - Samsung DeX Home (`com.sec.android.app.desktoplauncher`) and Samsung DeX (`com.sec.android.desktopmode.uiservice`)
+- Samsung Messages (`com.samsung.android.messaging`): It has been discontinued.
 - Samsung Pass (`com.samsung.android.samsungpass`) and Autofill with Samsung Pass (`com.samsung.android.samsungpassautofill`): [Bitwarden](https://github.com/bitwarden/android) (`com.x8bit.bitwarden`) from [F-Droid](https://droidify.app/app/?id=com.x8bit.bitwarden&repo_address=https://mobileapp.bitwarden.com/fdroid/repo).
 - Samsung PaymentFramework (`com.samsung.android.spayfw`), `com.samsung.android.knox.mpos`
 - Samsung text-to-speech engine (`com.samsung.SMT`), SamsungTTS US English Voice 1 (`com.samsung.SMT.lang_en_us_l03`), SamsungTTS 简体中文 语音 1 (`com.samsung.SMT.lang_zh_cn_l02`), SamsungTTS Cantonese Voice 1 (`com.samsung.SMT.lang_zh_hk_f00`), and SamsungTTS Taiwanese Mandarin Voice 1 (`com.samsung.SMT.lang_zh_tw_f00`): [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine), [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [F-Droid](https://f-droid.org/packages/dev.davidv.translator).
@@ -170,6 +178,7 @@ This is a non-exhaustive list of apps disabled/uninstalled in the list, some of 
 - Tools (`com.sec.android.app.quicktool`): MA Measure (`com.vayunmathur.measure`) from [F-Droid](https://droidify.app/app/?id=com.vayunmathur.measure&repo_address=https://ma.vayunmathur.com/fdroid/repo).
 - Video Player (`com.samsung.android.video`): [VLC](https://code.videolan.org/videolan/vlc-android) (`org.videolan.vlc`) from [F-Droid](https://f-droid.org/packages/org.videolan.vlc).
 - Voice Access (`com.google.android.apps.accessibility.voiceaccess`)
+- Wallpaper and style (`com.samsung.android.app.dressroom`): Removing this app will prevent you to set a new wallpaper on OneUI Home on Android 10+. It's recommended to use an open source launcher such as [Lawnchair](https://github.com/LawnchairLauncher/lawnchair) from [GitHub release](https://github.com/LawnchairLauncher/lawnchair/releases) or [F-Droid](https://apt.izzysoft.de/fdroid/index/apk/app.lawnchair).
 - Weather (`com.sec.android.daemonapp`): [Weather](https://github.com/breezy-weather/breezy-weather) (`org.breezyweather`) from [F-Droid](https://f-droid.org/packages/org.breezyweather).
 - WiFi Calling (`com.sec.unifiedwfc`)
 - YouTube (`com.google.android.youtube`): [PipePipe](https://github.com/InfinityLoop1308/PipePipe) (`InfinityLoop1309.NewPipeEnhanced`) from [GitHub release](https://github.com/InfinityLoop1308/PipePipe/releases) (recommended due to frequent updates) or [F-Droid](https://f-droid.org/packages/InfinityLoop1309.NewPipeEnhanced), YouTube patched with [Morphe](https://github.com/MorpheApp/morphe-manager) (`app.morphe.manager`) from [GitHub release](https://github.com/MorpheApp/morphe-manager/releases) with [MicroG-RE](https://github.com/MorpheApp/MicroG-RE) (`app.revanced.android.gms`) from [GitHub release](https://github.com/MorpheApp/MicroG-RE/releases). Refer to my [morphe-patch-selections](https://github.com/Willie169/morphe-patch-selections) repo for my Morphe patch selections.

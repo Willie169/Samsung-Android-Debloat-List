@@ -77,6 +77,7 @@ com.samsung.android.aircommandmanager
 com.samsung.android.allshare.service.mediashare
 com.samsung.android.app.camera.sticker.facearavatar.preload
 com.samsung.android.app.contacts
+com.samsung.android.app.dressroom
 com.samsung.android.app.earphonetypec
 com.samsung.android.app.interpreter
 com.samsung.android.app.omcagent
@@ -158,6 +159,7 @@ com.samsung.android.service.stplatform
 com.samsung.android.service.tagservice
 com.samsung.android.shortcutbackupservice
 com.samsung.android.smartcallprovider
+com.samsung.android.smartface
 com.samsung.android.smartsuggestions
 com.samsung.android.smartswitchassistant
 com.samsung.android.spayfw
