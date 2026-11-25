@@ -216,7 +216,8 @@ This is a non-exhaustive list of apps not disabled/uninstalled in the list, some
 ## Non-ADB Settings
 
 Set the following items in settings. Note that some of them need to be set for work profile separately if you have work profile, such as those under Google.
-- Do not login to Samsung account.
+- Do not login to Samsung account if you don't need.
+- Do not login to Google account if you don't need.
 - Connections > Wi-Fi > Advanced settings > Manage networks: Remove old networks you no longer use.
 - Connections > Wi-Fi > Advanced settings > Allow WEP networks: Disable
 - Connections > Bluetooth: Disable when not in use
@@ -228,7 +229,7 @@ Set the following items in settings. Note that some of them need to be set for w
 - Galaxy AI: Disable
 - Notifications > App notifications: Disable on apps you don't need real-time notifications from.
 - Notifications > Lock screen: Disable
-- Notifications > Advanced settings > Notification history: Disable. If you want notification history, use [NotificationLog](https://codeberg.org/jonas-l/notificationlog-android) (`de.jl.notificationlog`) from [F-Droid](https://f-droid.org/packages/de.jl.notificationlog).
+- Notifications > Advanced settings > Notification history: Disable. If you want notification history, I recommend [NotificationLog](https://codeberg.org/jonas-l/notificationlog-android) (`de.jl.notificationlog`) from [F-Droid](https://f-droid.org/packages/de.jl.notificationlog).
 - Display > Screen saver: Do not set to picture that may reveal something about you.
 - Wallpaper and style: Do not set your lock screen to picture that may reveal something about you.
 - Lock screen & AOD > Screen lock and biometrics: Set a strong password and/or use fingerprint depending on your threat model and preference.
@@ -264,7 +265,7 @@ Set the following items in settings. Note that some of them need to be set for w
 - Apps: Uninstall or disable apps you don't need.
 - Apps > 3 dots > Special access: Disable permissions you don't need. I recommend using [Permission Pilot](https://github.com/d4rken-org/permission-pilot) (`eu.darken.myperm`) from [GitHub release](https://github.com/d4rken-org/permission-pilot) or [F-Droid](https://f-droid.org/packages/eu.darken.myperm) and go to its settings > Permission Watcher > Enable watcher to detect permission changes and notify you.
 - Accessibility > TalkBack > Settings > Text-to-speech > Preferred engine: I recommend using [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [GitHub release](https://github.com/woheller69/ttsEngine) or [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine) or [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [GitHub release](https://github.com/DavidVentura/offline-translator) or [F-Droid](https://f-droid.org/packages/dev.davidv.translator) because they don't collect your data and use Piper or Coqui voices, which I think is of better quality than Speech Recognition and Synthesis from Google (`com.google.android.tts`) and Samsung text-to-speech engine (`com.samsung.SMT`).
-- Accessibility > Installed apps > Review apps.
+- Accessibility > Installed apps > Revoke what you don't need.
 
 ## ADB Settings
 
