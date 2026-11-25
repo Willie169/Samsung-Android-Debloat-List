@@ -218,17 +218,17 @@ This is a non-exhaustive list of apps not disabled/uninstalled in the list, some
 Set the following items in settings. Note that some of them need to be set for work profile separately if you have work profile, such as those under Google.
 - Do not login to Samsung account.
 - Connections > Wi-Fi > Advanced settings > Manage networks: Remove old networks you no longer use.
-- Connections > Wi-Fi > Advanced settings > Allow WEP networks: Disabled
-- Connections > Bluetooth: Disabled when not in use
-- Connections > NFC and contactless payments: Disabled when not in use
-- Connections > Ultra-wideband (UWB): Disabled when not in use
+- Connections > Wi-Fi > Advanced settings > Allow WEP networks: Disable
+- Connections > Bluetooth: Disable when not in use
+- Connections > NFC and contactless payments: Disable when not in use
+- Connections > Ultra-wideband (UWB): Disable when not in use
 - Connections > More connection settings > Private DNS > Private DNS provider hostname: A trusted DNS provider, such as `security.cloudflare-dns.com`. If you are using DNS proxy, VPN, or other approaches to manage DNS resolving, ignore this. Note that setting this will interfere some VPN apps, and this settings is for the whole device instead of one profile. For my setup, refer to my [**android-privacy-network-connection-configurations**](https://github.com/Willie169/android-privacy-network-connection-configurations) repo.
 - Connected devices > Quick Share > Who can share with you: Off, Your devices, or Contacts
 - Connected devices > Music Share: Disabled when not in use
-- Galaxy AI: Disabled.
+- Galaxy AI: Disable
 - Notifications > App notifications: Disable on apps you don't need real-time notifications from.
-- Notifications > Lock screen: Disabled.
-- Notifications > Advanced settings > Notification history: Disabled. If you want notification history, use [NotificationLog](https://codeberg.org/jonas-l/notificationlog-android) (`de.jl.notificationlog`) from [F-Droid](https://f-droid.org/packages/de.jl.notificationlog).
+- Notifications > Lock screen: Disable
+- Notifications > Advanced settings > Notification history: Disable. If you want notification history, use [NotificationLog](https://codeberg.org/jonas-l/notificationlog-android) (`de.jl.notificationlog`) from [F-Droid](https://f-droid.org/packages/de.jl.notificationlog).
 - Display > Screen saver: Do not set to picture that may reveal something about you.
 - Wallpaper and style: Do not set your lock screen to picture that may reveal something about you.
 - Lock screen & AOD > Screen lock and biometrics: Set a strong password and/or use fingerprint depending on your threat model and preference.
@@ -238,24 +238,30 @@ Set the following items in settings. Note that some of them need to be set for w
 - Security and privacy > More security settings > Certificate management app: Should be None.
 - Security and privacy > More security settings > Install unknown apps: Only apps you trust.
 - Security and privacy > More security settings > Device admin apps: Only apps you trust.
-- Security and privacy > More privacy settings > Send diagnostic data: Disabled
-- Security and privacy > More privacy settings > Android personalization service: Disabled
-- Security and privacy > More privacy settings > Data sharing updates for location: Revoke unncessary apps.
-- Security and privacy > More privacy settings > Permission manager: Check each permission and revoke all unncessary permissions. I recommend using [Permission Pilot](https://github.com/d4rken-org/permission-pilot) (`eu.darken.myperm`) from [GitHub release](https://github.com/d4rken-org/permission-pilot) or [F-Droid](https://f-droid.org/packages/eu.darken.myperm) and go to its settings > Permission Watcher > Enable watcher to detect permission changes and notify you.
-- Security and privacy > More privacy settings > Android System Intelligence > Keyboard > Show smart text suggestion in the keyboard suggestion strip: Disabled. Android System Intelligence is disabled/uninstalled in the list. If you've disabled/uninstalled it, the settings may not show.
+- Security and privacy > More privacy settings > Send diagnostic data: Disable
+- Security and privacy > More privacy settings > Android personalization service: Disable
+- Security and privacy > More privacy settings > Data sharing updates for location: Revoke unnecessary apps.
+- Security and privacy > More privacy settings > Permission manager: Check each permission and revoke all unnecessary permissions. I recommend using [Permission Pilot](https://github.com/d4rken-org/permission-pilot) (`eu.darken.myperm`) from [GitHub release](https://github.com/d4rken-org/permission-pilot) or [F-Droid](https://f-droid.org/packages/eu.darken.myperm) and go to its settings > Permission Watcher > Enable watcher to detect permission changes and notify you.
+- Security and privacy > More privacy settings > Android System Intelligence > Keyboard > Show smart text suggestion in the keyboard suggestion strip: Disable. Android System Intelligence is disabled/uninstalled in the list. If you've disabled/uninstalled it, the settings may not show.
 - Security and privacy > More privacy settings > Android System Intelligence > Clear data > All time: Clear data. Android System Intelligence is disabled/uninstalled in the list. If you've disabled/uninstalled it, the settings may not show.
 - Security and privacy > More privacy settings > Activity controls: Review settings.
 - Security and privacy > More privacy settings > Ads > Delete advertising ID
-- Security and privacy > More privacy settings > Usage & diagonstics: Disabled
+- Security and privacy > More privacy settings > Usage & diagnostics: Disable
 - Location > Location services > turn off Google Location Sharing, Location Accuracy, Timeline, Wi-Fi scanning, and Bluetooth scanning: They are battery-consuming and/or may have privacy concerns depending on your threat model. You can enable Location Accuracy, Wi-Fi scanning, and optionally also Bluetooth scanning to improve location accuracy if your threat model is okay with it. If you don't need location, disable Location. If you don't need location in work profile, disable Location for work profile.
+- Google > All services > Connected apps: Disconnect what you don't need.
 - Google > All services > Ads > Delete advertising ID
-- Google > All services > Location Accuracy: Disabled
+- Google > All services > Location Accuracy: Disable
 - Google > All services > Personalize using shared data: Disable all
 - Google > All services > Quick Share > Who can share with you: Off, Your devices, or Contacts
-- Google > All services > System services > Uninstall those you don't need.
-- Google > All services > Usage & diagnostics: Disabled
-- Google > All services > Connected apps: Review apps.
-- Apps: Uninstall or disable apps you don't use.
+- Google > All services > System services > Uninstall what you don't need.
+- Google > All services > Phone number verification: Disable
+- Google > All services > Usage & diagnostics: Disable
+- Google > All services > Phone number sharing: Disable
+- Google > All services > Verification codes by SMS: Disable all
+- Google > All services > Backup: Turn off all unless you need
+- Google > All services > Advanced Protection: Disable
+- Google > All services > Sensitive content warnings: Disable, and uninstall Android System SafetyCore
+- Apps: Uninstall or disable apps you don't need.
 - Apps > 3 dots > Special access: Disable permissions you don't need. I recommend using [Permission Pilot](https://github.com/d4rken-org/permission-pilot) (`eu.darken.myperm`) from [GitHub release](https://github.com/d4rken-org/permission-pilot) or [F-Droid](https://f-droid.org/packages/eu.darken.myperm) and go to its settings > Permission Watcher > Enable watcher to detect permission changes and notify you.
 - Accessibility > TalkBack > Settings > Text-to-speech > Preferred engine: I recommend using [SherpaTTS](https://github.com/woheller69/ttsEngine) (`org.woheller69.ttsengine`) from [GitHub release](https://github.com/woheller69/ttsEngine) or [F-Droid](https://f-droid.org/packages/org.woheller69.ttsengine) or [Translator / Offline Translator](https://github.com/DavidVentura/offline-translator) (`dev.davidv.translator`) from [GitHub release](https://github.com/DavidVentura/offline-translator) or [F-Droid](https://f-droid.org/packages/dev.davidv.translator) because they don't collect your data and use Piper or Coqui voices, which I think is of better quality than Speech Recognition and Synthesis from Google (`com.google.android.tts`) and Samsung text-to-speech engine (`com.samsung.SMT`).
 - Accessibility > Installed apps > Review apps.
